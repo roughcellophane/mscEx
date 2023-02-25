@@ -1,12 +1,13 @@
+-- mga tables
+
 CREATE TABLE Users (
-    UserID INT,
+    UserID int,
     LName varchar(255),
     FName varchar(255),
     Password varchar(255),
     Access varchar(255)
 )
 
--- nasa accounts file tayo but lipat ko na lang ito after meeting 
 CREATE TABLE Menu (
     ProdID VARCHAR(255),
     ProdName varchar(255),
@@ -19,8 +20,11 @@ CREATE TABLE Orders (
     OrderID varchar(255),
     CurrentStatus varchar(255),
     UserID int,
-    PrepTime int
+    ProdID array,
+    ProdNum array,
+    CurrentTime int
 )
 
-INSERT INTO hi idol
-
+-- data input
+INSERT INTO Menu (ProdID, ProdName, AvailBool, PriceValue, PrepTime)
+VALUES ("M2", "Fried Chicken", "TRUE", "70", "60");
