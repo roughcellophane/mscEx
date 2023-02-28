@@ -27,4 +27,5 @@ CREATE TABLE Orders (
 
 -- data input
 INSERT INTO Menu (ProdID, ProdName, AvailBool, PriceValue, PrepTime)
-VALUES ("M2", "Fried Chicken", "TRUE", "70", "60");
+VALUES ROW ("M2", "Fried Chicken", "TRUE", "70", "60"),
+    Row (,,,,)
