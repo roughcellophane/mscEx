@@ -27,5 +27,13 @@ CREATE TABLE Orders (
 
 -- data input
 INSERT INTO Menu (ProdID, ProdName, AvailBool, PriceValue, PrepTime)
-VALUES ROW ("M2", "Fried Chicken", "TRUE", "70", "60"),
-    Row (,,,,)
+VALUES ROW("M2", "Fried Chicken", "TRUE", "70", "60"),
+       ROW(,,,,),
+       ;
+
+INSERT INTO Users (UserID, LName, FName, Password, Access)
+VALUES ROW("M2", "Fried Chicken", "TRUE", "70", "60"),
+       ROW(,,,,),
+       ;
+
+INSERT INTO Orders (OrderID, CurrentStatus, UserID, ProdID, ProdNum, CurrentTime)
