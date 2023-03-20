@@ -32,7 +32,7 @@ VALUES ROW("M2", "Fried Chicken", "TRUE", "70", "60"),
        ;
 
 INSERT INTO Users (UserID, LName, FName, Password, Access)
-VALUES ROW("M2", "Fried Chicken", "TRUE", "70", "60"),
+VALUES ROW("57647", "Italio", "Melody", "70", "60"),
        ROW(,,,,),
        ;
 
