@@ -1,20 +1,16 @@
 <script>
-    var useracc = require('accounts.sql')
-    var connection = useracc.createConnection({
-        host: "localhost",
-        user: "myusername",
-        password: "mypassword"
-    });
-    con.connection(function(err) {
-        if (err) throw err;
-        console.log("Connected!");
-    });
+    var useracc = require('accounts.sql');
     function proceed(){
-        var userid = document.getElementById("userid")
-        var userpass = document.getElementById("password")
+        var userid = document.getElementById("userid");
+        var userpass = document.getElementById("password");
+        var db = useracc.database('Users');
+        if (userid in db) and (userpass in db);{
+            alert("jumbo hatdog");
+        }
+        else {
+            throw(err)
+        }
     }
-    if ID in {
-}
 </script>
 <html>
     <div class="login">
