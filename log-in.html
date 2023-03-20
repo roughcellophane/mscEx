@@ -1,10 +1,24 @@
 <script>
-    if ID
-
+    var useracc = require('accounts.sql')
+    var connection = useracc.createConnection({
+        host: "localhost",
+        user: "myusername",
+        password: "mypassword"
+    });
+    con.connection(function(err) {
+        if (err) throw err;
+        console.log("Connected!");
+    });
+    function proceed(){
+        
+    }
+    if ID in {
+}
 </script>
 <html>
     <div class="login">
-    "Username: "<input type="field" ID="userid"></input>
-    "Password: "<input type="password" ID="password"></input>
+    <p>Username: </p><input type="field" ID="userid"></input>
+    <p>Password: </p><input type="password" ID="password"></input>
+    <button text="Confirm" onclick="proceed()">
     </div>
 </html>
