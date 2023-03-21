@@ -1,4 +1,4 @@
-const track = document.getElementsByID("image-track");
+const track = document.getElementsById("image-track");
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
