@@ -1,14 +1,19 @@
 <script>
     var useracc = require('accounts.sql');
+    var connection = useracc.connect();
+    if (!connection.isConnected()){
+        alert('Connection failed! Try refreshing the page.');
+    }
     function proceed(){
         var userid = document.getElementById("userid");
         var userpass = document.getElementById("password");
-        var db = useracc.database('Users');
-        if (userid in db) and (userpass in db);{
+        var userarray = [userid,userpass]
+        var db = useracc.database('Users','Password');
+        if (userarray in db){
             alert("jumbo hatdog");
         }
-        else {
-            throw(err)
+        else{
+            alert("pakyu ka");
         }
     }
 </script>
