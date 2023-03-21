@@ -4,10 +4,10 @@
     $password="";
     $db="Users";
 
-    mysql_connect($host,$user,$password)
-    mysql_select_db($db)
+    mysql_connect($host,$user,$password);
+    mysql_select_db($db);
 
-    if(isset($_POST[UserID]){
+    if(isset($_POST[UserID])){
         $uname=$_POST['username'];
         $password=$_POST['password'];
         $sql="select * from accounts where UserID='".$uname."' and Password='".$password."' limit 1";
