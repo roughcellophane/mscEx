@@ -1,26 +1,12 @@
 <script>
-    var useracc = require('accounts.sql');
-    var connection = useracc.connect();
-    if (!connection.isConnected()){
-        alert('Connection failed! Try refreshing the page.');
-    }
-    function proceed(){
-        var userid = document.getElementById("userid");
-        var userpass = document.getElementById("password");
-        var userarray = [userid,userpass]
-        var db = useracc.database('Users','Password');
-        if (userarray in db){
-            alert("jumbo hatdog");
-        }
-        else{
-            alert("pakyu ka");
-        }
-    }
+    
 </script>
 <html>
-    <div class="login">
-    <p>Username: </p><input type="field" id="userid" placeholder="Username" required>
-    <p>Password: </p><input type="password" id="password" placeholder="Password" required>
-    <input type="submit">
+    <form action="connect.php" method="post">
+        <div class="login">
+        <p>Username: </p><input type="field" class="form-control" id="UserID" name="UserID" placeholder="Username" required>
+        <p>Password: </p><input type="password" class="form-control" id="Password" name="Password" placeholder="Password" required>
+        <input type="submit" onsubmit=proceed()>
     </div>
+</form>
 </html>
