@@ -10,9 +10,9 @@
     if(isset($_POST[UserID])){
         $uname=$_POST['username'];
         $password=$_POST['password'];
-        $sql="select * from accounts where UserID='".$uname."' and Password='".$password."' limit 1";
+        $sql="select * from accounts where UserID='".$uname."' and Pass='".$password."' limit 1";
         $result=mysql_query($sql);
-        if mysql_num_rows($result)==1{
+        if mysql_num_rows($result)==1 {
             echo "Log in Success!";
             exit();
         }

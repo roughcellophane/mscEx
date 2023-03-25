@@ -4,8 +4,7 @@ CREATE TABLE Users (
     UserID int,
     LName varchar(255),
     FName varchar(255),
-    Pass varchar(255),
-    Access varchar(255)
+    Pass varchar(255)
     );
 
 CREATE TABLE Menu (
@@ -27,10 +26,28 @@ CREATE TABLE Orders (
 
 
 INSERT INTO Menu (ProdID, ProdName, AvailBool, PriceValue, PrepTime)
-VALUES ROW ("M2", "Fried Chicken", "1", "70", "60");
-
+VALUES
+	("M1", "Tonkatsu", "1", "50", "50"),
+	("M2", "Fried Chicken", "1", "70", "30"),
+	("M3", "Dinuguan", "1", "70", "30"),
+	("M4", "Bopis", "1", "70", "30"),
+	("M5", "Adobong Pusit", "1", "70", "30"),
+	("M6", "Sinigang na Baboy", "1", "70", "30"),
+	("M7", "Sisig", "1", "70", "30"),
+	("M8", "Adobong Pusit", "1", "70", "30"),
+	("A1", "Spaghetti", "1", "70", "30"),
+	("A2", "Carbonara", "1", "70", "30");
+    
 INSERT INTO Users (UserID, LName, FName, Pass, Access)
-VALUES ROW ("57647", "Italio", "Melody", "MItalio", "60");
+VALUES
+	("57647", "Italio", "Melody", "MItalio", "60"),
+	("39048", "Placido", "Ernell", "EPlacido", "60"),
+	("93827", "Ramil", "Dianne", "DRamil", "60");
 
 INSERT INTO Orders (OrderID, CurrentStatus, UserID, ProdID, ProdNum, CurrentTime)
-VALUES ROW ("434893", "SENT", "57467", "2", "1", "2");
+VALUES
+	("434893", "SENT", "57467", "2", "1", "2");
+
+SELECT * FROM MENU;
+SELECT * FROM USERS;
+SELECT * FROM ORDERS;
