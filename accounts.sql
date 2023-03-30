@@ -38,7 +38,7 @@ VALUES
 	("A1", "Spaghetti", "1", "70", "30"),
 	("A2", "Carbonara", "1", "70", "30");
     
-INSERT INTO Users (UserID, LName, FName, Pass, Access)
+INSERT INTO Users (UserID, LName, FName, Password, Access)
 VALUES
 	("57647", "Italio", "Melody", "MItalio", "60"),
 	("39048", "Placido", "Ernell", "EPlacido", "60"),
