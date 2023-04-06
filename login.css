@@ -6,8 +6,8 @@ body{
     background: -webkit-linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
     background: linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
+    display: flex;
+    overflow: hidden;
 }
 .loginDiv{
     position: absolute;
@@ -17,7 +17,7 @@ body{
     float: left;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -55%);
     box-sizing: border-box;
     border-radius: 25px;
     text-align: center;
@@ -27,7 +27,6 @@ body{
     width: 100%;
     height: 50%;
     color: black;
-    padding: 0px 0px 25px 0px;
 }
 
 .loginContainer{
@@ -47,11 +46,12 @@ body{
 }
 
 .user-box{
+    font-family: 'Karla', sans-serif;
     width: 70%;
     padding: 10px 0;
     font-size: 16px;
     color: #000;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid #1A3F60;
     outline: none;
@@ -77,5 +77,17 @@ body{
 }
 
 #submitButton{
-    width: 75%;   
+    width: 70%;
+    padding: 10px 0;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    font-size: 16px;
+    color: white;
+    margin: 30px 0;
+    outline: none;
+    background: rgb(1,98,175);
+    background: -moz-linear-gradient(90deg, rgba(1,98,175,1) 0%, rgba(0,173,240,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(1,98,175,1) 0%, rgba(0,173,240,1) 100%);
+    background: linear-gradient(90deg, rgba(1,98,175,1) 0%, rgba(0,173,240,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0162af",endColorstr="#00adf0",GradientType=1);
 }
