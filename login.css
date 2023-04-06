@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+body{
+    background: rgb(31,116,181);
+    background: -moz-linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
+    background: linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.loginDiv{
+    position: absolute;
+    background: white;
+    height: 480px;
+    width: 320px;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 35px rgba(0,0,0,0.1);
+}
+.infoContainer{
+    width: 100%;
+    height: 50%;
+    color: black;
+    padding: 0px 0px 25px 0px;
+}
+
+.loginContainer{
+    height: 50%;
+    width: 100%;
+    color: black;
+    background: #fff;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.loginlogo{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    vertical-align: text-bottom;
+    padding: 25px 0px 0px 0px;
+}
+
+.user-box{
+    width: 70%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #1A3F60;
+    outline: none;
+    background: transparent;
+  }
+
+.textsababa{
+    vertical-align: text-bottom;
+    padding-top: 2.5px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+#infoHeader{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Rubik, sans-serif;
+}
+
+#infoDesc{
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+}
+
+#submitButton{
+    width: 75%;   
+}
