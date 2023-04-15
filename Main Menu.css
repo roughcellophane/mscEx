@@ -1,16 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 .grid-container {
   background: #efefef;
   font-family: "Rubik", sans-serif;
 }
 
-.grid-container a {
+.grid-yes {
+  background: #efefef;
+  font-family: "Rubik", sans-serif;
+}
+
+.grid-yes a {
   float: left;
   display: block;
   
 }
-  
+ 
+ 
 @supports (display: grid) {
   .grid-container {
     display: grid;
@@ -33,23 +40,6 @@
     font-weight: 200;
   }
 
-
-  .header {
-    background-color: #092a37;
-    grid-area: header;
-    padding: 1em;
-	
-  }
-
-  .main {
-    color: #959595;
-    background-color: white;
-    grid-area: main;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
   .footer {
     background-color: #5bbce4;
     grid-area: footer;
@@ -62,31 +52,13 @@
     grid-area: title;
   }
  
-   .item {
-    display: inline-block;
-    background: skyblue;
-    min-height: 250px;
-    min-width: 400px;
-    margin: 2em 1em;
-  }
-  
+
   @media screen and (max-width: 500px) {
     .item {
       min-height: 200px;
       min-width: 200px;
     }
   }
-}
-
-
-a {
-  display: block;
-  color: #c9e9f6;
-  text-decoration: underline;
-  margin: 1em auto;
-}
-a:hover {
-  cursor: pointer;
 }
 
 p {
@@ -97,4 +69,6 @@ p {
 
 i {
   color: skyblue;
+  padding: 10px;
+
 }
