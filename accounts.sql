@@ -1,5 +1,3 @@
--- mga tables
-
 CREATE TABLE Users (
     UserID int,
     LName varchar(255),
@@ -21,8 +19,18 @@ CREATE TABLE Orders (
     UserID int,
     ProdID varchar(255),
     ProdNum varchar(255),
-    CurrentTime int
+    CurrentTime int,
+    ProdName varchar(255),
+    TimeLeft int,
 );
+
+CREATE TABLE TStamps(
+    OrderID varchar(255),
+    OrderSent varchar(255),
+    OrderReceived varchar(255),
+    OrderUp varchar(255),
+)
+
 
 
 INSERT INTO Menu (ProdID, ProdName, AvailBool, PriceValue, PrepTime)
@@ -38,15 +46,19 @@ VALUES
 	("A1", "Spaghetti", "1", "70", "30"),
 	("A2", "Carbonara", "1", "70", "30");
     
-INSERT INTO Users (UserID, LName, FName, Password, Access)
+INSERT INTO Users (UserID, LName, FName, Pass)
 VALUES
-	("57647", "Italio", "Melody", "MItalio", "60"),
-	("39048", "Placido", "Ernell", "EPlacido", "60"),
-	("93827", "Ramil", "Dianne", "DRamil", "60");
+	("57647", "Italio", "Melody", "MItalio"),
+	("39048", "Placido", "Ernell", "EPlacido"),
+	("93827", "Ramil", "Dianne", "DRamil");
 
-INSERT INTO Orders (OrderID, CurrentStatus, UserID, ProdID, ProdNum, CurrentTime)
+INSERT INTO Orders (OrderID, CurrentStatus, UserID, ProdID, ProdNum, CurrentTime, ProdName, TimeLeft)
 VALUES
-	("434893", "SENT", "57467", "2", "1", "2");
+	();
+
+INSERT INTO TStamps (OrderID, OrderSent, OrderReceived, OrderUp)
+VALUES
+    ();
 
 SELECT * FROM MENU;
 SELECT * FROM USERS;
