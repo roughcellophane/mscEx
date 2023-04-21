@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="Menu Items.css">
 <link rel="stylesheet" href="Main Menu.css">
 <link rel="stylesheet" href="mySidebar.css">
+<link rel="stylesheet" href="foodbutton.css">
 <link rel="stylesheet" href="Checkout.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 <link rel="stylesheet" href="header.css">
@@ -22,7 +23,7 @@
 <body>
 
 		<header class="header">
-			<div id="main"><a href="#" onclick="openNav_sidebar()"> <i class="fa-solid fa-bars"></i></a></div>
+			<div id="main sidebarButton"><a href="#" onclick="openNav_sidebar()"> <i class="fa-solid fa-bars"></i></a></div>
 			<h1 class="logo">🍽 MakSci Express 🍽</h1>
 		  <ul class="yes">
 			  <li><a href="#" id="main" onclick="openNav_checkout()"><i class="fa-solid fa-cart-shopping-fast"></i></a></li>
@@ -63,24 +64,28 @@
 		</div>
 		
 		<ul class="hs">
+				
 		  <li class="hs__item"> 
 			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/112/300/300" alt=""/>
+			<a class="experiment" href="#" draggable=false>
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">TONKATSU</div>
+						<div class="priceDetails">70 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" alt=""/>5			
+					</a>
+			</a>
 			</div>
-		
+
 		  <li class="hs__item"> 
 			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/122/300/300" alt=""/>
+			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/152/300/300" alt=""/>
 			</div>
 			
 		  <li class="hs__item"> 
 			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/132/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/142/300/300" alt=""/>
+			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/152/300/300" alt=""/>
 			</div>
 			
 		  <li class="hs__item"> 
