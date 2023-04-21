@@ -1,5 +1,4 @@
-
-   a {
+ a {
 		text-decoration: none;
 	}
 	
@@ -50,12 +49,21 @@
     }
 
     .setMealColor{
-        background-color: #050A50;
+		background-color: #050A50;
     }
 
+    .alACarteColor{
+		background-color: #1E3F6D;
+    }
+	
+    .extrasColor{
+		background-color: #145169;
+    }
+	
     .drinkColor{
         background-color: #002469;
     }
+
 
     .leftAlignName{
         height: 20px;
@@ -78,56 +86,26 @@
 	underline: none;
 }
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (min-width: 150px) {
   .detailspane {
 		z-index: 6;
 		padding: 5px 5px 5px 5px;
-		position: relative;
+		position: absolute;
 		font-family: "Rubik", sans-serif;
         color: white;
         border-bottom-left-radius: 7px;
 		border-bottom-right-radius: 7px;
         box-shadow: 0px 5px 35px #bbbbbb;
-		background-color: #050A50;
 		width: 100%;
 		height: 25%;
-		top: 7em;
+		top: 2em;
+		object-fit: cover;
   }
   
-  .nameDetails{
-        padding-left: 2px;
-        font-size: 6px;
-        font-weight: bold;
-        vertical-align: text-top;
-		color: #FFFFFF;
-    }
-
-    .priceDetails{
-        padding-left: 1px;
-        font-size: 3px;
-        vertical-align: text-top;
-    }
-
-}
-
-@media only screen and  (max-width: 800px) {
-  .detailspane {
-		z-index: 6;
-		padding: 5px 5px 5px 5px;
-		position: relative;
-		font-family: "Rubik", sans-serif;
-        color: white;
-        border-bottom-left-radius: 7px;
-		border-bottom-right-radius: 7px;
-        box-shadow: 0px 5px 35px #bbbbbb;
-		background-color: #050A50;
-		width: 100%;
-		height: 25%;
-		top: 5em;
-  }
     .nameDetails{
         padding-left: 2px;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: bold;
         vertical-align: text-top;
 		color: #FFFFFF;
@@ -135,42 +113,70 @@
 
     .priceDetails{
         padding-left: 1px;
-        font-size: 5px;
+        font-size: 10px;
         vertical-align: text-top;
     }
 }
 
-@media only screen and  (max-width: 980px) {
+@media only screen and (min-width: 300px) {
   .detailspane {
 		z-index: 6;
 		padding: 5px 5px 5px 5px;
-		position: relative;
+		position: absolute;
 		font-family: "Rubik", sans-serif;
         color: white;
         border-bottom-left-radius: 7px;
 		border-bottom-right-radius: 7px;
         box-shadow: 0px 5px 35px #bbbbbb;
-		background-color: #050A50;
-		width: 200%;
-		height: 25%;
-		top: 9.4em;
+		width: 100%;
+		height: 30%;
+		top: 4em;
+		object-fit: cover;
   }
-}
+  
+    .nameDetails{
+        padding-left: 2px;
+        font-size: 10px;
+        font-weight: bold;
+        vertical-align: text-top;
+		color: #FFFFFF;
+    }
 
-@media only screen and  (max-width: 993px) {
+    .priceDetails{
+        padding-left: 1px;
+        font-size: 10px;
+        vertical-align: text-top;
+    }
+}
+@media only screen and (max-width: 680px) {
   .detailspane {
 		z-index: 6;
 		padding: 5px 5px 5px 5px;
-		position: relative;
+		position: absolute;
 		font-family: "Rubik", sans-serif;
         color: white;
         border-bottom-left-radius: 7px;
 		border-bottom-right-radius: 7px;
         box-shadow: 0px 5px 35px #bbbbbb;
-		background-color: #050A50;
-		width: 206%;
-		height: 25%;
-		top: 9.6em;
+		width: 100%;
+		height: 30%;
+		top: 6.8em;
+		object-fit: cover;
+  }
+} 
+@media only screen and (min-width: 700px) {
+  .detailspane {
+		z-index: 6;
+		padding: 5px 5px 5px 5px;
+		position: absolute;
+		font-family: "Rubik", sans-serif;
+        color: white;
+        border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+        box-shadow: 0px 5px 35px #bbbbbb;
+		width: 100%;
+		height: 35%;
+		top: 8.25em;
   }
   
     .nameDetails{
@@ -187,23 +193,19 @@
         vertical-align: text-top;
     }
 }
-
-
-
-@media only screen and  (max-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .detailspane {
 		z-index: 6;
 		padding: 5px 5px 5px 5px;
-		position: relative;
+		position: absolute;
 		font-family: "Rubik", sans-serif;
         color: white;
         border-bottom-left-radius: 7px;
 		border-bottom-right-radius: 7px;
         box-shadow: 0px 5px 35px #bbbbbb;
-		background-color: #050A50;
-		width: 210.25%;
-		height: 25%;
-		top: 9.8em;
+		width: 100%;
+		height: 30%;
+		top: 9.1em;
   }
   
     .nameDetails{
@@ -219,9 +221,6 @@
         font-size: 12px;
         vertical-align: text-top;
     }
-
-
-}
 
 @media only screen and (min-width: 1201px) {
 
@@ -248,7 +247,6 @@
         border-bottom-left-radius: 7px;
 		border-bottom-right-radius: 7px;
         box-shadow: 0px 5px 35px #bbbbbb;
-		background-color: #050A50;
 		padding: 5px 5px 5px 5px;
 		width: 100%;
 		height: 25%;
