@@ -3,37 +3,146 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 body{
-    background: rgb(31,116,181);
-    background: -moz-linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
-    background: linear-gradient(90deg, rgba(31,116,181,1) 0%, rgba(14,70,92,1) 100%);
+    background-color:#efefef !important;
     min-height: 100vh;
     display: flex;
     overflow: hidden;
     line-height: 20px !important;
+    font-family: Rubik, sans-serif;
 }
 .checkoutInfo{
     position: absolute;
-    background: white;
     margin: auto;
     box-sizing: border-box;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0px 5px 35px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 3w5px rgba(0,0,0,0.1);
     padding: 20px;
     float: left;
     left: 50%;
     transform: translate(-50%, 0%);
+    font-family: Rubik, sans-serif;
+    align-items: center;
 }
 
-@media screen and (min-width: 900px){
-    .checkoutInfo{
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 899px){
+@media screen and (min-width: 1000px){
     .checkoutInfo{
         width: 95%;
     }
+    .eachOrderRow{
+        width: 65%;
+    }
+    .orderInfo{
+        padding-left: 20px;
+    }
+    .orderPicture{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .checkoutInfo{
+        width: 95%;
+    }
+    .eachOrderRow{
+        width: 80%;
+    }
+    .orderInfo{
+        padding-left: 20px;
+    }
+    .orderPicture{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 862px){
+    .checkoutInfo{
+        width: 95%;
+    }
+    .eachOrderRow{
+        width: 95%;
+    }
+    .orderInfo{
+        padding-left: 10px;
+    }
+    .orderPicture{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.eachOrderRow{
+    margin: 15px auto;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+    border-radius: 10px !important;
+    border-color: none !important;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.orderPicture{
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.orderInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: auto;
+    overflow-wrap: break-word;
+    border: 20px black !important;;
+}
+
+.orderName{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.orderQuantity{
+    font-size: 14px;
+    font-family: Karla, sans-serif;
+    line-height: 30px;
+
+}
+
+.totalPrice{
+    width: 175px;
+    font-size: 14px;
+    font-family: Karla, sans-serif;
+    text-align: right;
+    padding-left: 15px;
+}
+
+.finalPriceDisplay{
+    margin: 15px auto;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+    border-radius: 10px !important;
+    border-color: none !important;
+    padding: 25px 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgb(43, 119, 132);
+    color: white;
+}
+
+.totalText{
+    font-size: 36px;
+    margin-right: auto;
+    text-align: left;
+}
+
+.finalPrice{
+    width: 175px;
+    font-size: 24px;
+    font-family: Karla, sans-serif;
+    text-align: right;
+    padding-left: 15px;
 }
