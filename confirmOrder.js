@@ -1,7 +1,14 @@
-$(".modalbttn").click(function() {
-    $(".modalcontainer,.modal").fadeIn("slow");
+function confirm() {
+    var x = document.getElementById("appearToggle");
+    x.style.display = "flex";
+  }
+
+/*
+$(".confirmButton").click(function() {
+    $(".modalContainer,.confirmOrder").fadeIn("slow");
   });
   
-  $(".close,.buttons").click(function() {
-    $(".modalcontainer,.modal").fadeOut("slow");
+  $(".modalContainer").click(function() {
+    $(".modalContainer,.confirmOrder").fadeOut("slow");
   });
+  */
