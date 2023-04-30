@@ -19,9 +19,73 @@
     </script>
     </head>
 <body>
+<div>
   <div class="checkoutInfo">
-    <div id="titleCard">Confirm your order</div>
-  <div ID="orderlist">
+  <div class="checkoutHeader">
+    
+    <div id="titleCard"><a style="color: rgb(43, 119, 132);" href=""><i class="bi bi-caret-left-fill"></i></a>Confirm your order</div>
+    <div id="shoppingCart"><i class="bi bi-cart-fill"></i></div></div>
+
+
+   <div class="eachOrderRow">
+    <div class="row1">
+        <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
+        <div class="orderInfo">
+            <div class="orderName">SMALL ORDER NAME WITH RICE</div>
+            <div class="orderQuantity">[QUANTITY]</div>
+        </div>
+        <div class="totalPrice">[TOTAL_PRICE]</div>
+    </div>
+    <div class="row2">
+<input type="button" class="deleteButton" value="REMOVE ORDER">
+    </div>
+    </div>
+   <div class="eachOrderRow">
+        <div class="row1">
+            <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
+            <div class="orderInfo">
+                <div class="orderName">SMALL ORDER NAME WITH RICE</div>
+                <div class="orderQuantity">[QUANTITY]</div>
+            </div>
+            <div class="totalPrice">[TOTAL_PRICE]</div>
+        </div>
+        <div class="row2">
+    <input type="button" class="deleteButton" value="REMOVE ORDER">
+        </div>
+        </div>
+   <div class="eachOrderRow">
+    <div class="row1">
+        <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
+        <div class="orderInfo">
+            <div class="orderName">SMALL ORDER NAME WITH RICE</div>
+            <div class="orderQuantity">[QUANTITY]</div>
+        </div>
+        <div class="totalPrice">[TOTAL_PRICE]</div>
+    </div>
+    <div class="row2">
+<input type="button" class="deleteButton" value="REMOVE ORDER">
+    </div>
+    </div>
+  <div class="eachOrderRow finalPriceDisplay">
+    <div class="totalText">Total</div>
+    <div class="finalPrice totalPrice">[TOTAL_PRICE]</div>
+    </div>
+  <div class="confirmButton">PLACE ORDER</div>
+  </div>
+</div>
+<!-- modal -->
+<div class="modalContainer">
+    <div class="confirmOrder">
+        <i class="bi bi-check-circle-fill"></i>
+        <div class="successMessage" style="font-weight: bold;">Your order is now being sent to the canteen!</div>
+        <div class="msgTotalPrice">Don't forget to have [TOTAL_PRICE] ready and pay at the canteen counter to receive your order.</div>
+        <div class="msgTrackInfo">Use this tracking number to track your order:</div>
+        <div class="msgTrackNo">[TRACKING NUMBER]</div>
+        <div class="goBackToMenu"><a style="color: white;" href="" class="MenuButton"><i class="bi bi-caret-left-fill"></i> GO BACK TO MENU</a></div>
+    </div>
+</div>
+
+<div ID="orderlist">
     <table rowspan=b colspan="4" id="receipt">
         <tr>
             <th>Meal</th>
@@ -31,33 +95,3 @@
         </tr>
   
   </div>
-  <div class="eachOrderRow">
-    <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
-    <div class="orderInfo">
-        <div class="orderName">SMALL ORDER NAME</div>
-        <div class="orderQuantity">[QUANTITY]</div>
-    </div>
-    <div class="totalPrice">[TOTAL_PRICE]</div>
-  </div>
-  <div class="eachOrderRow">
-    <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
-    <div class="orderInfo">
-        <div class="orderName">SMALL ORDER NAME WITH RICE</div>
-        <div class="orderQuantity">[QUANTITY]</div>
-    </div>
-    <div class="totalPrice">[TOTAL_PRICE]</div>
-  </div>
-  <div class="eachOrderRow">
-    <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
-    <div class="orderInfo">
-        <div class="orderName">INCREDIBLY LENGTHY ORDER NAME OF FOOD</div>
-        <div class="orderQuantity">[QUANTITY]</div>
-    </div>
-    <div class="totalPrice">[TOTAL_PRICE]</div>
-  </div>
-  <div class="eachOrderRow finalPriceDisplay">
-    <div class="totalText">Total</div>
-    <div class="finalPrice totalPrice">[TOTAL_PRICE]</div>
-    </div>
-  </div>
-</html>
