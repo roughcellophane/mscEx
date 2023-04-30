@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>MakSci Express</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+</head>
+<style>
+    .foodButton {
+    display: inline-block;
+    min-height: 125px;
+    min-width: 400px;
+    margin: 2em 1em;
+    text-align: center;
+    padding: 125px 0px;
+    }
+
+    #setMeal {  
+    background-image: url("https://images.unsplash.com/photo-1551218372-a8789b81b253");
+    background-color: #5b5dc2;
+    background-blend-mode: multiply;
+    background-position: center;
+    position: relative;
+    width: 40%;
+    height: 40%;
+}
+
+    .mainTableDIV {
+        height: 300px;
+        width: 300px;
+        margin: 10px 10px 10px 10px;
+        float: left;
+    }
+
+    .menu{
+        width: 300px;
+        height: 225px;
+        display: block;
+        border-radius: 7px;
+        object-fit: cover;
+    }
+    
+    .orderDesign{
+        width: 300px;
+        height: 300px;
+        font-family: "Rubik", sans-serif;
+        color: white;
+        border-radius: 7px;
+        box-shadow: 0px 5px 35px #bbbbbb;
+    }
+
+    .setMealColor{
+        background-color: #3F43A4;
+    }
+
+    .drinkColor{
+        background-color: #48A7A5;
+    }
+
+    .leftAlignName{
+        height: 20px;
+        padding-top: 8px;
+        padding-left: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: text-top;
+    }
+
+    .leftAlignPrice{
+        height: 55px;
+        padding-top: -20px;
+        padding-left: 5px;
+        font-size: 15px;
+        vertical-align: text-top;
+    }
+
+    .nameDetails{
+        padding-top: 12px;
+        padding-left: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: text-top;
+    }
+
+    .priceDetails{
+        padding-left: 8px;
+        font-size: 14px;
+        vertical-align: text-top;
+    }
+</style>
+
+<BR> <BR>
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div class="mainTableDIV orderDesign setMealColor">
+        <img src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" class="menu" draggable="false">
+        <div class="nameDetails">TONKATSU</div>
+        <div class="priceDetails">70 PESOS</div>
+    </div>
+    </button>
+    <div class="mainTableDIV orderDesign setMealColor">
+        <img src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" class="menu" draggable="false">
+        <div class="nameDetails">TONKATSU</div>
+        <div class="priceDetails">70 PESOS</div>
+    </div>
+    <div class="mainTableDIV orderDesign setMealColor">
+        <img src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" class="menu" draggable="false">
+        <div class="nameDetails">TONKATSU</div>
+        <div class="priceDetails">70 PESOS</div>
+    </div>
+</html>
+
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    Accordion Item #1
+  </button>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+  --------------------------
+  <br><br>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div class="mainTableDIV orderDesign setMealColor">
+        <img src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" class="menu" draggable="false">
+        <div class="nameDetails">TONKATSU</div>
+            <div class="priceDetails">70 PESOS</div>
+        </button>
+    </div>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>

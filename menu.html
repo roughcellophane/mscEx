@@ -5,27 +5,31 @@
   <title>MakSci Express</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,700" >
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" >
 <link rel="stylesheet" href="Menu Items.css">
 <link rel="stylesheet" href="Main Menu.css">
 <link rel="stylesheet" href="mySidebar.css">
 <link rel="stylesheet" href="foodbutton.css">
 <link rel="stylesheet" href="Checkout.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 <link rel="stylesheet" href="header.css">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="more sidebar.css">
 <link rel="stylesheet" href="dashboard.css">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
 
 <body>
 
 		<header class="header">
 			<div id="main sidebarButton"><a href="#" onclick="openNav_sidebar()"> <i class="fa-solid fa-bars"></i></a></div>
-			<h1 class="logo"><img src="#">akSciExpress</h1>
+			<h1 class="icon"><img src="#">akSciExpress</h1>
 		  <ul class="yes">
 			  <li><a href="#" id="main" onclick="openNav_checkout()"><i class="fa-solid fa-cart-shopping-fast"></i></a></li>
 		  </ul>
@@ -34,33 +38,15 @@
 
 <div class="grid-container">	
 
-		<!-- dashboard -->
-		<div class="grid-item title">
-			<div class="slideshowContainer">
-		  
-		<!-- Replace the image 'src' with the images in your project.
-		Javascript is set up so that you can add as many images as you like, but make sure that you match the number of 'circle' span elements (below) to the number of images -->
-		  <img class="imageSlides" src="https://t4.ftcdn.net/jpg/05/31/67/91/360_F_531679184_3VykZEvx3OvHKnLpl3TdaDYWT1hYjvc9.jpg">
-		  <img class="imageSlides" src="#">
-		  <img class="imageSlides" src="#">
-		  
-		  <div class="slideshowCircles">
-		<!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
-		Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. -->
-			<span class="circle dot"></span>
-			<span class="circle"></span>
-			<span class="circle"></span>
-		  </div>
-		  
-		</div>
-</div>
+
 
 <!-- quick menu -->
   <footer class="grid-item footer">
     <h2>Quick Menu</h2>
-			<a>Set Meals</a> <br>
-			<a>Side Dishes</a> <br>
-			<a>Beverages</a> <br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170350628955/setmeals.png"></a><br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771169788608604/download.png"></a><br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170078007346/extras.png" ></a><br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170635857981/drinks.png"></a><br>
 
   </footer>
   
@@ -82,35 +68,30 @@
 		
 		<ul class="hs">
 				
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			<a class="experiment" href="#" draggable=false onclick="M1">
-				<div class="detailspane setMealColor">
-						<div class="nameDetails">TONKATSU</div>
-						<div class="priceDetails">65 PESOS</div>
-				</div>
-				<a class="hs__item__image" href="#" draggable=false>
-					<img class="menu" src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" alt=""/>
+			  <li class="hs__item"> 		  
+				<div type="button" class="hs__item__image__wrapper" onclick="openTonkatsu()">
+					<div class="detailspane setMealColor">
+							<div class="nameDetails">TONKATSU</div>
+							<div class="priceDetails">65 PESOS</div>
+					</div>
+					<a class="hs__item__image" href="#" draggable=false>
+						<img class="menu" src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" alt=""/>
 					</a>
-			</a>
-			</div>
+				</div>
 
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			<a class="experiment" href="#" draggable=false onclick="M2">
+			<div type="button" class="hs__item__image__wrapper" onclick="openFRIEDCHICKEN()">
 				<div class="detailspane setMealColor">
-						<div class="nameDetails">CHICKEN</div>
+						<div class="nameDetails">FRIED CHICKEN</div>
 						<div class="priceDetails">70 PESOS</div>
 				</div>
 				<a class="hs__item__image" href="#" draggable=false>
 					<img class="menu" src="https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg" alt=""/>		
 					</a>
-			</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			<a class="experiment" href="#" draggable=false onclick="M2">
+			<div type="button" class="hs__item__image__wrapper" onclick="openDINUGUAN()">
 				<div class="detailspane setMealColor">
 						<div class="nameDetails">DINUGUAN</div>
 						<div class="priceDetails">75 PESOS</div>
@@ -118,20 +99,17 @@
 				<a class="hs__item__image" href="#" draggable=false>
 					<img class="menu" src="https://i.ytimg.com/vi/U8oC6nqzhBY/maxresdefault.jpg" alt=""/>	
 					</a>
-			</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			<a class="experiment" href="#" draggable=false onclick="M3">
+			<div type="button" class="hs__item__image__wrapper" onclick="openBOPIS()">
 				<div class="detailspane setMealColor">
 						<div class="nameDetails">BOPIS</div>
 						<div class="priceDetails">65 PESOS</div>
 				</div>
 				<a class="hs__item__image" href="#" draggable=false>
 					<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2010/11/bopis-recipe.jpg" alt=""/>	
-					</a>
-			</a>
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
@@ -347,7 +325,7 @@
 						<div class="priceDetails">5 PESOS</div>
 				</div>
 				<a class="hs__item__image" href="#" draggable=false>
-					<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2020/01/pork-siomai-recipe.jpg alt=""/>	
+					<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2020/01/pork-siomai-recipe.jpg" alt=""/>	
 			</a>
 			</div>
 
@@ -587,7 +565,7 @@
           </div>
         </div>
       </div>	
-
+</div>
 <!-- curtain menu for checkout ooga booga -->
 
 <div id="checkout" class="overlay">
@@ -600,6 +578,110 @@
   </div>
 </div>
 	
+
+<!--------ITEM DETAILS!!-------------------->
+<div class="ITEM_DETAILS"> 
+<div id="TONKATSU">
+	<div id="checkout" class="overlay">	
+	<div class="overlay-content">
+	<div class="section-fluid-main">
+			<div class="section">
+				<div class="info-wrap mob-margin">
+					<p class="title-up">MakSci Express</p>
+					<h2>Tonkatsu</h2>
+					<div class="section-fluid">
+						<input class="desc-btn" type="radio" id="desc-1" name="desc-btn" checked/>
+						<label for="desc-1">Description</label> 
+						<input class="desc-btn" type="radio" id="desc-2" name="desc-btn"/>
+						<label for="desc-2">Prices</label> 
+						<div class="section-fluid desc-sec accor-1">
+							<p>It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+						</div>	
+						<div class="section-fluid desc-sec accor-2">
+							<div class="section-inline">
+								<p class="smol_font"><span>65</span> Pesos<br>With Rice</p>
+							</div>	
+							<div class="section-inline">
+								<p class="smol_font"><span>55</span> Pesos<br>A la Carte</p>
+							</div>
+						</div>	
+					</div>	
+					<h5>Choose order option:</h5>
+				</div>
+				<div class="clearfix"></div>
+				<input class="color-btn for-color-1" type="radio" id="color-1" name="color-btn" checked/ value="M1">
+				<label class="first-color" for="color-1"><p>With Rice</p></label> 
+				<input class="color-btn for-color-2" type="radio" id="color-2" name="color-btn"/ value="A1">
+				<label class="color-2" for="color-2"><p>Al a Carte</p></label> 
+				
+				
+
+
+				
+				<div class="img-wrap tonkatsu-1"></div>
+				<div class="img-wrap tonkatsu-2"></div>	
+				<div class="img-wrap fried_chicken-1"></div>
+				<div class="img-wrap fried_chicken-2"></div>
+				<div class="img-wrap chair-5"></div>
+				<div class="img-wrap chair-6"></div>		
+				<div class="back-color"></div>	
+				<div class="back-color tonkatsu-2"></div>	
+				<div class="back-color chair-3"></div>	
+				<div class="back-color chair-4"></div>	
+				<div class="back-color chair-5"></div>	
+				<div class="back-color chair-6"></div>	
+			
+			<br>
+				
+				<div class="info-wrap">
+				
+				<div ng-app="app">
+					<form
+						action="/basket/add"
+						class="add-to-cart text-center"
+						method="POST"
+						name="addToBasket">
+						
+						<br>
+						<label class="label" for="itemQty"><h5>Quantity:</h5></label>
+
+						<div class="add-qty"
+							max-qty="9"
+							model="item.qty"
+							select-classes="input input--select"
+							hide-extra-text="false"
+							input-name="itemQty"
+							quantity-selector>
+
+							<input
+								type="number"
+								class="input input--select"
+								min="1"
+								value="1">
+							<br>
+							<br>		
+							<br>
+							<input class="btn" ng-click="submit($event, addToBasket)" type="submit" value="Add To Cart" >
+						</div>
+					</form>
+				</div>
+				</div>
+				<a href="#" class="logo" target="_blank">
+					<img src="https://media.discordapp.net/attachments/1021975352945414186/1085188387692089474/MakSci_Express_Logo_Version_14_-_Symbol_1.1.png" alt="">
+				</a>
+				<a href="javascript:void(0)" class="escape" onclick="closeTonkatsu()"><i class="fa-solid fa-xmark-large"></i></a>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+
+
 	
 <!-- external javascript files -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
@@ -610,6 +692,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
   <script src="Menu Items.js"></script>
   <script src="dashboard.js"></script>
+  <script src="item details.js"></script>
 
 
 

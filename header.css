@@ -57,7 +57,7 @@ a {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid rgb(162, 162, 162);
-	background-color: #f4f4f4;
+	background-image: linear-gradient(90deg,#053373,#325D8C,#053373);
 	-webkit-box-shadow: 0px 0px 6px 0px rgba(162,162,162,0.75);
 	-moz-box-shadow: 0px 0px 6px 0px rgba(162,162,162,0.75);
 	box-shadow: 0px 0px 6px 0px rgba(162,162,162,0.75);

@@ -1,0 +1,1013 @@
+/* Please ❤ this if you like it! */
+.TONKATSU{
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	overflow-x: hidden; 
+    transition: 0.5s; 
+	z-index: 1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+@import "font-awesome";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}	
+	
+[ng-app] {
+  align-items: center;
+  display: block;
+  font-size: 1.5em;
+  height: 100%;
+  justify-content: center;
+  z-index: 9;
+  width: 100%;
+  left: 3em;
+}
+
+.input {
+  border-radius: 0;
+  color: #54577C;
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  font-weight: light;
+  vertical-align: middle;
+  margin-left: -10px;
+}
+label--select,
+.input--select {
+  background-color: white;
+  border: 2px solid darkgray;
+  border-radius: 0;
+  box-shadow: 0 -2px 0 0 white inset;
+  padding: 0.7em;
+  transition: all 0.2s ease;
+}
+label--select:hover,
+.input--select:hover {
+  border-color: gray;
+}
+label--select:focus, label--select:active,
+.input--select:focus,
+.input--select:active {
+  border-color: #ECFFB0;
+}
+
+.input--select {
+  padding: 0.8em 2.4em 0.8em 0.7em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input--select{
+  padding-bottom: 0.7em;
+  padding-top: 0.7em;
+}
+.input--select::-ms-expand {
+  display: none;
+}
+
+.select {
+  display: inline-block;
+  position: relative;
+}
+.select::after {
+  color: #54577C;
+  content: "▼";
+  font-size: 0.5em;
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.add-qty {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 0.5em;
+  width: 150px;
+}
+.add-qty .select {
+  width: 100%;
+}
+.add-qty .select::after {
+  right: 0.55em;
+}
+.add-qty .input--text,
+.add-qty .input--select {
+  background-color: white;
+  border: 2px solid #4A7B9D;
+  box-shadow: none;
+  padding: 0.2em 0.35em;
+  text-align: left;
+  width: 150px;
+}
+.add-qty .input--text option,
+.add-qty .input--select option {
+  font-size: 1rem;
+}
+.add-qty .input--text::-webkit-outer-spin-button, .add-qty .input--text::-webkit-inner-spin-button,
+.add-qty .input--select::-webkit-outer-spin-button,
+.add-qty .input--select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.ITEM_DETAILS{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #fff;
+  	background-color: #1f2029;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+
+}
+.smol_font {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #fff;
+	margin: 0;
+}
+
+.section-fluid-main{
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.section{
+  position: relative;
+  max-width: calc(100% - 40px);
+  width: 860px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+.section-fluid{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+  position: absolute;
+  visibility: hidden;
+}
+
+.color-btn:checked + label,
+.color-btn:not(:checked) + label{
+  position: relative;
+  height: 40px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 100px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  color: #ffeba7;
+  margin-right: 10px;
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  z-index: 10;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 12px;
+}
+.color-btn:checked + label{
+  border-color: #434343;
+  transform: scale(1.1);
+}
+
+
+/*------------------------------------------------------SET MEALS-----------------------------------------------------------*/
+
+.ITEM_DETAILS>label.first-color{
+  margin-left: 500px;
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+  background-size: cover;
+}
+.ITEM_DETAILS>label.color-2{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+.ITEM_DETAILS>label.color-3{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+.ITEM_DETAILS>label.color-4{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+.ITEM_DETAILS>label.color-5{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+.ITEM_DETAILS>label.color-6{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+.ITEM_DETAILS>label.color-7{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+.ITEM_DETAILS>label.color-8{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+.ITEM_DETAILS>label.color-9{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+.ITEM_DETAILS>label.color-10{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+.ITEM_DETAILS>label.color-11{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+.ITEM_DETAILS>label.color-12{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+.ITEM_DETAILS>label.color-13{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+.ITEM_DETAILS>label.color-14{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+.ITEM_DETAILS>label.color-15{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+.ITEM_DETAILS>label.color-16{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+
+
+/*------------------------------------------------------AL A CARTE-----------------------------------------------------------*/
+label.color-17{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-18{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-19{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-20{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-21{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-22{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+
+
+/*------------------------------------------------------EXTRAS-----------------------------------------------------------*/
+
+label.color-23{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-24{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-25{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-26{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-27{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-28{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+
+
+/*------------------------------------------------------DRINKS-----------------------------------------------------------*/
+
+label.color-29{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-30{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-31{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-32{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-33{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-34{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-35{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-36{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-37{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-38{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-39{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-40{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-41{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-42{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-43{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-44{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-45{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-46{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+label.color-47{
+  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
+}
+label.color-48{
+  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.img-wrap{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 400px;
+  height: 480px;
+  display: inline-block;
+  z-index: 9;
+  transition: all 550ms linear;
+  transition-delay: 100ms;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg');
+  opacity: 0;
+}
+
+
+/*------------------------------------------------------SET MEALS-----------------------------------------------------------*/
+
+.for-color-1:checked ~ .img-wrap.tonkatsu-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.tonkatsu-2{
+  background-image: url('https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg');
+}
+.for-color-2:checked ~ .img-wrap.tonkatsu-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+.img-wrap.fried_chicken-1{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-3:checked ~ .img-wrap.fried_chicken-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.fried_chicken-2{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-4:checked ~ .img-wrap.fried_chicken-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+.img-wrap.dinuguan-1{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-5:checked ~ .img-wrap.dinuguan-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.dinuguan-2{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-6:checked ~ .img-wrap.dinuguan-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+.img-wrap.bopis-1{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-7:checked ~ .img-wrap.bopis-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.bopis-2{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-8:checked ~ .img-wrap.bopis-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+.img-wrap.adobong_pusit-1{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-9:checked ~ .img-wrap.adobong_pusit-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.adobong_pusit-2{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-10:checked ~ .img-wrap.adobong_pusit-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+.img-wrap.siningang_baboy-1{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-11:checked ~ .img-wrap.siningang_baboy-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.siningang_baboy-2{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-12:checked ~ .img-wrap.siningang_baboy-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+.img-wrap.sisig-1{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-13:checked ~ .img-wrap.sisig-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.sisig-2{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-14:checked ~ .img-wrap.sisig-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+.img-wrap.bicol_express-1{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-15:checked ~ .img-wrap.bicol_express-1{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+.img-wrap.bicol_express-2{
+  background-image: url('https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg');
+}
+.for-color-16:checked ~ .img-wrap.bicol_express-2{
+  opacity: 1;
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+/*------------------------------------------------------AL A CARTE-----------------------------------------------------------*/
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0) rotate(-1deg);
+  }  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0) rotate(2deg);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0) rotate(-3deg);
+  }
+  40%, 60% {
+    transform: translate3d(3px, 0, 0) rotate(3deg);
+  }
+}
+
+
+/*------------------------------------------------------SET MEALS-----------------------------------------------------------*/
+
+.back-color {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  transition: all 250ms linear;
+  transition-delay: 300ms;
+}
+.back-color.tonkatsu-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-2:checked ~ .back-color.tonkatsu-2{
+  opacity: 1;
+}
+
+
+
+.back-color.fried_chicken-1 {
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  opacity: 0;
+}
+.for-color-3:checked ~ .back-color.fried_chicken-1{
+  opacity: 1;
+}
+
+.back-color.fried_chicken-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-4:checked ~ .back-color.fried_chicken-2{
+  opacity: 1;
+}
+
+
+.back-color.dinuguan-1 {
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  opacity: 0;
+}
+.for-color-5:checked ~ .back-color.dinuguan-1{
+  opacity: 1;
+}
+
+.back-color.dinuguan-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-6:checked ~ .back-color.dinuguan-2{
+  opacity: 1;
+}
+
+
+.back-color.bopis-1 {
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  opacity: 0;
+}
+.for-color-7:checked ~ .back-color.bopis-1{
+  opacity: 1;
+}
+
+.back-color.bopis-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-8:checked ~ .back-color.bopis-2{
+  opacity: 1;
+}
+
+
+.back-color.adobong_pusit-1 {
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  opacity: 0;
+}
+.for-color-9:checked ~ .back-color.adobong_pusit-1{
+  opacity: 1;
+}
+
+.back-color.adobong_pusit-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-10:checked ~ .back-color.adobong_pusit-2{
+  opacity: 1;
+}
+
+
+.back-color.siningang_baboy-1 {
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  opacity: 0;
+}
+.for-color-11:checked ~ .back-color.siningang_baboy-1{
+  opacity: 1;
+}
+
+.back-color.siningang_baboy-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-12:checked ~ .back-color.siningang_baboy-2{
+  opacity: 1;
+}
+
+
+.back-color.sisig-1 {
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  opacity: 0;
+}
+.for-color-13:checked ~ .back-color.sisig-1{
+  opacity: 1;
+}
+
+.back-color.sisig-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-14:checked ~ .back-color.sisig-2{
+  opacity: 1;
+}
+
+
+.back-color.bicol_express-1 {
+  background-image: linear-gradient(196deg,#050A50,#e66767);
+  opacity: 0;
+}
+.for-color-15:checked ~ .back-color.bicol_express-1{
+  opacity: 1;
+}
+
+.back-color.bicol_express-2 {
+  background-image: linear-gradient(196deg,#4c4c4c,#21568C);
+  opacity: 0;
+}
+.for-color-16:checked ~ .back-color.bicol_express-2{
+  opacity: 1;
+}
+
+
+/*------------------------------------------------------AL A CARTE-----------------------------------------------------------*/
+
+.back-color.chair-3 {
+  background-image: linear-gradient(196deg,#1E3F6D,#21568C);
+  opacity: 0;
+}
+.for-color-3:checked ~ .back-color.chair-3{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.back-color.chair-4 {
+  background-image: linear-gradient(196deg,#97afc3,#6789a7);
+  opacity: 0;
+}
+.for-color-4:checked ~ .back-color.chair-4{
+  opacity: 1;
+}
+.back-color.chair-5 {
+  background-image: linear-gradient(196deg,#145169,#8c7f76);
+  opacity: 0;
+}
+.for-color-5:checked ~ .back-color.chair-5{
+  opacity: 1;
+}
+.back-color.chair-6 {
+  background-image: linear-gradient(196deg,#aaadac,#838786);
+  opacity: 0;
+}
+.for-color-6:checked ~ .back-color.chair-6{
+  opacity: 1;
+}
+
+.info-wrap{
+  position: relative;
+  margin-left: 500px;
+  z-index: 10;
+  display: block;
+  text-align: left;
+}
+.title-up {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+h4 span{
+  text-decoration: line-through;
+  font-size: 20px;
+  opacity: 0.6;
+  padding-left: 15px;
+}
+h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.desc-btn:checked + label,
+.desc-btn:not(:checked) + label{
+  position: relative;
+  transition: all 200ms linear;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: #ffeba7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin-right: 25px;
+  opacity: 0.5;
+}
+.desc-btn:checked + label{
+  opacity: 1;
+}
+.desc-btn:not(:checked) + label:hover {
+  opacity: 0.8;
+}
+
+.desc-sec {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  transition: all 250ms linear;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+.desc-sec.accor-2 {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+#desc-1:checked ~ .desc-sec.accor-1 {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#desc-2:checked ~ .desc-sec.accor-2 {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.section-inline{
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  background-color: rgb(38, 83, 131, .5);
+  padding: .5em;
+}
+.section-inline p span{
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.btn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 4px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgba(206, 206, 206, .15);
+  color: #fff;
+  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  transition: all 250ms linear;
+  text-decoration: none;
+  top:-130px;
+  margin-top: 70px;
+  margin-left: -10px;
+}
+.icon {
+  padding-right: 7px;
+  font-size: 20px;
+}
+.btn:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: -1;
+  background-color: #002469;
+  transition: background-color 250ms 300ms ease;
+}
+.btn:hover{
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #000;
+}
+.for-color-2:checked ~ .info-wrap .btn:before{
+  background-color: #1a1a1a;
+}
+.for-color-3:checked ~ .info-wrap .btn:before{
+  background-color: #40566e;
+}
+.for-color-4:checked ~ .info-wrap .btn:before{
+  background-color: #5e89b2;
+}
+.for-color-5:checked ~ .info-wrap .btn:before{
+  background-color: #8c7f76;
+}
+.for-color-6:checked ~ .info-wrap .btn:before{
+  background-color: #5d6160;
+}
+
+.clearfix {
+  width: 100%;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.escape{
+	position: fixed;
+	top: -25px;
+	left: 95%;
+	display: block;
+	z-index: 1000;
+	transition: all 250ms linear;
+	font-size: 35px;
+	color: #CBE1FF;
+}
+
+.logo {
+	position: fixed;
+	top: 15px;
+	left: -15px;
+	display: block;
+	z-index: 1000;
+	transition: all 250ms linear;
+}
+.logo img {
+	height: 75px;
+	width: auto;
+	display: block;
+	transition: filter 250ms 700ms linear;
+}
+
+@media screen and (max-width: 991px) {
+  .section{
+    margin: 0 auto;
+    text-align: center;
+    max-width: calc(100% - 40px);
+    width: 370px;
+  }
+  label.first-color{
+    margin-left: 0;
+  }
+  .info-wrap{
+    margin-left: 0;
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .img-wrap{
+    width: 375px;
+    height: 308px;
+    left: 50%;
+    margin-left: -190px;
+  }
+  .mob-margin {
+    margin-top: 320px;
+  }
+  .desc-btn:checked + label,
+  .desc-btn:not(:checked) + label{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .color-btn:checked + label,
+  .color-btn:not(:checked) + label{
+    height: 40px;
+    width: 100px;
+    margin: 5px auto;
+    text-align: center;
+  }
+  .section-inline{
+    margin: 0 5px;
+  }
+  
+  .btn{
+	  left:-32px;
+  } 
+  .escape{
+	left: 90%;
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+  .section{
+    width: 280px;
+  }
+  .info-wrap{
+    width: 280px;
+  }
+  .color-btn:checked + label,
+  .color-btn:not(:checked) + label{
+    height: 30px;
+    width: 100px;
+	padding-top: 2px;
+  }
+  .section-inline p span{
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .section-inline p{
+    font-size: 14px;
+  }
+}
+
