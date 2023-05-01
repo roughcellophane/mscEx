@@ -5,26 +5,32 @@
   <title>MakSci Express</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,700" >
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" >
 <link rel="stylesheet" href="Menu Items.css">
 <link rel="stylesheet" href="Main Menu.css">
 <link rel="stylesheet" href="mySidebar.css">
 <link rel="stylesheet" href="foodbutton.css">
 <link rel="stylesheet" href="Checkout.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 <link rel="stylesheet" href="header.css">
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="more sidebar.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="item details pane.css">
+<link rel="stylesheet" href="popup.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 </head>
 
 <body>
 
 		<header class="header">
 			<div id="main sidebarButton"><a href="#" onclick="openNav_sidebar()"> <i class="fa-solid fa-bars"></i></a></div>
-			<h1 class="logo"><img src="https://media.discordapp.net/attachments/1021975352945414186/1085188387692089474/MakSci_Express_Logo_Version_14_-_Symbol_1.1.png" style="width: 75px; height: auto;"></h1>
+			<h1 class="icon"><img src="#">akSciExpress</h1>
 		  <ul class="yes">
 			  <li><a href="#" id="main" onclick="openNav_checkout()"><i class="fa-solid fa-cart-shopping-fast"></i></a></li>
 		  </ul>
@@ -33,17 +39,15 @@
 
 <div class="grid-container">	
 
-<!-- dashboard -->
-	<div class="grid-item title">
-		<h1>This is a dashboard mf</h1>
-	</div>
+
 
 <!-- quick menu -->
   <footer class="grid-item footer">
     <h2>Quick Menu</h2>
-			<a>Set Meals</a> <br>
-			<a>Side Dishes</a> <br>
-			<a>Beverages</a> <br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170350628955/setmeals.png"></a><br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771169788608604/download.png"></a><br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170078007346/extras.png" ></a><br>
+			<a href="#" class="quick_menu"><img class="selection" scr="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170635857981/drinks.png"></a><br>
 
   </footer>
   
@@ -65,67 +69,95 @@
 		
 		<ul class="hs">
 				
+			  <li class="hs__item"> 		  
+				<div type="button" class="hs__item__image__wrapper" data-modal-target="#modal">
+					<div class="detailspane setMealColor">
+							<div class="nameDetails">TONKATSU</div>
+							<div class="priceDetails">65 PESOS</div>
+					</div>
+					<a class="hs__item__image" href="#" draggable=false>
+						<img class="menu" src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" alt=""/>
+					</a>
+				</div>
+
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			<a class="experiment" href="#" draggable=false>
+			<div type="button" class="hs__item__image__wrapper" >
 				<div class="detailspane setMealColor">
-						<div class="nameDetails">TONKATSU</div>
+						<div class="nameDetails">FRIED CHICKEN</div>
 						<div class="priceDetails">70 PESOS</div>
 				</div>
 				<a class="hs__item__image" href="#" draggable=false>
-					<img class="menu" src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" alt=""/>5			
+					<img class="menu" src="https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg" alt=""/>		
 					</a>
-			</a>
-			</div>
-
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/152/300/300" alt=""/>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/152/300/300" alt=""/>
+			<div type="button" class="hs__item__image__wrapper">
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">DINUGUAN</div>
+						<div class="priceDetails">75 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i.ytimg.com/vi/U8oC6nqzhBY/maxresdefault.jpg" alt=""/>	
+					</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/152/300/300" alt=""/>
+			<div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">BOPIS</div>
+						<div class="priceDetails">65 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2010/11/bopis-recipe.jpg" alt=""/>	
+				</a>
+			</div>
+			
+			
+		  <li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" >
+			    <div class="detailspane setMealColor">
+						<div class="nameDetails">ADOBONG PUSIT</div>
+						<div class="priceDetails">65 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://yummykitchentv.com/wp-content/uploads/2021/04/adobong-pusit-recipe-01-1024x816.jpg" alt=""/>	
+				</a>
+			</div>
+			
+		
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" >
+			    <div class="detailspane setMealColor">
+						<div class="nameDetails">SINIGANG NA BABOY</div>
+						<div class="priceDetails">70 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.pinoyrecipe.net/wp-content/uploads/2022/09/Sinigang-na-Baboy-sa-Batuan-Recipe-1200x675.jpg" alt=""/>	
+				</a>
+			</div>
+			
+			
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">SISIG</div>
+						<div class="priceDetails">65 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/sisig-kapampangan-1.jpg" alt=""/>	
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/162/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/172/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/182/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/192/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1102/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1112/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1122/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+		  			<div class="detailspane setMealColor">
+						<div class="nameDetails">BICOL EXPRESS</div>
+						<div class="priceDetails">70 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i0.wp.com/whattoeatph.com/wp-content/uploads/2022/03/DSC_9120.jpg?fit=720%2C576&ssl=1" alt=""/>	
+				</a>
 			</div>
 		</ul>
 	  </div>
@@ -140,68 +172,149 @@
 		<ul class="hs">
 		  <li class="hs__item"> 
 			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/103/300/300" alt=""/>
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">SPAGHETTI</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/mushroom-spaghetti-recipe.jpg" alt=""/>	
+				</a>
+			</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/113/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">CARBONARA</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.cookingclassy.com/wp-content/uploads/2020/10/spaghetti-carbonara-01.jpg" alt=""/>	
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/123/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">BAKED MAC</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://images.summitmedia-digital.com/yummyph/images/2020/09/04/bakedmac640.jpg" alt=""/>	
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/133/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">EGGPLANT OMELETTE</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/mela-1200x675.jpg" alt=""/>	
+			</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/143/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">GINISANG UPO</div>
+						<div class="priceDetails">55 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://momfoodblog.com/wp-content/uploads/2021/03/Ginisang-Upo-with-Pork-MomFoodBlog2.jpg" alt=""/>	
+				</a>
+			</div>
+
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">GINSANG MONGGO</div>
+						<div class="priceDetails">30 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://speedyrecipe.com/wp-content/uploads/2018/04/Ginisang-Munggo.jpg" alt=""/>	
+				</a>
+			</div>
+		   
+		</ul>
+	  </div>
+<br>
+
+	  
+	  <div class="hs__wrapper">
+		<div class="hs__header">
+		  <h2 class="hs__headline">Extras</h2>
+		  <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+		</div>
+		
+		<ul class="hs">
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">RICE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://cdn.shopify.com/s/files/1/0406/5728/9378/products/Add-onPlainRice_530x@2x.jpg?v=1595751788" alt=""/>	
+				</a>
+		  </div>
+			
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">EGG</div>
+						<div class="priceDetails">15 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.sophisticatedgourmet.com/wp-content/uploads/2021/01/how-to-fry-an-egg-recipe.jpg" alt=""/>	
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/153/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">HAM</div>
+						<div class="priceDetails">20 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.everydayfamilycooking.com/wp-content/uploads/2019/12/air-fried-ham-slices.jpg" alt=""/>	
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/163/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">HOTDOG</div>
+						<div class="priceDetails">20 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://cdn.shopify.com/s/files/1/0487/5167/3505/products/BESTDOG-500g-3_360x.jpg?v=1633066669" alt=""/>	
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/173/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">SIOMAI</div>
+						<div class="priceDetails">5 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2020/01/pork-siomai-recipe.jpg" alt=""/>	
+				</a>
 			</div>
-			
+
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/183/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">SALAD</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad.jpg" alt=""/>	
+				</a>
 			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/193/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1103/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1113/300/300" alt=""/>
-			</div>
-			
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1123/300/300" alt=""/>
-			</div>
+
 		</ul>
 	  </div>
 <br>
@@ -212,69 +325,116 @@
 		  <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
 		</div>
 		<ul class="hs">
+		
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/104/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">LEMONADE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.texanerin.com/content/uploads/2014/08/honey-lemonade-2-650x975.jpg" alt=""/>
+				</a>
+			</div>
+		
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">BLUE LEMONADE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i0.wp.com/charlotteshares.blog/wp-content/uploads/2022/05/img_4254_jpg.jpg?resize=768%2C1024&ssl=1" alt=""/>
+				</a>
 			</div>
 
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/114/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.acouplecooks.com/wp-content/uploads/2020/07/Iced-Tea-001.jpg" alt=""/>	
+				</a>
+			</div>
+
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">RED ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i.pinimg.com/564x/ae/41/60/ae41604e8ee060a9a1d1066954670b04.jpg" alt=""/>	
+				</a>
+			</div>
+
+		
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">CUCUMBER ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.babaganosh.org/wp-content/uploads/2022/07/cucumber-lemonade-11.jpg.webp" alt=""/>	
+				</a>
+			</div>
+
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">MANGO ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.whiskaffair.com/wp-content/uploads/2019/03/Mango-Iced-Tea-2-3.jpg" alt=""/>	
+				</a>
+			</div>
+
+		  <li class="hs__item"> 
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">GUYABANO ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://simplybakings.com/wp-content/uploads/2020/02/Gayubano-Smoothie-13.jpg" alt=""/>	
+				</a>
 			</div>
 		
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/124/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">MELON JUICE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kOC6NsRK1YhkS-x4qj6iPGBIIo7UNS7u3fEHdGRzeu3vjjMjZOybf94K-8mI-8ZRGfU&usqp=CAU" alt=""/>	
+				</a>
 			</div>
-		
+
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/134/300/300" alt=""/>
-			</div>
-		
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/144/300/300" alt=""/>
-			</div>
-		
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/154/300/300" alt=""/>
-			</div>
-		
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/164/300/300" alt=""/>
-			</div>
-		
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/174/300/300" alt=""/>
-			</div>
-		
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/184/300/300" alt=""/>
-			</div>
-		>
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/194/300/300" alt=""/>
-			</div>
-		
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1104/300/300" alt=""/>
-			</div>
-		
-		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1114/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">GULAMAN</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i.pinimg.com/736x/a4/c8/a6/a4c8a62696ebd53b43458c8cadd9b25c.jpg" alt=""/>	
+				</a>
 			</div>
 			
 		  <li class="hs__item"> 
-			<div class="hs__item__image__wrapper">
-			  <!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="https://picsum.photos/id/1124/300/300" alt=""/>
+		  <div type="button" class="hs__item__image__wrapper" >
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">MILO</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://recipes-by-reeshu.s3.ap-south-1.amazonaws.com/recipes/ice-milo-dinosaur/1.jpg" alt=""/>	
+				</a>
 			</div>
 		</ul>
 	  </div>
@@ -360,7 +520,7 @@
           </div>
         </div>
       </div>	
-
+</div>
 <!-- curtain menu for checkout ooga booga -->
 
 <div id="checkout" class="overlay">
@@ -373,22 +533,113 @@
   </div>
 </div>
 	
-	
-<!-- external javascript files -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-  <script src="sidebar.js"></script>
-  <script src="Checkout.js"></script>
-  <script src='https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js'></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-  <script src="Menu Items.js"></script>
+
+<!-------------------------------------DETAILS PANE----------------------------------------->
+  <div class="modal" id="modal">
+
+    <div class="modal-body">
+     <div class="ITEM_DETAILS"> 
+		<div class="TONKATSU">
+			<div class="section-fluid-main">
+			<button data-close-button class="close-button">&times;</button>
+					<div class="section">
+						<div class="info-wrap mob-margin">
+							<p class="title-up">MakSci Express</p>
+							<p class="dish_name">Tonkatsu</p>
+							<div class="section-fluid">
+								<input class="desc-btn" type="radio" id="desc-1" name="desc-btn" checked/>
+								<label for="desc-1">Description</label> 
+								<input class="desc-btn" type="radio" id="desc-2" name="desc-btn"/>
+								<label for="desc-2">Prices</label> 
+								<div class="section-fluid desc-sec accor-1">
+									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+								</div>	
+								<div class="section-fluid desc-sec accor-2">
+									<div class="section-inline">
+										<p class="smol"><span>65</span> Pesos<br>With Rice</p>
+									</div>	
+									<div class="section-inline">
+										<p class="smol"><span>55</span> Pesos<br>A la Carte</p>
+									</div>
+								</div>	
+							</div>
+							<p class="choose">Choose order option:</p>
+						</div>
+						<div class="clearfix"></div>
+						<input class="color-btn for-color-1" type="radio" id="color-1" name="color-btn" checked/ value="M1">
+						<label class="first-color" for="color-1"><p>With Rice</p></label> 
+						<input class="color-btn for-color-2" type="radio" id="color-2" name="color-btn"/ value="A1">
+						<label class="color-2" for="color-2"><p>Al a Carte</p></label> 
+						
+						
 
 
+						
+						<div class="img-wrap tonkatsu-1"></div>
+						<div class="img-wrap tonkatsu-2"></div>	
+						<div class="img-wrap fried_chicken-1"></div>
+						<div class="img-wrap fried_chicken-2"></div>
+						<div class="img-wrap chair-5"></div>
+						<div class="img-wrap chair-6"></div>		
+						<div class="back-color"></div>	
+						<div class="back-color tonkatsu-2"></div>	
+						<div class="back-color chair-3"></div>	
+						<div class="back-color chair-4"></div>	
+						<div class="back-color chair-5"></div>	
+						<div class="back-color chair-6"></div>	
+					
+					<br>
+						
+						<div class="info-wrap">
+						
+						<div ng-app="app">
+							<form
+								action="/basket/add"
+								class="add-to-cart text-center"
+								method="POST"
+								name="addToBasket">
+								
+								<br>
+								<label class="label" for="itemQty"><p class="choose">Quantity:</p></label>
 
+								<div class="add-qty"
+									max-qty="9"
+									model="item.qty"
+									select-classes="input input--select"
+									hide-extra-text="false"
+									input-name="itemQty"
+									quantity-selector>
 
+									<input
+										type="number"
+										class="input input--select"
+										min="1"
+										value="1">
+
+									<input class="btn" ng-click="submit($event, addToBasket)" type="submit" value="Add To Cart" >
+								</div>
+							</form>
+						</div>
+						</div>
+						
+					</div>
+			</div>
+		</div>
+		</div>
+    </div>
+  </div>
+  <div id="pane"></div>
 
 
 </body>
 
+<!-- external javascript files -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+  <script src='https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+  <script src="Menu Items.js"></script>
+  <script src="sidebar.js"></script>
+  <script defer src="popup.js"></script>
 
 </html>

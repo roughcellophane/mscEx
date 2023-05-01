@@ -1,3 +1,8 @@
+function deleteOrder(orderDetails) {
+  const orderNum = document.getElementById(orderDetails);
+  orderNum.remove();
+}
+
 function confirm() {
     var x = document.getElementById("appearToggle");
     x.style.display = "flex";

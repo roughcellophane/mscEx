@@ -29,7 +29,7 @@
     <div id="shoppingCart"><i class="bi bi-cart-fill"></i></div></div>
 
 
-   <div class="eachOrderRow">
+   <div class="eachOrderRow" id = "order1">
     <div class="row1">
         <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
         <div class="orderInfo">
@@ -39,10 +39,10 @@
         <div class="totalPrice">[TOTAL_PRICE]</div>
     </div>
     <div class="row2">
-<input type="button" class="deleteButton" value="REMOVE ORDER">
+<input type="button" class="deleteButton" value="REMOVE ORDER" onclick="deleteOrder('order1')">
     </div>
     </div>
-   <div class="eachOrderRow">
+   <div class="eachOrderRow" id="order2">
         <div class="row1">
             <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
             <div class="orderInfo">
@@ -55,7 +55,7 @@
     <input type="button" class="deleteButton" value="REMOVE ORDER">
         </div>
         </div>
-   <div class="eachOrderRow">
+   <div class="eachOrderRow" id="order3">
     <div class="row1">
         <img class="orderPicture" src="https://media.discordapp.net/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" draggable="false">
         <div class="orderInfo">
