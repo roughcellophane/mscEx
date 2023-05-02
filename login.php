@@ -37,6 +37,7 @@
             $_SESSION['LName'] = $row['LName'];
             $_SESSION['FName'] = $row['FName'];
             $_SESSION['Password'] = $row['Pass'];
+            $_SESSION['Access'] = $row['Access'];
             header("Location: home.php");
             exit();
         }

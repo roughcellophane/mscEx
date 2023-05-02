@@ -1,10 +1,30 @@
 <?php
  session_start();
+ include('db_conn.php');
  if(isset($_SESSION['UserID']) && $_SESSION['Password']){
-    ?>
-    <!DOCTYPE html>
+    if(isset($_SESSION['error'])){
+        if($_SESSION['error'] =='wait'){
+            echo "<script>alert('Please wait for your pre-existing order to be completed first.')</script>";
+            $_SESSION['error']="";
+        }
+        elseif($_SESSION['error'] =='invalidfood'){
+            echo "<script>alert('Food code invalid.')</script>";
+            $_SESSION['error']="";
+            }
+        elseif($_SESSION['error']=='nocopies'){
+            echo "<script>alert('Please remove your pre-existing copy of this food first.')</script>";
+            $_SESSION['error']="";
+            }
+        elseif($_SESSION['error']=='deletepickup'){
+            echo "<script>alert('Please remove your awaiting food first.')</script>";
+            $_SESSION['error']="";
+        }
+    }
+        ?>    
+                
+        <!DOCTYPE html>
     <html>
-        <script>           
+        <script>
             </script>
         <head>
             <title>MENU</title>
@@ -44,6 +64,40 @@
                 
             <?php if (isset($_SESSION['COS'])){
                 echo $_SESSION['COS'];
+                }
+                ?>
+            <?php
+                if ($_SESSION['Access']=="admin"){
+                ?>
+                <p><br>Clear all orders</p>
+                <form action = "clear.php">
+                    <input type="submit">
+                    </form>
+                <p><br>Start timer</p>
+                <form action = "timerstart.php">
+                    <input type="submit">
+                    </form>
+                    <br>
+                    <table border ="1" cellspacing="0" cellpadding="10">
+    <tr>
+        <th>UserID</th>
+        <th>CurrentStatus</th>
+        </tr>
+<?php
+$query = "SELECT * FROM Orders";
+$result = mysqli_query($conn, $query);
+if (mysqli_num_rows($result) > 0) {
+  while($data = mysqli_fetch_assoc($result)) {
+ ?>
+ <tr>
+   <td><?php echo $data['UserID']; ?> </td>
+   <td><?php echo $data['CurrentStatus']; ?> </td>
+    </tr>
+  <?php
+  }
+}?>
+  </table>
+            <?php
                 }
                 ?>
             </body>

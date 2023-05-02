@@ -2,7 +2,8 @@ CREATE TABLE Users (
     UserID int,
     LName varchar(255),
     FName varchar(255),
-    Pass varchar(255)
+    Pass varchar(255),
+    Access varchar(255)
     );
 
 CREATE TABLE Menu (
@@ -20,17 +21,23 @@ CREATE TABLE Orders (
     ProdID varchar(255),
     ProdNum varchar(255),
     CurrentTime int,
-    ProdName varchar(255),
-    TimeLeft int,
+    ProdName varchar(255)
 );
 
 CREATE TABLE TStamps(
     OrderID varchar(255),
+    UserID int,
     OrderSent varchar(255),
     OrderReceived varchar(255),
-    OrderUp varchar(255),
-)
+    OrderUp varchar(255)
+);
 
+CREATE TABLE Timers(
+    UserID int,
+    TimeLeft int,
+    InitTime int,
+    StartTime int
+);
 
 
 INSERT INTO Menu (ProdID, ProdName, AvailBool, PriceValue, PrepTime)
@@ -46,20 +53,11 @@ VALUES
 	("A1", "Spaghetti", "1", "70", "30"),
 	("A2", "Carbonara", "1", "70", "30");
     
-INSERT INTO Users (UserID, LName, FName, Pass)
+INSERT INTO Users (UserID, LName, FName, Pass, Access)
 VALUES
-	("57647", "Italio", "Melody", "MItalio"),
-	("39048", "Placido", "Ernell", "EPlacido"),
-	("93827", "Ramil", "Dianne", "DRamil");
+	("57647", "Italio", "Melody", "MItalio","customer"),
+	("39048", "Placido", "Ernell", "EPlacido","customer"),
+	("93827", "Ramil", "Dianne", "DRamil","customer"),
+    ("10000","sal","upan","slowpan","admin");
 
-INSERT INTO Orders (OrderID, CurrentStatus, UserID, ProdID, ProdNum, CurrentTime, ProdName, TimeLeft)
-VALUES
-	();
 
-INSERT INTO TStamps (OrderID, OrderSent, OrderReceived, OrderUp)
-VALUES
-    ();
-
-SELECT * FROM MENU;
-SELECT * FROM USERS;
-SELECT * FROM ORDERS;
