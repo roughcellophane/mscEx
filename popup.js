@@ -9,6 +9,8 @@ openModalButtons.forEach(button => {
   })
 })
 
+
+
 pane.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal.active')
   modals.forEach(modal => {
@@ -22,6 +24,25 @@ closeModalButtons.forEach(button => {
     closeModal(modal)
   })
 })
+
+
+
+
+pane.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.chicken.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.chicken')
+    closeModal(modal)
+  })
+})
+
+
 
 function openModal(modal) {
   if (modal == null) return

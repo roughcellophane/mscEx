@@ -7,8 +7,12 @@
 }
 
 .grid-yes {
-  background: #F5F8FB;
-  font-family: "Rubik", sans-serif;
+  	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 7%;
+	background-color: #fff;
+	font-family: "Rubik", sans-serif;
 }
 
 .grid-yes a {
@@ -16,8 +20,39 @@
   display: block;
   
 }
- 
- 
+
+.quick_menu{	
+	z-index: 3;
+	width: auto;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	margin-right: 15px;
+}
+.selection{
+	top: -32px;
+	left: -65px;
+	width: 280px;
+	height: 185px;
+	transform: scale(0.45, 0.48);
+	position: relative;
+	background-blend-mode: hard-light;
+	padding-bottom: 10px;
+}
+
+.sign{
+	font-size: 2.2em;
+    font-weight: 700; 
+	width: auto;
+	height: 2.7em;
+	background-color: #27231d;
+	text-transform: uppercase;
+	color: #d1bc9a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 @supports (display: grid) {
   .grid-container {
     display: grid;
@@ -34,24 +69,21 @@
   }
   
   .grid-item {
-    color: #fff;
-    padding: 3.5em 1em;
-    font-size: 1em;
-    font-weight: 200;
+    color: #201E1C;
+    padding: .5em;
   }
 
   .footer {
-    background-color: #5bbce4;
+    background-color: #F1f1f1;
     grid-area: footer;
     padding: 0.6em;
+	text-align: center;
+	width: 570px;
+	height: 480px;
   }
-  
-   .title {
-    color: #555;
-    background-color: #f4fbfd;
-    grid-area: title;
-  }
- 
+	
+	
+}
 
   @media screen and (max-width: 500px) {
     .item {
@@ -59,16 +91,9 @@
       min-width: 200px;
     }
   }
-}
 
 p {
   text-align: left;
   text-indent: 20px;
   font-weight: 100;
-}
-
-i {
-  color: skyblue;
-  padding: 10px;
-
 }
