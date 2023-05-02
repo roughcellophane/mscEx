@@ -20,7 +20,7 @@ pane.addEventListener('click', () => {
 
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
+    const modal = button.closest('#modal')
     closeModal(modal)
   })
 })
@@ -37,7 +37,7 @@ pane.addEventListener('click', () => {
 
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.chicken')
+    const modal = button.closest('#chicken')
     closeModal(modal)
   })
 })

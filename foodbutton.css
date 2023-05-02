@@ -83,7 +83,6 @@ height: 40%;
 }
 #experiment {
 text-decoration: none;
-underline: none;
 }
 
 
@@ -193,6 +192,7 @@ underline: none;
     vertical-align: text-top;
 }
 }
+
 @media only screen and (min-width: 1000px) {
 .detailspane {
     z-index: 6;
@@ -221,8 +221,8 @@ underline: none;
     font-size: 12px;
     vertical-align: text-top;
 }
-
-@media only screen and (min-width: 1201px){
+}
+@media only screen and (min-width: 1201px) {
 
 .nameDetails{
     padding-left: 8px;
@@ -251,4 +251,5 @@ underline: none;
     width: 100%;
     height: 25%;
     top: 75%;
+    }
 }

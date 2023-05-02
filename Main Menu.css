@@ -29,15 +29,25 @@
 	justify-content: center;
 	margin-right: 15px;
 }
+
+.mate{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 270px;
+	height: 168px;
+	display: flex;
+	justify-content: center;	
+	border: hidden;
+}
+
 .selection{
-	top: -32px;
-	left: -65px;
-	width: 280px;
-	height: 185px;
-	transform: scale(0.45, 0.48);
+	border-radius: 3px;
+	width: 270px;
+	height: 172px;
+	object-fit: cover;
 	position: relative;
 	background-blend-mode: hard-light;
-	padding-bottom: 10px;
+	position: relative;
 }
 
 .sign{

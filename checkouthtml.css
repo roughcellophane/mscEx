@@ -58,7 +58,7 @@ body{
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     .checkoutInfo{
         width: 50%;
     }
@@ -66,8 +66,23 @@ body{
         padding-left: 20px;
     }
     .orderPicture{
-        width: 100px;
-        height: 100px;
+        font-size: 40px;  
+    }
+    .confirmButton{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    .checkoutInfo{
+        width: 80%;
+    }
+    .orderInfo{
+        padding-left: 20px;
+    }
+    .orderPicture{
+        font-size: 40px;  
     }
     .confirmButton{
         width: 40%;
@@ -76,15 +91,13 @@ body{
 
 @media screen and (max-width: 768px){
     .checkoutInfo{
-        width: 75%;
-    }
-
-    .orderInfo{
-        padding-left: 20px;
+        width: 85%;
     }
     .orderPicture{
-        width: 100px;
-        height: 100px;
+        font-size: 30px;  
+    }
+    .orderInfo{
+        padding-left: 20px;
     }
     .confirmButton{
         width: 65%;
@@ -98,12 +111,11 @@ body{
     .orderInfo{
         padding-left: 10px;
     }
-    .orderPicture{
-        width: 60px;
-        height: 60px;
-    }
     .orderName{
         font-size: 14px;
+    }
+    .orderPicture{
+        font-size: 30px;  
     }
     .deleteButton{
         font-size: 14px;
@@ -146,7 +158,11 @@ body{
 .orderPicture{
     object-fit: cover;
     border-radius: 5px;
+    color:rgb(43, 119, 132);
+    line-height: 0;
+    margin: 5px;
 }
+
 
 .orderInfo{
     display: flex;
