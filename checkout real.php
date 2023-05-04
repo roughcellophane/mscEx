@@ -53,12 +53,14 @@ if (mysqli_num_rows($result) > 0) {
           ?> id = "delete">
           </form></td>
     </tr>
+  <?php
+  }?>
   </table>
   <form action = "confirm.php">
     <input type = "submit" value = "Confirm Orders" class="confirmButton" onclick="confirm()">
     </form>
   <?php
-  }
+  
 }
 else{?>
     <tr>
