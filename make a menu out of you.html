@@ -5,39 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,700" >
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" >
-<link rel="stylesheet" href="Menu Items.css">
-<link rel="stylesheet" href="Main Menu.css">
-<link rel="stylesheet" href="mySidebar.css">
-<link rel="stylesheet" href="foodbutton.css">
-<link rel="stylesheet" href="Checkout.css">
-<link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="more sidebar.css">
-<link rel="stylesheet" href="item details pane.css">
-<link rel="stylesheet" href="popup.css">
-
+  <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,700" >
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" >
+  <link rel="stylesheet" href="Menu Items.css">
+  <link rel="stylesheet" href="Main Menu.css">
+  <link rel="stylesheet" href="mySidebar.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="foodbutton.css">
+  <link rel="stylesheet" href="Checkout.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="more sidebar.css">
+  <link rel="stylesheet" href="item details pane.css">
+  <link rel="stylesheet" href="popup.css">
+  
 
 </head>
 
 <body>
 <!-- header-->
-		<div class="divider"></div>
-		<header class="header">
-			<div><a class="hamburger" href="#" onclick="openNav_sidebar()"> <i class="fa-solid fa-bars"></i></a></div>
-			<h1 class="icon"><img src="#">akSciExpress</h1>
-		  <ul class="yes">
-			  <li><a href="#" class="checkout" onclick="openNav_checkout()"><i class="fa-solid fa-cart-shopping-fast"></i></a></li>
-		  </ul>
-		</header>
+<div class="divider"></div>
+<header class="header">
+	<div><a class="hamburger" href="#" onclick="openNav_sidebar()"> <i class="fa-solid fa-bars"></i></a></div>
+	<h1 class="icon"><img src="#">akSciExpress</h1>
+  <ul class="yes">
+	  <li><a href="#" class="checkout" onclick="openNav_checkout()"><i class="fa-solid fa-cart-shopping-fast"></i></a></li>
+  </ul>
+</header>
 
 
 <div class="grid-container">	
+
+<!-- dashboard-->
+<div class="slowpan">
+	<section id="imgages-carousel">
+		 <div class="img-carousel-container">
+				<div class="img-carousel">
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646045524099/1.png" draggable=false>
+						<p>1/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646347522152/2.png" draggable=false> 
+						<p>2/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646687256616/3.png" draggable=false> 
+						<p>3/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597058920528/4.png" draggable=false> 
+						<p>4/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597763563591/6.png" draggable=false> 
+						<p>5/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665598115876864/7.png" draggable=false>
+						<p>6/6</p>
+					</div>
+				</div>
+				<button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+				<button id="next"><i class="fas fa-chevron-right fa-2x"></i></button> 
+			</div>        
+	</section> 
 
 
 
@@ -540,8 +576,8 @@
 
 	
 <!---------------------------------------Tonkatsu------------------------------------------->
-  <div class="modal" id="modal">
-    <div class="modal-body">	
+  <div class="foodDisplay" id="modal">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -551,14 +587,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Tonkatsu</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-1" name="desc-btn-1" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-1" name="desc-btn-1" checked>
 								<label for="desc-1">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-2" name="desc-btn-1"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-2" name="desc-btn-1"/>
 								<label for="desc-2">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>65</span> Pesos<br>With Rice</p>
 									</div>	
@@ -622,8 +658,8 @@
 <div id="pane"></div>
 
 <!---------------------------------------Fried Chicken------------------------------------------->	
-  <div class="chicken" id="chicken">
-    <div class="chicken-body">
+  <div class="foodDisplay" id="chicken">
+    <div class="foodDisplay-body">
 	 <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -633,14 +669,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Fried Chicken</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-3" name="desc-btn-2" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-3" name="desc-btn-2" checked>
 								<label for="desc-3">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-4" name="desc-btn-2">
+								<input class="desc-btn desc-even" type="radio" id="desc-4" name="desc-btn-2">
 								<label for="desc-4">Prices</label> 
-								<div class="section-fluid desc-sec accor-3">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a dish consisting of deep fired chicken pieces that have been coated with seasoned flour.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-4">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>70</span> Pesos<br>With Rice</p>
 									</div>	
@@ -707,8 +743,9 @@
 
 
 <!---------------------------------------Dinuguan------------------------------------------->	
-  <div class="dinuguan" id="dinuguan">
-    <div class="dinuguan-body">
+
+  <div class="foodDisplay" id="dinuguan">
+    <div class="foodDisplay-body">
 	 <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -718,14 +755,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Dinuguan</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-5" name="desc-btn-3" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-5" name="desc-btn-3" checked>
 								<label for="desc-5">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-6" name="desc-btn-3">
+								<input class="desc-btn desc-even" type="radio" id="desc-6" name="desc-btn-3">
 								<label for="desc-6">Prices</label> 
-								<div class="section-fluid desc-sec accor-6">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a Filipino savory stew usually of pork offal meat simmered in a rich, spicy dark gravy of pig blood, garlic, chili, and vinegar.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-6">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>70</span> Pesos<br>With Rice</p>
 									</div>	
@@ -791,8 +828,8 @@
 <div id="pane"></div>
 
 <!-----------------------------------------------------------------------BOPIS----------------------------------------------------------------------->	
-  <div class="bopis" id="bopis">
-    <div class="bopis-body">
+  <div class="foodDisplay" id="bopis">
+    <div class="foodDisplay-body">
 	 <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -802,14 +839,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Bopis</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-7" name="desc-btn-4" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-7" name="desc-btn-4" checked>
 								<label for="desc-7">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-8" name="desc-btn-4">
+								<input class="desc-btn desc-even" type="radio" id="desc-8" name="desc-btn-4">
 								<label for="desc-8">Prices</label> 
-								<div class="section-fluid desc-sec accor-7">
-									<p class="smol">It is a Filipino savory stew usually of pork offal meat simmered in a rich, spicy dark gravy of pig blood, garlic, chili, and vinegar.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">A classic meal made of pork heart, lungs, and liver in tomato paste.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-8">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>65</span> Pesos<br>With Rice</p>
 									</div>	
@@ -876,8 +913,8 @@
 
 
 <!---------------------------------------ADOBONG PUSIT------------------------------------------->	
-  <div class="adobong_pusit" id="adobong_pusit">
-    <div class="adobong_pusit-body">
+  <div class="foodDisplay" id="adobong_pusit">
+    <div class="foodDisplay-body">
 	 <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -887,14 +924,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Adobong Pusit</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-9" name="desc-btn-5" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-9" name="desc-btn-5" checked>
 								<label for="desc-9">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-10" name="desc-btn-5">
+								<input class="desc-btn desc-even" type="radio" id="desc-10" name="desc-btn-5">
 								<label for="desc-10">Prices</label> 
-								<div class="section-fluid desc-sec accor-9">
-									<p class="smol">It is a Filipino savory stew usually of pork offal meat simmered in a rich, spicy dark gravy of pig blood, garlic, chili, and vinegar.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">A delicious style of adobo that incorporates squid meat.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-10">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>65</span> Pesos<br>With Rice</p>
 									</div>	
@@ -961,8 +998,8 @@
 
 
 <!---------------------------------------SINIGANG NA BABOY------------------------------------------->	
-  <div class="sinigang_baboy" id="sinigang_baboy">
-    <div class="sinigang_baboy-body">
+  <div class="foodDisplay" id="sinigang_baboy">
+    <div class="foodDisplay-body">
 	 <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -972,14 +1009,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Sinigang na Baboy</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-11" name="desc-btn-6" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-11" name="desc-btn-6" checked>
 								<label for="desc-11">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-12" name="desc-btn-6">
+								<input class="desc-btn desc-even" type="radio" id="desc-12" name="desc-btn-6">
 								<label for="desc-12">Prices</label> 
-								<div class="section-fluid desc-sec accor-11">
-									<p class="smol">It is a Filipino savory stew usually of pork offal meat simmered in a rich, spicy dark gravy of pig blood, garlic, chili, and vinegar.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">A hot and sour soup with vegetables and pig meat.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-12">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>70</span> Pesos<br>With Rice</p>
 									</div>	
@@ -1046,8 +1083,8 @@
 
 
 <!---------------------------------------SISIG------------------------------------------->	
-  <div class="sisig" id="sisig">
-    <div class="sisig-body">
+  <div class="foodDisplay" id="sisig">
+    <div class="foodDisplay-body">
 	 <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1057,14 +1094,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Sisig</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-13" name="desc-btn-7" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-13" name="desc-btn-7" checked>
 								<label for="desc-13">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-14" name="desc-btn-7">
+								<input class="desc-btn desc-even" type="radio" id="desc-14" name="desc-btn-7">
 								<label for="desc-14">Prices</label> 
-								<div class="section-fluid desc-sec accor-13">
-									<p class="smol">It is a Filipino savory stew usually of pork offal meat simmered in a rich, spicy dark gravy of pig blood, garlic, chili, and vinegar.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">Minced pork, chopped onion, and chicken liver. It is a favorite dish for pulutan.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-14">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>65</span> Pesos<br>With Rice</p>
 									</div>	
@@ -1131,8 +1168,8 @@
 
 
 <!---------------------------------------------------Bicol Express------------------------------------------------------->	
-  <div class="bicol_express" id="bicol_express">
-    <div class="bicol_express-body">
+  <div class="foodDisplay" id="bicol_express">
+    <div class="foodDisplay-body">
 	 <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1142,14 +1179,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Bicol Express</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-15" name="desc-btn-8" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-15" name="desc-btn-8" checked>
 								<label for="desc-15">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-16" name="desc-btn-8">
+								<input class="desc-btn desc-even" type="radio" id="desc-16" name="desc-btn-8">
 								<label for="desc-16">Prices</label> 
-								<div class="section-fluid desc-sec accor-15">
-									<p class="smol">It is a Filipino savory stew usually of pork offal meat simmered in a rich, spicy dark gravy of pig blood, garlic, chili, and vinegar.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">A spicy dish made of minced pork, chopped onions, chili peppers, and tofu.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-16">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>70</span> Pesos<br>With Rice</p>
 									</div>	
@@ -1221,8 +1258,8 @@
 
 	
 <!---------------------------------------Spaghetti------------------------------------------->
-  <div class="spaghetti" id="spaghetti">
-    <div class="spaghetti-body">	
+  <div class="foodDisplay" id="spaghetti">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1232,14 +1269,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Spaghetti</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-17" name="desc-btn-9" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-17" name="desc-btn-9" checked>
 								<label for="desc-17">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-18" name="desc-btn-9"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-18" name="desc-btn-9"/>
 								<label for="desc-18">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
-									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">The Italian spaghetti, but sweeter and with hotdogs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>55</span> Pesos<br>A la Carte</p>
 									</div>
@@ -1297,8 +1334,8 @@
 
 
 <!---------------------------------------Carbonara------------------------------------------->
-  <div class="carbonara" id="carbonara">
-    <div class="carbonara-body">	
+  <div class="foodDisplay" id="carbonara">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1308,14 +1345,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Carbonara</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-19" name="desc-btn-10" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-19" name="desc-btn-10" checked>
 								<label for="desc-19">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-20" name="desc-btn-10"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-20" name="desc-btn-10"/>
 								<label for="desc-20">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
-									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">A white, creamy pasta known for its rich, flavorful sauce.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>25</span> Pesos<br>A la Carte</p>
 									</div>
@@ -1374,8 +1411,8 @@
 
 
 <!---------------------------------------Baked Mac------------------------------------------->
-  <div class="baked_mac" id="baked_mac">
-    <div class="baked_mac-body">	
+  <div class="foodDisplay" id="baked_mac">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1385,14 +1422,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Baked Mac</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-21" name="desc-btn-11" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-21" name="desc-btn-11" checked>
 								<label for="desc-21">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-22" name="desc-btn-11"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-22" name="desc-btn-11"/>
 								<label for="desc-22">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
-									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">A meal of macaroni with tomato sauce, topped with melted cheese.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>25</span> Pesos<br>A la Carte</p>
 									</div>
@@ -1450,8 +1487,8 @@
 
 
 <!---------------------------------------Eggplant Omelette------------------------------------------->
-  <div class="eggplant_omelette" id="eggplant_omelette">
-    <div class="eggplant_omelette-body">	
+  <div class="foodDisplay" id="eggplant_omelette">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1461,14 +1498,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Eggplant Omelette</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-23" name="desc-btn-12" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-23" name="desc-btn-12" checked>
 								<label for="desc-23">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-24" name="desc-btn-12"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-24" name="desc-btn-12"/>
 								<label for="desc-24">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
-									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">Mashed eggplant coated in seasoned beaten egg.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>25</span> Pesos<br>A la Carte</p>
 									</div>
@@ -1526,8 +1563,8 @@
 
 
 <!---------------------------------------Ginisang Upo------------------------------------------->
-  <div class="ginisang_upo" id="ginisang_upo">
-    <div class="ginisang_upo-body">	
+  <div class="foodDisplay" id="ginisang_upo">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1537,14 +1574,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Ginisang Upo</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-25" name="desc-btn-13" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-25" name="desc-btn-13" checked>
 								<label for="desc-25">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-26" name="desc-btn-13"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-26" name="desc-btn-13"/>
 								<label for="desc-26">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
-									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">Bottle gourds sautéed in garlic, onions, and tomatoes.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>25</span> Pesos<br>A la Carte</p>
 									</div>
@@ -1602,8 +1639,8 @@
 
 
 <!---------------------------------------Ginisang Monggo------------------------------------------->
-  <div class="ginisang_monggo" id="ginisang_monggo">
-    <div class="ginisang_monggo-body">	
+  <div class="foodDisplay" id="ginisang_monggo">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1613,14 +1650,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Ginisang Monggo</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-27" name="desc-btn-14" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-27" name="desc-btn-14" checked>
 								<label for="desc-27">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-28" name="desc-btn-14"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-28" name="desc-btn-14"/>
 								<label for="desc-28">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
-									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
+								<div class="section-fluid desc-sec accor-odd">
+									<p class="smol">Mung beans served with various vegetables and meat.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>25</span> Pesos<br>A la Carte</p>
 									</div>
@@ -1681,8 +1718,8 @@
 <!-------------------------------------------EXTRAS----------------------------------------------->
 
 <!---------------------------------------Rice------------------------------------------->
-  <div class="rice" id="rice">
-    <div class="rice-body">	
+  <div class="foodDisplay" id="rice">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1692,14 +1729,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Rice</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-29" name="desc-btn-15" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-29" name="desc-btn-15" checked>
 								<label for="desc-29">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-30" name="desc-btn-15"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-30" name="desc-btn-15"/>
 								<label for="desc-30">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br>Extra</p>
 									</div>
@@ -1756,8 +1793,8 @@
 <div id="pane"></div>
 
 <!---------------------------------------Egg------------------------------------------->
-  <div class="egg" id="egg">
-    <div class="egg-body">	
+  <div class="foodDisplay" id="egg">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1767,14 +1804,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Egg</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-31" name="desc-btn-16" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-31" name="desc-btn-16" checked>
 								<label for="desc-31">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-32" name="desc-btn-16"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-32" name="desc-btn-16"/>
 								<label for="desc-32">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br>Extra</p>
 									</div>
@@ -1831,8 +1868,8 @@
 <div id="pane"></div>
 
 <!---------------------------------------Ham------------------------------------------->
-  <div class="ham" id="ham">
-    <div class="ham-body">	
+  <div class="foodDisplay" id="ham">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1842,14 +1879,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Ham</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-33" name="desc-btn-17" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-33" name="desc-btn-17" checked>
 								<label for="desc-33">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-34" name="desc-btn-17"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-34" name="desc-btn-17"/>
 								<label for="desc-34">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br>Extra</p>
 									</div>
@@ -1907,8 +1944,8 @@
 
 
 <!---------------------------------------Hotdog------------------------------------------->
-  <div class="hotdog" id="hotdog">
-    <div class="hotdog-body">	
+  <div class="foodDisplay" id="hotdog">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1918,14 +1955,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Hotdog</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-35" name="desc-btn-18" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-35" name="desc-btn-18" checked>
 								<label for="desc-35">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-36" name="desc-btn-18"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-36" name="desc-btn-18"/>
 								<label for="desc-36">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br>Extra</p>
 									</div>
@@ -1983,8 +2020,8 @@
 
 
 <!---------------------------------------Siomai------------------------------------------->
-  <div class="siomai" id="siomai">
-    <div class="siomai-body">	
+  <div class="foodDisplay" id="siomai">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -1994,14 +2031,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Siomai</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-37" name="desc-btn-19" checked>
-								<label for="desc-37">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-38" name="desc-btn-19"/>
+								<input class="desc-btn desc-odd" type="radio" id="desc-37" name="desc-btn-19" checked>
+								<label for="desc-37 desc-even">Description</label> 
+								<input class="desc-btn desc-even" type="radio" id="desc-38" name="desc-btn-19"/>
 								<label for="desc-38">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br>Extra</p>
 									</div>
@@ -2060,8 +2097,8 @@
 
 
 <!---------------------------------------Salad------------------------------------------->
-  <div class="salad" id="salad">
-    <div class="salad-body">	
+  <div class="foodDisplay" id="salad">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2071,14 +2108,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Salad</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-39" name="desc-btn-20" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-39" name="desc-btn-20" checked>
 								<label for="desc-39">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-40" name="desc-btn-20"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-40" name="desc-btn-20"/>
 								<label for="desc-40">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br>Extra</p>
 									</div>
@@ -2140,8 +2177,8 @@
 
 
 <!---------------------------------------Lemonade------------------------------------------->
-  <div class="lemonade" id="lemonade">
-    <div class="lemonade-body">	
+  <div class="foodDisplay" id="lemonade">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2151,14 +2188,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Lemonade</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-41" name="desc-btn-21" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-41" name="desc-btn-21" checked>
 								<label for="desc-41">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-42" name="desc-btn-21"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-42" name="desc-btn-21"/>
 								<label for="desc-42">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2223,8 +2260,8 @@
 
 
 <!---------------------------------------Blue Lemonade------------------------------------------->
-  <div class="bluelemonade" id="bluelemonade">
-    <div class="bluelemonade-body">	
+  <div class="foodDisplay" id="bluelemonade">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2234,14 +2271,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Blue Lemonade</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-43" name="desc-btn-22" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-43" name="desc-btn-22" checked>
 								<label for="desc-43">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-44" name="desc-btn-22"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-44" name="desc-btn-22"/>
 								<label for="desc-44">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2305,8 +2342,8 @@
 <div id="pane"></div>
 
 <!---------------------------------------Iced Tea------------------------------------------->
-  <div class="iced_tea" id="iced_tea">
-    <div class="iced_tea-body">	
+  <div class="foodDisplay" id="iced_tea">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2316,14 +2353,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Iced Tea</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-45" name="desc-btn-23" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-45" name="desc-btn-23" checked>
 								<label for="desc-45">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-46" name="desc-btn-23"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-46" name="desc-btn-23"/>
 								<label for="desc-46">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2388,8 +2425,8 @@
 
 
 <!---------------------------------------Red Iced Tea------------------------------------------->
-  <div class="red_iced_tea" id="red_iced_tea">
-    <div class="red_iced_tea-body">	
+  <div class="foodDisplay" id="red_iced_tea">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2399,14 +2436,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Red Iced Tea</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-47" name="desc-btn-24" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-47" name="desc-btn-24" checked>
 								<label for="desc-47">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-48" name="desc-btn-24"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-48" name="desc-btn-24"/>
 								<label for="desc-48">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2471,8 +2508,8 @@
 
 
 <!---------------------------------------Cucumber Iced Tea------------------------------------------->
-  <div class="cucumber_iced_tea" id="cucumber_iced_tea">
-    <div class="cucumber_iced_tea-body">	
+  <div class="foodDisplay" id="cucumber_iced_tea">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2482,14 +2519,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Cucumber Iced Tea</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-49" name="desc-btn-25" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-49" name="desc-btn-25" checked>
 								<label for="desc-49">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-50" name="desc-btn-25"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-50" name="desc-btn-25"/>
 								<label for="desc-50">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2554,8 +2591,8 @@
 
 
 <!---------------------------------------Mango Iced Tea------------------------------------------->
-  <div class="mango_iced_tea" id="mango_iced_tea">
-    <div class="mango_iced_tea-body">	
+  <div class="foodDisplay" id="mango_iced_tea">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2565,14 +2602,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Mango Iced Tea</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-51" name="desc-btn-26" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-51" name="desc-btn-26" checked>
 								<label for="desc-51">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-52" name="desc-btn-26"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-52" name="desc-btn-26"/>
 								<label for="desc-52">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2637,8 +2674,8 @@
 
 
 <!---------------------------------------Guyabano Iced Tea------------------------------------------->
-  <div class="guyabano_iced_tea" id="guyabano_iced_tea">
-    <div class="guyabano_iced_tea-body">	
+  <div class="foodDisplay" id="guyabano_iced_tea">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2648,14 +2685,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Guyabano Iced Tea</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-53" name="desc-btn-27" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-53" name="desc-btn-27" checked>
 								<label for="desc-53">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-54" name="desc-btn-27"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-54" name="desc-btn-27"/>
 								<label for="desc-54">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2720,8 +2757,8 @@
 
 
 <!---------------------------------------Melon Juice------------------------------------------->
-  <div class="melon_juice" id="melon_juice">
-    <div class="melon_juice-body">	
+  <div class="foodDisplay" id="melon_juice">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2731,14 +2768,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Melon Juice</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-55" name="desc-btn-28" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-55" name="desc-btn-28" checked>
 								<label for="desc-55">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-56" name="desc-btn-28"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-56" name="desc-btn-28"/>
 								<label for="desc-56">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2803,8 +2840,8 @@
 
 
 <!---------------------------------------Gulaman------------------------------------------->
-  <div class="gulaman" id="gulaman">
-    <div class="gulaman-body">	
+  <div class="foodDisplay" id="gulaman">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2814,14 +2851,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Melon Juice</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-57" name="desc-btn-29" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-57" name="desc-btn-29" checked>
 								<label for="desc-57">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-58" name="desc-btn-29"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-58" name="desc-btn-29"/>
 								<label for="desc-58">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2886,8 +2923,8 @@
 
 
 <!---------------------------------------Milo------------------------------------------->
-  <div class="milo" id="milo">
-    <div class="milo-body">	
+  <div class="foodDisplay" id="milo">
+    <div class="foodDisplay-body">	
      <div class="ITEM_DETAILS"> 
 		<div class="FOOD">
 			<div class="section-fluid-main">
@@ -2897,14 +2934,14 @@
 							<p class="title-up">MakSci Express</p>
 							<p class="dish_name">Milo</p>
 							<div class="section-fluid">
-								<input class="desc-btn" type="radio" id="desc-59" name="desc-btn-30" checked>
+								<input class="desc-btn desc-odd" type="radio" id="desc-59" name="desc-btn-30" checked>
 								<label for="desc-59">Description</label> 
-								<input class="desc-btn" type="radio" id="desc-60" name="desc-btn-30"/>
+								<input class="desc-btn desc-even" type="radio" id="desc-60" name="desc-btn-30"/>
 								<label for="desc-60">Prices</label> 
-								<div class="section-fluid desc-sec accor-1">
+								<div class="section-fluid desc-sec accor-odd">
 									<p class="smol">It is a thick juicy pork cutlet coated in crisp panko breadcrumbs.</p>
 								</div>	
-								<div class="section-fluid desc-sec accor-2">
+								<div class="section-fluid desc-sec accor-even">
 									<div class="section-inline">
 										<p class="smol"><span>10</span> Pesos<br></p>
 									</div>	
@@ -2973,9 +3010,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
 <script src="Menu Items.js"></script>
+<script src="dashboard.js"></script>
 <script src="sidebar.js"></script>
 <script src="scroll.js"></script>
 <script defer src="popup.js"></script>
-
 
 </html>
