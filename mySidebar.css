@@ -5,39 +5,31 @@
   z-index: 3; 
   top: 0;
   left: -310px;
-  background-color: #48A7A5;
+  background-color: #36312b;
   overflow-x: hidden; 
-  transition: 0.5s; 
+  transition: 0.5s;   
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5); 
 }
 
 .sidebar a {
   padding: 3px 16px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #272523;
+  color: rgba(253, 248, 241);
   display: block;
   transition: 0.3s;
 }
 
-.sidebar a:hover {
-  color: #09312A;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
 .openbtn {
-  font-size: 30px;
   cursor: pointer;
   background-color: #fea104;
   color: #000000;
   padding: 10px 15px;
   border: none;
+}
+
+.closebtn a:hover {
+  color: #eab676;
 }
 
 .sidebar .closebtn {
@@ -49,12 +41,7 @@
 }
 
 .openbtn:hover {
-  background-color: #1E596D;
-}
-
-
-.sidebarButton {
-	color: #000000;
+  background-color: #5e492f;
 }
 
 

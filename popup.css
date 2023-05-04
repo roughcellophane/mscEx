@@ -60,6 +60,7 @@
 }
 
 
+
 .chicken {
   position: fixed;
   top: 50%;
@@ -79,5 +80,667 @@
 }
 
 .chicken-body {
+  padding: 10px 15px;
+}
+
+
+
+.dinuguan {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.dinuguan.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.dinuguan-body {
+  padding: 10px 15px;
+}
+
+
+
+.bopis {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.bopis.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.bopis-body {
+  padding: 10px 15px;
+}
+
+
+
+.adobong_pusit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.adobong_pusit.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.adobong_pusit-body {
+  padding: 10px 15px;
+}
+
+
+.sinigang_baboy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.sinigang_baboy.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.sinigang_baboy-body {
+  padding: 10px 15px;
+}
+
+
+
+.sisig {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.sisig.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.sisig-body {
+  padding: 10px 15px;
+}
+
+
+
+.bicol_express {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.bicol_express.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.bicol_express-body {
+  padding: 10px 15px;
+}
+
+
+
+.spaghetti {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.spaghetti.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.spaghetti-body {
+  padding: 10px 15px;
+}
+
+
+.carbonara {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.carbonara.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.carbonara-body {
+  padding: 10px 15px;
+}
+
+
+.baked_mac {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.baked_mac.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.baked_mac-body {
+  padding: 10px 15px;
+}
+
+
+.eggplant_omelette {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.eggplant_omelette.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.eggplant_omelette-body {
+  padding: 10px 15px;
+}
+
+
+.ginisang_upo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.ginisang_upo.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.ginisang_upo-body {
+  padding: 10px 15px;
+}
+
+
+.ginisang_monggo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.ginisang_monggo.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.ginisang_monggo-body {
+  padding: 10px 15px;
+}
+
+
+.rice {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.rice.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.rice-body {
+  padding: 10px 15px;
+}
+
+
+.egg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.egg.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.egg-body {
+  padding: 10px 15px;
+}
+
+
+.ham {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.ham.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.ham-body {
+  padding: 10px 15px;
+}
+
+
+
+.hotdog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.hotdog.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hotdog-body {
+  padding: 10px 15px;
+}
+
+.siomai {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.siomai.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.siomai-body {
+  padding: 10px 15px;
+}
+
+
+
+.salad {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.salad.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.salad-body {
+  padding: 10px 15px;
+}
+
+
+
+
+.lemonade {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.lemonade.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.lemonade-body {
+  padding: 10px 15px;
+}
+
+
+
+.bluelemonade {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.bluelemonade.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.bluelemonade-body {
+  padding: 10px 15px;
+}
+
+
+.iced_tea {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.iced_tea.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.iced_tea-body {
+  padding: 10px 15px;
+}
+
+
+
+.red_iced_tea {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.red_iced_tea.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.red_iced_tea-body {
+  padding: 10px 15px;
+}
+
+
+
+
+.cucumber_iced_tea {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.cucumber_iced_tea.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cucumber_iced_tea-body {
+  padding: 10px 15px;
+}
+
+
+.mango_iced_tea {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.mango_iced_tea.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.mango_iced_tea-body {
+  padding: 10px 15px;
+}
+
+
+
+.guyabano_iced_tea {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.guyabano_iced_tea.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.guyabano_iced_tea-body {
+  padding: 10px 15px;
+}
+
+
+
+
+.melon_juice {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.melon_juice.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.melon_juice-body {
+  padding: 10px 15px;
+}
+
+
+
+.gulaman {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.gulaman.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.gulaman-body {
+  padding: 10px 15px;
+}
+
+
+
+.milo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  max-height:600px;
+  z-index: 8;
+}
+
+.milo.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.milo-body {
   padding: 10px 15px;
 }

@@ -27,23 +27,19 @@ a {
 	margin-top: 5px;
 
 }
-.logo a,
+
 .yes a {
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
-}
-
-.yes a {
 	color: #272523;
 	font-size: 2.5em;
 }
 
 .yes a:hover {
-	color: #718daa;
+	color: #5e492f;
 }
-
 
 
 .divider {
@@ -54,10 +50,12 @@ a {
 	display: flex;
 }
 
-.hamburger{
+
+.hamburger {
+	font-size: 2.5em;	
 	color: #000000;
-	font-size: 2.5em;
-	}
+}
+
 
 .header {
 	height: 120px;
