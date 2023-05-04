@@ -1,4 +1,5 @@
 /* Please ❤ this if you like it! */
+
 .FOOD{
 	height: 100%;
 	width: 100%;
@@ -209,228 +210,37 @@ label--select:focus, label--select:active,
 
 /*------------------------------------------------------SET MEALS-----------------------------------------------------------*/
 
-label.first-color{
+.first-color, .color-3, .color-5, .color-7, .color-9, .color-11, .color-13, .color-15 {
   margin-left: 500px;
   background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
   background-size: cover;
 }
-label.color-2{
+.color-2, .color-4, .color-6, .color-8, .color-10, .color-12, .color-14, .color-16{
   background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
 }
-label.color-3{
-  margin-left: 500px;
-  background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
-  background-size: cover;
-}
-label.color-4{
-  background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
-}
-label.color-5{
-  margin-left: 500px;
-  background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
-  background-size: cover;
-}
-label.color-6{
-  background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
-}
-label.color-7{
-  margin-left: 500px;
-  background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
-  background-size: cover;
-}
-label.color-8{
-  background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
-}
-label.color-9{
-  margin-left: 500px;
-  background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
-  background-size: cover;
-}
-label.color-10{
-  background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
-}
-label.color-11{
-  margin-left: 500px;
-  background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
-  background-size: cover;
-}
-label.color-12{
-  background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
-}
-label.color-13{
-  margin-left: 500px;
-  background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
-  background-size: cover;
-}
-label.color-14{
-  background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
-}
-label.color-15{
-  margin-left: 500px;
-  background-image: url('https://www.shutterstock.com/image-illustration/green-designed-grunge-texture-vintage-260nw-1349433869.jpg');
-  background-size: cover;
-}
-label.color-16{
-  background-image: url('https://t3.ftcdn.net/jpg/02/30/65/32/360_F_230653258_1SCEgR7iyZLpxP7T8pDPqaPIfHFtl6Qd.jpg');
-}
-
-
 /*------------------------------------------------------AL A CARTE-----------------------------------------------------------*/
-label.color-17{
+label.color-17, .color-18, .color-19, .color-20, .color-21, .color-22{
   margin-left: 500px;
   background-image: url('https://thumbs.dreamstime.com/b/dark-blue-green-background-black-distressed-grunge-rock-stone-texture-blank-elegant-teal-blue-background-lots-142729877.jpg');
   background-size: cover;
 }
-label.color-18{
-  margin-left: 500px;
-  background-image: url('https://thumbs.dreamstime.com/b/dark-blue-green-background-black-distressed-grunge-rock-stone-texture-blank-elegant-teal-blue-background-lots-142729877.jpg');
-  background-size: cover;
-}
-label.color-19{
-  margin-left: 500px;
-  background-image: url('https://thumbs.dreamstime.com/b/dark-blue-green-background-black-distressed-grunge-rock-stone-texture-blank-elegant-teal-blue-background-lots-142729877.jpg');
-  background-size: cover;
-}
-label.color-20{
-  margin-left: 500px;
-  background-image: url('https://thumbs.dreamstime.com/b/dark-blue-green-background-black-distressed-grunge-rock-stone-texture-blank-elegant-teal-blue-background-lots-142729877.jpg');
-  background-size: cover;
-}
-label.color-21{
-  margin-left: 500px;
-  background-image: url('https://thumbs.dreamstime.com/b/dark-blue-green-background-black-distressed-grunge-rock-stone-texture-blank-elegant-teal-blue-background-lots-142729877.jpg');
-  background-size: cover;
-}
-label.color-22{
-  margin-left: 500px;
-  background-image: url('https://thumbs.dreamstime.com/b/dark-blue-green-background-black-distressed-grunge-rock-stone-texture-blank-elegant-teal-blue-background-lots-142729877.jpg');
-  background-size: cover;
-}
-
-
 /*------------------------------------------------------EXTRAS-----------------------------------------------------------*/
 
-label.color-23{
+.color-23, .color-24, .color-25, .color-26, .color-27, .color-28{
   margin-left: 500px;
   background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
   background-size: cover;
 }
-
-label.color-24{
-  margin-left: 500px;
-  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
-  background-size: cover;
-}
-
-label.color-25{
-  margin-left: 500px;
-  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
-  background-size: cover;
-}
-
-label.color-26{
-  margin-left: 500px;
-  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
-  background-size: cover;
-}
-
-label.color-27{
-  margin-left: 500px;
-  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
-  background-size: cover;
-}
-
-label.color-28{
-  margin-left: 500px;
-  background-image: url('https://t4.ftcdn.net/jpg/02/95/58/81/360_F_295588160_0v6trlE9I3tTuIBkokhPyMGAMzv9nZye.jpg');
-  background-size: cover;
-}
-
-
 /*------------------------------------------------------DRINKS-----------------------------------------------------------*/
 
-label.color-29{
+.color-29, .color-31, .color-33, .color-35, .color-37, .color-39, .color-41, .color-43, .color-45, .color-47{
   margin-left: 500px;
   background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
   background-size: cover;
 }
-label.color-30{
+.color-30, .color-32, .color-34, .color-36, .color-38, .color-40, .color-42, .color-44, .color-46, .color-48{
   background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
 }
-label.color-31{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-32{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-33{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-34{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-35{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-36{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-37{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-38{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-39{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-40{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-41{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-42{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-43{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-44{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-45{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-46{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-label.color-47{
-  margin-left: 500px;
-  background-image: url('https://img.freepik.com/premium-photo/old-stone-texture-background-toned-classic-blue-color_107210-688.jpg');
-  background-size: cover;
-}
-label.color-48{
-  background-image: url('https://t3.ftcdn.net/jpg/01/40/33/00/360_F_140330093_ZRD5rIUJEtQDabQFc8Wdwaxcb4PxTZfs.jpg');
-}
-
-
 
 /*-----------------------------------------------------------------------------------------------------------------------*/
 
@@ -654,6 +464,7 @@ label.color-48{
 
 /*------------------------------------------------------DRINKS-----------------------------------------------------------*/
 
+
 .img-wrap.lemonade-1{
   background-image: url('https://www.texanerin.com/content/uploads/2014/08/honey-lemonade-2-650x975.jpg');
 }
@@ -771,7 +582,7 @@ label.color-48{
   background-image: url('https://i.pinimg.com/736x/a4/c8/a6/a4c8a62696ebd53b43458c8cadd9b25c.jpg');
 }
 .for-color-45:checked ~ .img-wrap.gulaman-1{
-  opacity: 1;
+  opacity: 0;
 }
 .img-wrap.gulaman-2{
   background-image: url('https://i.pinimg.com/736x/a4/c8/a6/a4c8a62696ebd53b43458c8cadd9b25c.jpg');
@@ -780,12 +591,11 @@ label.color-48{
   opacity: 1;
 }
 
-
 .img-wrap.milo-1{
   background-image: url('https://recipes-by-reeshu.s3.ap-south-1.amazonaws.com/recipes/ice-milo-dinosaur/1.jpg');
 }
 .for-color-47:checked ~ .img-wrap.milo-1{
-  opacity: 1;
+  opacity: 0;
 }
 .img-wrap.milo-2{
   background-image: url('https://recipes-by-reeshu.s3.ap-south-1.amazonaws.com/recipes/ice-milo-dinosaur/1.jpg');
@@ -864,7 +674,7 @@ label.color-48{
 
 .back-color.dinuguan-1 {
   background-image: linear-gradient(61deg, rgba(0,175,67,1) 3%, rgba(27,94,75,1) 100%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-5:checked ~ .back-color.dinuguan-1{
   opacity: 1;
@@ -881,7 +691,7 @@ label.color-48{
 
 .back-color.bopis-1 {
   background-image: linear-gradient(61deg, rgba(0,175,67,1) 3%, rgba(27,94,75,1) 100%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-7:checked ~ .back-color.bopis-1{
   opacity: 1;
@@ -898,7 +708,7 @@ label.color-48{
 
 .back-color.adobong_pusit-1 {
   background-image: linear-gradient(61deg, rgba(0,175,67,1) 3%, rgba(27,94,75,1) 100%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-9:checked ~ .back-color.adobong_pusit-1{
   opacity: 1;
@@ -915,7 +725,7 @@ label.color-48{
 
 .back-color.siningang_baboy-1 {
   background-image: linear-gradient(61deg, rgba(0,175,67,1) 3%, rgba(27,94,75,1) 100%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-11:checked ~ .back-color.siningang_baboy-1{
   opacity: 1;
@@ -932,7 +742,7 @@ label.color-48{
 
 .back-color.sisig-1 {
   background-image: linear-gradient(61deg, rgba(0,175,67,1) 3%, rgba(27,94,75,1) 100%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-13:checked ~ .back-color.sisig-1{
   opacity: 1;
@@ -949,7 +759,7 @@ label.color-48{
 
 .back-color.bicol_express-1 {
   background-image: linear-gradient(61deg, rgba(0,175,67,1) 3%, rgba(27,94,75,1) 100%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-15:checked ~ .back-color.bicol_express-1{
   opacity: 1;
@@ -968,7 +778,7 @@ label.color-48{
 
 .back-color.spaghetti-1 {
   background-image: linear-gradient(90deg, rgba(9,117,121,1) 21%, rgba(20,81,105,1) 51%, rgba(4,54,88,1) 90%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-17:checked ~ .back-color.spaghetti-1{
   opacity: 1;
@@ -1075,7 +885,7 @@ label.color-48{
 
 .back-color.lemonade-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-29:checked ~ .back-color.lemonade-1{
   opacity: 1;
@@ -1093,7 +903,7 @@ label.color-48{
 
 .back-color.bluelemonade-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-31:checked ~ .back-color.bluelemonade-1{
   opacity: 1;
@@ -1110,7 +920,7 @@ label.color-48{
 
 .back-color.iced_tea-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-33:checked ~ .back-color.iced_tea-1{
   opacity: 1;
@@ -1124,11 +934,9 @@ label.color-48{
   opacity: 1;
 }
 
-
-
 .back-color.red_iced_tea-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-35:checked ~ .back-color.red_iced_tea-1{
   opacity: 1;
@@ -1145,7 +953,7 @@ label.color-48{
 
 .back-color.cucumber_iced_tea-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-37:checked ~ .back-color.cucumber_iced_tea-1{
   opacity: 1;
@@ -1162,7 +970,7 @@ label.color-48{
 
 .back-color.mango_iced_tea-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-39:checked ~ .back-color.mango_iced_tea-1{
   opacity: 1;
@@ -1179,7 +987,7 @@ label.color-48{
 
 .back-color.guyabano_iced_tea-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-41:checked ~ .back-color.guyabano_iced_tea-1{
   opacity: 1;
@@ -1196,7 +1004,7 @@ label.color-48{
 
 .back-color.melon_juice-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-43:checked ~ .back-color.melon_juice-1{
   opacity: 1;
@@ -1214,7 +1022,7 @@ label.color-48{
 
 .back-color.gulaman-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-45:checked ~ .back-color.gulaman-1{
   opacity: 1;
@@ -1231,7 +1039,7 @@ label.color-48{
 
 .back-color.milo-1 {
   background-image:  linear-gradient(56deg, rgba(65,101,218,1) 16%, rgba(17,74,187,1) 41%, rgba(5,37,97,1) 78%);
-  opacity: 0;
+  opacity: 1;
 }
 .for-color-47:checked ~ .back-color.milo-1{
   opacity: 1;
@@ -1244,8 +1052,6 @@ label.color-48{
 .for-color-48:checked ~ .back-color.milo-2{
   opacity: 1;
 }
-
-
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1337,350 +1143,25 @@ label.color-48{
   transform: translateY(20px);
   margin-bottom: 10px;
 }
-.desc-sec.accor-2 {
+.desc-sec.accor-2, .desc-sec.accor-4, .desc-sec.accor-6, .accor-even{
   position: absolute;
   top: 25px;
   left: 0;
   width: 100%;
   z-index: 2;
 }
-.desc-sec.accor-4 {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-}
-#desc-1:checked ~ .desc-sec.accor-1 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-2:checked ~ .desc-sec.accor-2 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-3:checked ~ .desc-sec.accor-3 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-4:checked ~ .desc-sec.accor-4 {
+
+.desc-odd:checked ~ .accor-odd {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-#desc-5:checked ~ .desc-sec.accor-5 {
+.desc-even:checked ~ .accor-even {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
-#desc-6:checked ~ .desc-sec.accor-6 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-7:checked ~ .desc-sec.accor-7 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-8:checked ~ .desc-sec.accor-8 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-9:checked ~ .desc-sec.accor-9 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-10:checked ~ .desc-sec.accor-10 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-11:checked ~ .desc-sec.accor-11 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-12:checked ~ .desc-sec.accor-12 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-13:checked ~ .desc-sec.accor-13 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-14:checked ~ .desc-sec.accor-14 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-15:checked ~ .desc-sec.accor-15 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-16:checked ~ .desc-sec.accor-16 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-17:checked ~ .desc-sec.accor-17 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-18:checked ~ .desc-sec.accor-18 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-19:checked ~ .desc-sec.accor-19 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-20:checked ~ .desc-sec.accor-20 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-21:checked ~ .desc-sec.accor-21 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-22:checked ~ .desc-sec.accor-22 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-23:checked ~ .desc-sec.accor-23 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-24:checked ~ .desc-sec.accor-24 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-25:checked ~ .desc-sec.accor-25 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-26:checked ~ .desc-sec.accor-26 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-27:checked ~ .desc-sec.accor-27 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-28:checked ~ .desc-sec.accor-28 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-29:checked ~ .desc-sec.accor-29 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-30:checked ~ .desc-sec.accor-30 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-31:checked ~ .desc-sec.accor-31 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-32:checked ~ .desc-sec.accor-32 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-33:checked ~ .desc-sec.accor-33 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-34:checked ~ .desc-sec.accor-34 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-35:checked ~ .desc-sec.accor-35 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-36:checked ~ .desc-sec.accor-36 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-
-#desc-37:checked ~ .desc-sec.accor-37 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-38:checked ~ .desc-sec.accor-38 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-39:checked ~ .desc-sec.accor-39 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-40:checked ~ .desc-sec.accor-40 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-41:checked ~ .desc-sec.accor-41 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-42:checked ~ .desc-sec.accor-42 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-43:checked ~ .desc-sec.accor-43 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-44:checked ~ .desc-sec.accor-44 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-
-#desc-45:checked ~ .desc-sec.accor-45 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-46:checked ~ .desc-sec.accor-46 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-47:checked ~ .desc-sec.accor-47 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-48:checked ~ .desc-sec.accor-48 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-} 
-
-
-#desc-49:checked ~ .desc-sec.accor-49 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-50:checked ~ .desc-sec.accor-50 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-51:checked ~ .desc-sec.accor-51 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-52:checked ~ .desc-sec.accor-52 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-53:checked ~ .desc-sec.accor-53 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-54:checked ~ .desc-sec.accor-54 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-55:checked ~ .desc-sec.accor-55 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-56:checked ~ .desc-sec.accor-56 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-#desc-57:checked ~ .desc-sec.accor-57 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-58:checked ~ .desc-sec.accor-58 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-59:checked ~ .desc-sec.accor-59 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#desc-60:checked ~ .desc-sec.accor-60 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
 
 .section-inline{
   position: relative;
@@ -1771,20 +1252,6 @@ label.color-48{
   content: "";
 }
 
-.logo {
-	position: fixed;
-	top: 20px;
-	left: 15px;
-	display: block;
-	z-index: 1000;
-	transition: all 250ms linear;
-}
-.logo img {
-	height: 75px;
-	width: auto;
-	display: block;
-	transition: filter 250ms 700ms linear;
-}
 
 @media screen and (max-width: 991px) {
   .section{
@@ -1846,8 +1313,6 @@ label.color-48{
   .escape{
 	left: 90%;
 }
-
-
 
 }
 @media screen and (max-width: 575px) {
