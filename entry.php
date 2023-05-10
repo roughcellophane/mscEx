@@ -25,16 +25,18 @@
             $order = validate($current.$_SESSION['UserID']);
             $ID = validate($_SESSION['UserID']);
             $quantity = validate($_POST['quan']);
+            $price = $row['PriceValue'];
+            $value = $price * $quantity;
             $quantityupdated = $quantity - 1 ;
             $standard = 10;
-            $check = "SELECT * FROM Orders WHERE UserID = $user";
+            $check = "SELECT * FROM Orders WHERE UserID = '$user'";
             $checker = mysqli_fetch_assoc(mysqli_query($conn,$check));
             $comparison = $checker['OrderID'];
             if ($order != $comparison){
                 $prep = validate($row['PrepTime'] + ($quantityupdated * $standard));
                 $name = validate($row['ProdName']);
-                $entry = "INSERT INTO Orders (OrderID, CurrentStatus, UserID, ProdID, ProdNum, CurrentTime, ProdName)
-                VALUES ('$order','PLEASE CONFIRM','$ID','$current','$quantity','$prep','$name')";
+                $entry = "INSERT INTO Orders (OrderID, CurrentStatus, UserID, ProdID, ProdNum, CurrentTime, ProdName, PriceValue)
+                VALUES ('$order','PLEASE CONFIRM','$ID','$current','$quantity','$prep','$name','$value')";
                 if (mysqli_query($conn, $entry)) {
                     echo "<script>alert('New record created successfully!')</script>";
                 }

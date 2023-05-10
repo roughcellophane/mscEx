@@ -8,6 +8,14 @@ function confirm() {
     x.style.display = "flex";
   }
 
+  $(".totalPrice").keyup(function() {
+    var tot = 0;
+    $(".totalPrice").each(function() {
+      total += Number($(this).val());
+    });
+    $('#finalPrice').Number(text(total));
+  });
+
 /*
 $(".confirmButton").click(function() {
     $(".modalContainer,.confirmOrder").fadeIn("slow");

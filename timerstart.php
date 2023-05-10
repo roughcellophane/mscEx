@@ -32,7 +32,7 @@
                 $prompt4 = "UPDATE Orders 
                             SET CurrentStatus = 'READY FOR PICKUP'
                             WHERE UserID = '$reference'";
-                $ms = floor(microtime(true));
+                $ms = floor(microtime(true)*1000);
                 $prompt5 = "UPDATE TStamps 
                             SET OrderUp = '$ms' 
                             WHERE UserID = '$reference'";

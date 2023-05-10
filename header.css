@@ -24,18 +24,18 @@ a {
 
 
 .icon{
-	width: 70px;
-	height: 70px;
+	width: auto;
+	height: 35px;
 	display: flex;
 	align-items: center;
 	border: hidden;
 }
 
 .icon_pic{
-	width: 70px;
-	height: 70px;
+	width: 35px;
+	height: 35px;
 	object-fit: cover;
-	position: relative;
+
 }
 
 .logo {
@@ -44,6 +44,7 @@ a {
 	font-size: 2.75em;
 	color: #0a0705;
 	font-family: 'Heebo', sans-serif;
+	display: flex;
 }
 
 .main-nav {
@@ -79,9 +80,9 @@ a {
 	color: #000000;
 }
 
-
 .header {
-	height: 120px;
+	font-size: 10px;
+	height: 60px !important;
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid rgb(212,146,39);

@@ -117,7 +117,7 @@ body{
     .orderPicture{
         font-size: 30px;  
     }
-    .deleteButton{
+    .deleteButton, #delete{
         font-size: 14px;
     }
     #titleCard{
@@ -200,10 +200,10 @@ body{
     padding-left: 15px;
 }
 
-.deleteButton{
+.deleteButton, #delete{
     background-color: #D04B38;
     color: white;
-    padding: 12px;
+    padding: 6px;
     align-items: center;
     border: none;
     border-radius: 3px;

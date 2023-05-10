@@ -616,18 +616,18 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 					<div class="clearfix"></div>
 					<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-					<div class="buttonAlign">
-						<input class="color-btn for-color-1" type="radio" id="color-1" name="Food" value="M1">
-						<label class="first-color" for="color-1"><p>With Rice</p></label> 
-						<input class="color-btn for-color-2" type="radio" id="color-2" name="Food" value="A1">
-						<label class="color-2" for="color-2"><p>A la Carte</p></label> 
-						<div class="img-wrap tonkatsu-1"></div>
-						<div class="img-wrap tonkatsu-2"></div>	
-						<div class="back-color"></div>	
-						<div class="back-color tonkatsu-2"></div>	
-					</div>
+
+							<input class="color-btn for-color-1" type="radio" id="color-1" name="Food" value="M1">
+							<label class="first-color" for="color-1"><p>With Rice</p></label> 
+							<input class="color-btn for-color-2" type="radio" id="color-2" name="Food" value="A1">
+							<label class="color-2" for="color-2"><p>A la Carte</p></label> 
+							<div class="img-wrap tonkatsu-1"></div>
+							<div class="img-wrap tonkatsu-2"></div>	
+							<div class="back-color"></div>	
+							<div class="back-color tonkatsu-2"></div>	
+
 					<br>
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 						<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 						<input class="btn" type="submit" value="Add To Cart" >
@@ -676,7 +676,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-3" type="radio" id="color-3" name="Food" value="M2">
 						<label class="color-3" for="color-3"><p>With Rice</p></label> 
 						<input class="color-btn for-color-4" type="radio" id="color-4" name="Food" value="A2">
@@ -685,7 +684,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap fried_chicken-2"></div>	
 						<div class="back-color"></div>	
 						<div class="back-color fried_chicken-2"></div>	
-						</div>
 					<br>
 					<div class="info-wrap">
 					<label for="itemQty"><p class="money">Quantity:</p></label>
@@ -739,7 +737,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-5" type="radio" id="color-5" name="Food" value="M3">
 						<label class="color-5" for="color-5"><p>With Rice</p></label> 
 						<input class="color-btn for-color-6" type="radio" id="color-6" name="Food" value="A3">
@@ -748,10 +745,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap dinuguan-2"></div>	
 						<div class="back-color dinuguan-1"></div>	
 						<div class="back-color dinuguan-2"></div>	
-						</div>
+			
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 						<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 						<input class="btn" type="submit" value="Add To Cart" >
@@ -801,18 +798,18 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-7" type="radio" id="color-7" name="Food" value="M4">
 						<label class="color-7" for="color-7"><p>With Rice</p></label> 
 						<input class="color-btn for-color-8" type="radio" id="color-8" name="Food" value="A4">
 						<label class="color-8" for="color-8"><p>A la Carte</p></label> 
+						
+						
 						<div class="img-wrap bopis-1"></div>
 						<div class="img-wrap bopis-2"></div>	
 						<div class="back-color bopis-1"></div>	
 						<div class="back-color bopis-2"></div>	
-						</div>
 					<br>
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -862,7 +859,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-9" type="radio" id="color-9" name="Food" value="M5">
 						<label class="color-9" for="color-9"><p>With Rice</p></label> 
 						<input class="color-btn for-color-10" type="radio" id="color-10" name="Food" value="A5">
@@ -870,12 +866,11 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap adobong_pusit-1"></div>
 						<div class="img-wrap adobong_pusit-2"></div>	
 						<div class="back-color adobong_pusit-1"></div>	
-						<div class="back-color adobong_pusit-2"></div>
-						</div>
+						<div class="back-color adobong_pusit-2"></div>	
 			
 					<br>
 						
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -925,7 +920,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-11" type="radio" id="color-11" name="Food" value="M6">
 						<label class="color-11" for="color-11"><p>With Rice</p></label> 
 						<input class="color-btn for-color-12" type="radio" id="color-12" name="Food" value="A6">
@@ -936,11 +930,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap siningang_baboy-2"></div>	
 						<div class="back-color siningang_baboy-1"></div>	
 						<div class="back-color siningang_baboy-2"></div>	
-						</div>
 			
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -990,7 +983,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-13" type="radio" id="color-13" name="Food" value="M7">
 						<label class="color-13" for="color-13"><p>With Rice</p></label> 
 						<input class="color-btn for-color-14" type="radio" id="color-14" name="Food" value="A7">
@@ -1001,9 +993,9 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap sisig-2"></div>	
 						<div class="back-color sisig-1"></div>	
 						<div class="back-color sisig-2"></div>	
-						</div>
+			
 					<br>
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1053,7 +1045,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-15" type="radio" id="color-15" name="Food" value="M8">
 						<label class="color-15" for="color-15"><p>With Rice</p></label> 
 						<input class="color-btn for-color-16" type="radio" id="color-16" name="Food" value="A8">
@@ -1063,12 +1054,11 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap bicol_express-1"></div>
 						<div class="img-wrap bicol_express-2"></div>	
 						<div class="back-color bicol_express-1"></div>	
-						<div class="back-color bicol_express-2"></div>
-						</div>
+						<div class="back-color bicol_express-2"></div>	
 			
 					<br>
 						
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1125,7 +1115,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 							<div class="img-wrap spaghetti-1"></div>
 							<div class="back-color spaghetti-1"></div>	
 					<br>
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1176,7 +1166,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 	<div class="img-wrap carbonara-1"></div>
 	<div class="back-color carbonara-1"></div>	
 <br>
-<div class="info-wrap inputReformat">
+<div class="info-wrap">
 <label for="itemQty"><p class="money">Quantity:</p></label>
 		<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 		<input class="btn" type="submit" value="Add To Cart" >
@@ -1228,7 +1218,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 							<label class="color-19" for="color-19"><p>A la Carte</p></label> 
 							<div class="img-wrap baked_mac-1"></div>
 							<div class="back-color baked_mac-1"></div>	
-							<div class="info-wrap inputReformat">
+							<div class="info-wrap">
 								<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1280,7 +1270,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap eggplant_omelette-1"></div>
 						<div class="back-color eggplant_omelette-1"></div>	
 					<br>
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 							<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 							<input class="btn" type="submit" value="Add To Cart" >
@@ -1332,7 +1322,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap ginisang_upo-1"></div>
 						<div class="back-color ginisang_upo-1"></div>	
 					<br>
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 					<label for="itemQty"><p class="money">Quantity:</p></label>
 					<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 					<input class="btn" type="submit" value="Add To Cart" >
@@ -1384,7 +1374,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap ginisang_monggo-1"></div>
 						<div class="back-color ginisang_monggo-1"></div>	
 					<br>
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 <label for="itemQty"><p class="money">Quantity:</p></label>
 		<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 		<input class="btn" type="submit" value="Add To Cart" >
@@ -1434,7 +1424,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<input class="color-btn for-color-23" type="radio" id="color-23" name="Food" value="E1" checked>
+						<input class="color-btn for-color-23" type="radio" id="color-23" name="color-btn-23" value="E1" checked>
 						<label class="color-23" for="color-23"><p>A la Carte</p></label> 
 						
 						
@@ -1442,7 +1432,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="back-color rice-1"></div>	
 					<br>
 						
-						<div class="info-wrap inputReformat">
+						<div class="info-wrap">
 						
 						<br>
 						<label for="itemQty"><p class="money">Quantity:</p></label>
@@ -1510,7 +1500,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<input class="color-btn for-color-24" type="radio" id="color-24" name="Food" value="E2" checked>
+						<input class="color-btn for-color-24" type="radio" id="color-24" name="color-btn-24" value="E2" checked>
 						<label class="color-24" for="color-24"><p>A la Carte</p></label> 
 						
 						
@@ -1518,7 +1508,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="back-color egg-1"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1563,7 +1553,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<input class="color-btn for-color-25" type="radio" id="color-25" name="Food" value="E3" checked>
+						<input class="color-btn for-color-25" type="radio" id="color-25" name="color-btn-25" value="E3" checked>
 						<label class="color-25" for="color-25"><p>A la Carte</p></label> 
 						
 						
@@ -1571,7 +1561,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="back-color ham-1"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1617,7 +1607,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<input class="color-btn for-color-26" type="radio" id="color-26" name="Food" value="E4" checked>
+						<input class="color-btn for-color-26" type="radio" id="color-26" name="color-btn-26" value="E4" checked>
 						<label class="color-26" for="color-26"><p>A la Carte</p></label> 
 						
 						
@@ -1625,7 +1615,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="back-color hotdog-1"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1671,7 +1661,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<input class="color-btn for-color-27" type="radio" id="color-27" name="Food" value="E5" checked>
+						<input class="color-btn for-color-27" type="radio" id="color-27" name="color-btn-27" value="E5" checked>
 						<label class="color-27" for="color-27"><p>A la Carte</p></label> 
 						
 						
@@ -1679,7 +1669,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="back-color siomai-1"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1726,7 +1716,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<input class="color-btn for-color-28" type="radio" id="color-28" name="Food" value="E6" checked>
+						<input class="color-btn for-color-28" type="radio" id="color-28" name="color-btn-28" value="E6" checked>
 						<label class="color-28" for="color-28"><p>A la Carte</p></label> 
 						
 						
@@ -1734,7 +1724,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="back-color salad-1"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1787,7 +1777,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-29" type="radio" id="color-29" name="Food" value="D1">
 						<label class="color-29" for="color-29"><p>Small</p></label> 
 						<input class="color-btn for-color-30" type="radio" id="color-30" name="Food" value="D2">
@@ -1798,10 +1787,9 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap lemonade-2"></div>	
 						<div class="back-color lemonade-1"></div>	
 						<div class="back-color lemonade-2"></div>	
-						</div>
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1850,7 +1838,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-31" type="radio" id="color-31" name="Food" value="D3">
 						<label class="color-31" for="color-31"><p>Small</p></label> 
 						<input class="color-btn for-color-32" type="radio" id="color-32" name="Food" value="D4">
@@ -1860,11 +1847,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap bluelemonade-1"></div>
 						<div class="img-wrap bluelemonade-2"></div>	
 						<div class="back-color bluelemonade-1"></div>	
-						<div class="back-color bluelemonade-2"></div>
-						</div>	
+						<div class="back-color bluelemonade-2"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1912,7 +1898,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-33" type="radio" id="color-33" name="Food" value="D5">
 						<label class="color-33" for="color-33"><p>Small</p></label> 
 						<input class="color-btn for-color-34" type="radio" id="color-34" name="Food" value="D6">
@@ -1922,11 +1907,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap iced_tea-1"></div>
 						<div class="img-wrap iced_tea-2"></div>	
 						<div class="back-color iced_tea-1"></div>	
-						<div class="back-color iced_tea-2"></div>
-					</div>
+						<div class="back-color iced_tea-2"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -1975,7 +1959,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-35" type="radio" id="color-35" name="Food" value="D7">
 						<label class="color-35" for="color-35"><p>Small</p></label> 
 						<input class="color-btn for-color-36" type="radio" id="color-36" name="Food" value="D8">
@@ -1985,11 +1968,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap red_iced_tea-1"></div>
 						<div class="img-wrap red_iced_tea-2"></div>	
 						<div class="back-color red_iced_tea-1"></div>	
-						<div class="back-color red_iced_tea-2"></div>
-					</div>
+						<div class="back-color red_iced_tea-2"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -2037,7 +2019,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 							<p class="choose">Choose order option:</p>
 						</div>
 						<div class="clearfix"></div>
-						<div class="buttonAlign">
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
 						<input class="color-btn for-color-37" type="radio" id="color-37" name="Food" value="D9">
 						<label class="color-37" for="color-37"><p>Small</p></label> 
@@ -2048,11 +2029,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap cucumber_iced_tea-1"></div>
 						<div class="img-wrap cucumber_iced_tea-2"></div>	
 						<div class="back-color cucumber_iced_tea-1"></div>	
-						<div class="back-color cucumber_iced_tea-2"></div>
-					</div>
+						<div class="back-color cucumber_iced_tea-2"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -2101,7 +2081,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-39" type="radio" id="color-39" name="Food" value="D11">
 						<label class="color-39" for="color-39"><p>Small</p></label> 
 						<input class="color-btn for-color-40" type="radio" id="color-40" name="Food" value="D12">
@@ -2112,10 +2091,9 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap mango_iced_tea-2"></div>	
 						<div class="back-color mango_iced_tea-1"></div>	
 						<div class="back-color mango_iced_tea-2"></div>	
-						</div>
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -2164,7 +2142,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-41" type="radio" id="color-41" name="Food" value="D13">
 						<label class="color-41" for="color-41"><p>Small</p></label> 
 						<input class="color-btn for-color-42" type="radio" id="color-42" name="Food" value="D14">
@@ -2175,10 +2152,9 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap guyabano_iced_tea-2"></div>	
 						<div class="back-color guyabano_iced_tea-1"></div>	
 						<div class="back-color guyabano_iced_tea-2"></div>	
-						</div>
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -2227,7 +2203,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-43" type="radio" id="color-43" name="Food" value="D15">
 						<label class="color-43" for="color-43"><p>Small</p></label> 
 						<input class="color-btn for-color-44" type="radio" id="color-44" name="Food" value="D16">
@@ -2237,11 +2212,9 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap melon_juice-1"></div>
 						<div class="img-wrap melon_juice-2"></div>	
 						<div class="back-color melon_juice-1"></div>	
-						<div class="back-color melon_juice-2"></div>
-					</div>
-						
+						<div class="back-color melon_juice-2"></div>	
 					<br>
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -2290,7 +2263,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-45" type="radio" id="color-45" name="Food" value="D17">
 						<label class="color-45" for="color-45"><p>Small</p></label> 
 						<input class="color-btn for-color-46" type="radio" id="color-46" name="Food" value="D18">
@@ -2300,11 +2272,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap gulaman-1"></div>
 						<div class="img-wrap gulaman-2"></div>	
 						<div class="back-color gulaman-1"></div>	
-						<div class="back-color gulaman-2"></div>
-					</div>
+						<div class="back-color gulaman-2"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >
@@ -2353,7 +2324,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						</div>
 						<div class="clearfix"></div>
 						<form action="entry.php" class="add-to-cart text-center" method="POST" name="addToBasket">
-						<div class="buttonAlign">
 						<input class="color-btn for-color-47" type="radio" id="color-47" name="Food" value="D19">
 						<label class="color-47" for="color-47"><p>Small</p></label> 
 						<input class="color-btn for-color-48" type="radio" id="color-48" name="Food" value="D20">
@@ -2363,11 +2333,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 						<div class="img-wrap milo-1"></div>
 						<div class="img-wrap milo-2"></div>	
 						<div class="back-color milo-1"></div>	
-						<div class="back-color milo-2"></div>
-					</div>
+						<div class="back-color milo-2"></div>	
 					<br>
 						
-					<div class="info-wrap inputReformat">
+					<div class="info-wrap">
 						<label for="itemQty"><p class="money">Quantity:</p></label>
 								<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 								<input class="btn" type="submit" value="Add To Cart" >

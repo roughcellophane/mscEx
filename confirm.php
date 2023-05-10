@@ -45,5 +45,5 @@
     else {
         echo "<h2>Order failed to be confirmed.</h2>";
     };
-    header("Location:checkout real.php")
+    header("Location: home.php")
     ?>
