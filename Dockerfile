@@ -4,4 +4,4 @@ COPY ;/main/index.php
 
 RUN docker-php-ext-install mysqli
 
-EXPOSE 80
+EXPOSE 8080
