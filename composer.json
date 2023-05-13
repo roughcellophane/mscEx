@@ -76,32 +76,17 @@
           "type": "vcs",
           "url": "git@github.com:UH-StudentServices/student_guide.git"
       },
-      {
-          "type": "vcs",
-          "url": "https://github.com/larowlan/block_access"
-      },
       
       {
         "type": "vcs",
-        "url": "https://github.com/larowlan/block_access"
+        "url": "https://github.com/roughcellophane/mscEx/tree/main/composer-repo"
      },
 
       {
           "type": "composer",
           "url": "https://asset-packagist.org/"
       },
-      {
-          "type": "composer",
-          "url": "https://packages.drupal.org/8"
-      }
-  ],
-  "require": {
-      "composer/installers": "^1.2",
-      "cweagans/composer-patches": "1.7.0",
-      "drupal/core-composer-scaffold": "^8.8",
-      "drupal/core-project-message": "^8.8",
-      "drupal/core-recommended": "^8.8"
-  },
+      
   "conflict": {
       "drupal/drupal": "*"
   },
