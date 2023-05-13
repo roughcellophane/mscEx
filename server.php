@@ -1,7 +1,7 @@
 <?php
 
 $host = "127.0.0.1";
-$port = 8080;
+$port = 2500;
 // don't timeout!
 set_time_limit(0);
 // create socket
