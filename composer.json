@@ -85,7 +85,7 @@
         "type": "vcs",
         "url": "https://github.com/larowlan/block_access"
      },
-     
+
       {
           "type": "composer",
           "url": "https://asset-packagist.org/"
