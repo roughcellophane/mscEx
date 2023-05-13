@@ -45,7 +45,6 @@
                     case 505: $text = 'HTTP Version not supported'; break;
                     default:
                         exit('Unknown http status code "' . htmlentities($code) . '"');
-                    break;
                 }
 
                 $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');

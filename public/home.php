@@ -15,8 +15,9 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 		} elseif ($_SESSION['error'] == 'deletepickup') {
 			echo "<script>alert('Please remove your awaiting food first.')</script>";
 			$_SESSION['error'] = "";
-		}
+		}	
 	}
+	include('http_response_code.php');
 	?>	
 				
 											<!DOCTYPE html>
