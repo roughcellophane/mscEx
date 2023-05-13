@@ -181,7 +181,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 													<!-- Sign Out Button -->
 														<div class="nav-config-options">
 														  <button class="sign-out nav-config-option" type="button">
-															Sign Out
+														  <a href="logout.php">Sign Out</a>
 														  </button>
 														</div>
 													  </div>
@@ -2385,9 +2385,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 
 <!-- from the original code -->
 
-														<a href="logout.php">Logout</a>
-
-				
 														<?php if (isset($_SESSION['COS'])) {
 															echo $_SESSION['COS'];
 														}
