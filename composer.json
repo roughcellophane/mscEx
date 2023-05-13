@@ -1,140 +1,67 @@
 {
-    "name": "mscex/main",
+    "name": "symfony/framework-standard-edition",
+    "license": "MIT",
     "type": "project",
-    "license": "GPL-2.0-or-later",
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "Fernandez Herrera Salupan",
-            "email": "MSE.superuser@gmail.com"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url":  "https://packages.drupal.org/8"
+    "description": "The \"Symfony Standard Edition\" distribution",
+    "autoload": {
+        "psr-4": {
+            "AppBundle\\": "src/AppBundle"
         },
-        {
-            "type": "package",
-            "package": {
-                "name": "desandro/masonry",
-                "version": "3.3.1",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/desandro/masonry/archive/v3.3.1.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "desandro/imagesloaded",
-                "version": "3.1.8",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "enyo/dropzone",
-                "version": "4.2.0",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/enyo/dropzone",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
-        }
-    ],
-    "extra": {
-        "installer-paths": {
-            "libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "modules/contrib/{$name}": [
-                "type:drupal-module"
-            ]
-        }
+        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "tests/" },
+        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
     "require": {
-        "composer/installers": "^1.0.20",
-        "drupal/file_browser": "dev-1.x",
-        "drupal/entity_embed": "dev-1.x",
-        "drupal/entity_browser": "dev-1.x",
-        "drupal/dropzonejs": "dev-1.x",
-        "enyo/dropzone": "4.2.0",
-        "desandro/masonry": "3.3.1",
-        "desandro/imagesloaded": "3.1.8"
+        "php": ">=5.5.9",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/orm": "^2.5",
+        "incenteev/composer-parameter-handler": "^2.0",
+        "sensio/framework-extra-bundle": "^5.0.0",
+        "symfony/monolog-bundle": "^3.1.0",
+        "symfony/polyfill-apcu": "^1.0",
+        "symfony/swiftmailer-bundle": "^2.6.4",
+        "symfony/symfony": "3.4.*",
+        "twig/twig": "^1.0||^2.0"
     },
-      {
-          "type": "vcs",
-          "url": "git@github.com:UH-StudentServices/student_guide.git"
-      },
-      
-      {
-        "type": "vcs",
-        "url": "https://github.com/roughcellophane/mscEx/tree/main/composer-repo"
-     },
-
-      {
-          "type": "composer",
-          "url": "https://asset-packagist.org/"
-      },
-      
-  "conflict": {
-      "drupal/drupal": "*"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-      "sort-packages": true
-  },
-  "extra": {
-      "drupal-scaffold": {
-          "locations": {
-              "web-root": "web/"
-          }
-      },
-      "installer-paths": {
-          "web/core": [
-              "type:drupal-core"
-          ],
-          "web/libraries/{$name}": [
-              "type:drupal-library"
-          ],
-          "web/modules/contrib/{$name}": [
-              "type:drupal-module"
-          ],
-          "web/profiles/contrib/{$name}": [
-              "type:drupal-profile"
-          ],
-          "web/themes/contrib/{$name}": [
-              "type:drupal-theme"
-          ],
-          "drush/Commands/contrib/{$name}": [
-              "type:drupal-drush"
-          ],
-          "web/modules/custom/{$name}": [
-              "type:drupal-custom-module"
-          ],
-          "web/themes/custom/{$name}": [
-              "type:drupal-custom-theme"
-          ]
-      },
-      "enable-patching": true,
-      "composer-exit-on-patch-failure": true,
-      "drupal-core-project-message": {
-          "include-keys": [
-              "homepage",
-              "support"
-          ]
-
-      }
-  }
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.0"
+    },
+    "scripts": {
+        "symfony-scripts": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+        ],
+        "post-install-cmd": [
+            "@symfony-scripts"
+        ],
+        "post-update-cmd": [
+            "@symfony-scripts"
+        ]
+    },
+    "config": {
+        "platform": {
+            "php": "5.6"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+        "symfony-tests-dir": "tests",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
+        "branch-alias": {
+            "dev-master": "3.4-dev"
+        }
+    }
 }
