@@ -58,7 +58,7 @@
                 $code = (isset($GLOBALS['http_response_code']) ? $GLOBALS['http_response_code'] : 200);
 
             }
-
+            
             return $code;
 
         }

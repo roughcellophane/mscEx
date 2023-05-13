@@ -17,7 +17,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 			$_SESSION['error'] = "";
 		}	
 	}
-	include('http_response_code.php');
+include('http_response_code.php');
 	?>	
 				
 											<!DOCTYPE html>
