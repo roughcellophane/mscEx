@@ -1,10 +1,12 @@
 {
-    "name": "mortenson/example",
+    "name": "mscex/main",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "authors": [
         {
-            "name": "Samuel Mortenson",
-            "email": "samuel.mortenson@acquia.com"
+            "name": "Fernandez Herrera Salupan",
+            "email": "MSE.superuser@gmail.com"
         }
     ],
     "repositories": [
@@ -69,5 +71,85 @@
         "enyo/dropzone": "4.2.0",
         "desandro/masonry": "3.3.1",
         "desandro/imagesloaded": "3.1.8"
-    }
+    },
+      {
+          "type": "vcs",
+          "url": "git@github.com:UH-StudentServices/student_guide.git"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/larowlan/block_access"
+      },
+      
+      {
+        "type": "vcs",
+        "url": "https://github.com/larowlan/block_access"
+     },
+     
+      {
+          "type": "composer",
+          "url": "https://asset-packagist.org/"
+      },
+      {
+          "type": "composer",
+          "url": "https://packages.drupal.org/8"
+      }
+  ],
+  "require": {
+      "composer/installers": "^1.2",
+      "cweagans/composer-patches": "1.7.0",
+      "drupal/core-composer-scaffold": "^8.8",
+      "drupal/core-project-message": "^8.8",
+      "drupal/core-recommended": "^8.8"
+  },
+  "conflict": {
+      "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+      "sort-packages": true
+  },
+  "extra": {
+      "drupal-scaffold": {
+          "locations": {
+              "web-root": "web/"
+          }
+      },
+      "installer-paths": {
+          "web/core": [
+              "type:drupal-core"
+          ],
+          "web/libraries/{$name}": [
+              "type:drupal-library"
+          ],
+          "web/modules/contrib/{$name}": [
+              "type:drupal-module"
+          ],
+          "web/profiles/contrib/{$name}": [
+              "type:drupal-profile"
+          ],
+          "web/themes/contrib/{$name}": [
+              "type:drupal-theme"
+          ],
+          "drush/Commands/contrib/{$name}": [
+              "type:drupal-drush"
+          ],
+          "web/modules/custom/{$name}": [
+              "type:drupal-custom-module"
+          ],
+          "web/themes/custom/{$name}": [
+              "type:drupal-custom-theme"
+          ]
+      },
+      "enable-patching": true,
+      "composer-exit-on-patch-failure": true,
+      "drupal-core-project-message": {
+          "include-keys": [
+              "homepage",
+              "support"
+          ]
+
+      }
+  }
 }
