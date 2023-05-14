@@ -699,7 +699,7 @@ include('http_response_code.php');
 						<div class="back-color fried_chicken-2"></div>	
 						</div>
 					<br>
-					<div class="info-wrap">
+					<div class="info-wrap inputReformat">
 					<label for="itemQty"><p class="money">Quantity:</p></label>
 					<input type="number" name="quan" class="input input--select" max="9" min="1" value="1">
 					<input class="btn" type="submit" value="Add To Cart" >
