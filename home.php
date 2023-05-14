@@ -157,10 +157,10 @@ include('http_response_code.php');
 					
 													<!-- display Item tracker -->		
 														<div class="nav-section">
-														  <h2 class="nav-section-label">Order Tracker: <span class="Order ID"> Order Number </span></h2>               
+														  <h2 class="nav-section-label">Order Tracker: <span class="Order ID"><?php echo $data['UserID']; ?> </span></h2>               
 														  <div class="nav-section-content">
 															<div class="nav-tracker">
-															  <h3 class="nav-tracker-label">Insert Step: <span class="highlight"> Preparing</span></h3>
+															  <h3 class="nav-tracker-label">Current Status: <span class="highlight"><?php echo $data['CurrentStatus']; ?> </span></h3>
 															  <div class="nav-tracker-progress">
 																<div class="nav-tracker-progress-bar"></div>
 															  </div>
@@ -2424,10 +2424,7 @@ include('http_response_code.php');
 																						if (mysqli_num_rows($result) > 0) {
 																							while ($data = mysqli_fetch_assoc($result)) {
 																								?>
-																																												 <tr>
-																																												   <td><?php echo $data['UserID']; ?> </td>
-																																												   <td><?php echo $data['CurrentStatus']; ?> </td>
-																																													</tr>
+
 																																								  				<?php
 																							}
 																						} ?>
