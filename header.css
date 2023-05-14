@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Karla);
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Heebo:wght@700&family=Signika+Negative:wght@700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.icon{
+	width: auto;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	border: hidden;
+}
+
+.icon_pic{
+	width: 35px;
+	height: 35px;
+	object-fit: cover;
+
+}
+
+.logo {
+	margin: 0;
+	font-weight: 700;
+	font-size: 2.75em;
+	color: #0a0705;
+	font-family: 'Heebo', sans-serif;
+	display: flex;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+
+.yes a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	color: #272523;
+	font-size: 2.5em;
+}
+
+.yes a:hover {
+	color: #5e492f;
+}
+
+
+.divider {
+	height: 25px;
+	width: 100%;
+	background-color: #272523;
+	border-radius: 0px !important;
+	display: flex;
+}
+
+
+.hamburger {
+	font-size: 2.5em;	
+	color: #000000;
+}
+
+.header {
+	font-size: 10px;
+	height: 60px !important;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid rgb(212,146,39);
+	background-color: #fda003;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(212,146,39,0.75);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(212,146,39,0.75);
+	box-shadow: 0px 0px 6px 0px rgba(212,146,39,0.75);
+	border-radius: 0px !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 200px) {
+	.header {
+		padding: 20px 15px;
+	}
+}
+
+@media (min-width: 900px) {
+	.header {
+		padding: 20px 30px;
+	}
+}

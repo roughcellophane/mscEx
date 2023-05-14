@@ -1,0 +1,256 @@
+:root {
+  --font-color: 253, 248, 241;
+  --font-2: 41, 34, 22;
+--font-3: 51, 25, 9;
+  --theme-background: 212, 146, 39;
+  --theme-primary:#EAB676;  
+  --theme-dark: 237, 158, 31; 
+  --theme-dark-hover: 129, 94, 49;
+  --theme-red: 227, 24, 55;
+}
+
+h2, h3, input, select, button, span, p {
+  color: rgb(var(--font-color));
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+
+
+#nav > .nav-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  width: 3.5rem;
+  height: 2.5rem;
+}
+
+.nav-title {
+  color: rgb(var(--font-color));
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0px;
+  background-color: #27231d;
+  border: none;
+  outline: none;
+  padding: 18px;
+}
+
+#nav > .nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#nav > .nav-content > .nav-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+#nav > .nav-content > .nav-header > .nav-greeting {
+  flex-grow: 1;
+  font-size: 1.25rem;
+  color: rgb(var(--font-color));  
+  cursor: pointer;
+}
+
+#nav > .nav-content > .nav-header > button {
+  width: 3.5rem;
+  height: 2.5rem;
+  background-color: rgba(255 255 255 / 8%);
+  padding: 1rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#nav > .nav-content > .nav-header > button:hover,
+#nav > .nav-content > .nav-header > button:focus {
+  background-color: rgba(255 255 255 / 15%);
+color: rgb(var(--font-3));
+}
+
+#nav > .nav-content > .nav-header > button > i {
+  color: rgb(var(--font-color));
+  font-size: 1.25rem;
+}
+
+#nav > .nav-content > .nav-section > .nav-section-label {
+  color: rgb(var(--font-color));
+  font-weight: 700;
+}
+
+.nav-section-label {
+    font-size: .95rem;
+    margin-top: 13px;
+}
+
+
+#nav > .nav-content > .nav-section > .nav-section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav > .nav-content .nav-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.Order ID {
+    font-size: 0.4rem;
+    font-weight: 400;
+}
+
+#nav > .nav-content .nav-options > .nav-option {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: rgb(var(--theme-dark));
+  border-radius: 0.25rem;
+  outline: none;
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+}
+
+#nav > .nav-content .nav-options > .nav-option:hover,
+#nav > .nav-content .nav-options > .nav-option:focus {
+  background-color: rgb(var(--theme-dark-hover));
+color: rgb(var(--font-3));
+}
+
+#nav > .nav-content .nav-options > .nav-option > i {
+  color: rgb(var(--font-2));
+  font-size: 1.4rem;
+}
+
+#nav > .nav-content .nav-options > .nav-option > span {
+  color: rgb(var(--font-2));
+  font-size: 0.6rem;
+}
+
+#nav > .nav-content .nav-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(var(--theme-dark));
+  padding: 0.75rem;
+  padding-bottom: 0.8rem;
+  border-radius: 0.25rem;
+}
+
+#nav > .nav-content .nav-tracker > .nav-tracker-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  gap: 1rem;  
+color: rgb(var(--font-2));
+}
+
+#nav > .nav-content .nav-track {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(var(--theme-dark));
+  padding: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.25rem;
+}
+
+#nav > .nav-content .nav-track > .nav-track-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  gap: 1rem; 
+  color: rgb(var(--font-2));	
+}
+
+ #nav > .nav-content .nav-track > .nav-track-label > .process {
+color: rgb(var(--font-3));
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+#nav > .nav-content .nav-tracker > .nav-tracker-label > .highlight { 
+color: rgb(var(--font-3));
+font-size: .75rem;
+  font-weight: 500;
+}
+
+#nav > .nav-content .nav-tracker > .nav-tracker-progress {
+  height: 1.25rem;
+  width: 100%;
+  background-color: rgba(255 255 255 / 25%);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+#nav > .nav-content .nav-tracker > .nav-tracker-progress > .nav-tracker-progress-bar {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(var(--theme-red));
+  border-radius: 2rem;
+}
+
+#nav > .nav-content .nav-track > .more {
+  font-size: 13px;
+  font-weight: 700;
+font-family: "Rubik", sans-serif;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more a:hover{
+ color: rgb(var(--font-2));
+}  
+
+#nav > .nav-content .nav-config-options {
+  width: calc(100% - 1.9rem);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 1rem;
+}
+
+#nav > .nav-content .nav-config-options > .nav-config-option {
+  height: 2rem;
+  width: 2.6rem;
+  background-color: rgb(var(--theme-dark));  
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  color: rgb(var(--font-color));
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: -10, 20, absolute;
+}
+
+#nav > .nav-content .nav-config-options > .nav-config-option.sign-out {
+
+padding: 0 6.8rem;
+  width: auto; 
+justify-content: center;
+}
+
+#nav > .nav-content .nav-config-options > .nav-config-option:hover,
+#nav > .nav-content .nav-config-options > .nav-config-option:focus {
+  background-color: rgb(var(--theme-dark-hover));  
+}
+
+#nav > .nav-content .nav-config-options > .nav-config-option > i {
+  color: rgb(var(--font-color));
+  font-size: 1rem;
+}
+
