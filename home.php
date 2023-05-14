@@ -140,7 +140,7 @@ include('http_response_code.php');
 													<!-- main nav buttons -->	
 														<div class="nav-section">
 														  <div class="nav-options">
-															<a class="nav-option" href="#">
+															<a class="nav-option" href="checkout real.php">
 															  <i class="fa-solid fa-cart-shopping"></i>
 															  <span>Checkout</span>
 															</a>
