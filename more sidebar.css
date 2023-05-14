@@ -159,9 +159,9 @@ color: rgb(var(--font-2));
   flex-direction: column;
   gap: 0.5rem;
   background-color: rgb(var(--theme-dark));
-  padding: 0.75rem;
-  padding-bottom: 0.4rem;
+  padding: 0.55rem;
   border-radius: 0.25rem;
+  text-align: center;
 }
 
 #nav > .nav-content .nav-track > .nav-track-label {
