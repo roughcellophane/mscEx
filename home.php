@@ -157,15 +157,12 @@ include('http_response_code.php');
 					
 													<!-- display Item tracker -->		
 														<div class="nav-section">
-														  <h2 class="nav-section-label">Order Tracker: <span class="Order ID"><?php echo $data['UserID']; ?> </span></h2>               
+														  <h2 class="nav-section-label">Order Tracker: <span class="Order ID"> <?php echo $data['UserID']; ?> </span></h2>               
 														  <div class="nav-section-content">
 															<div class="nav-tracker">
-															  <h3 class="nav-tracker-label">Current Status: <span class="highlight"><?php echo $data['CurrentStatus']; ?> </span></h3>
-															  <div class="nav-tracker-progress">
-																<div class="nav-tracker-progress-bar">
-
-																
-
+															  <h3 class="nav-tracker-label">Current Status: <span class="highlight"> <?php echo $data['CurrentStatus']; ?> </span></h3>
+															  <div class="nav-tracker-progress" data-progress-percent= "<?php echo $find['TimeLeft']?>">
+																<div class="nav-tracker-progress-bar" >
 																</div>
 															  </div>
 															</div>
@@ -2445,6 +2442,7 @@ include('http_response_code.php');
 ?>
 <head>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://kit.fontawesome.com/1ee8f271b9.js'></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
@@ -2452,6 +2450,7 @@ include('http_response_code.php');
 	<script src="dashboard.js"></script>
 	<script src="sidebar.js"></script>	
 	<script src="scroll.js"></script>
+	<script src="progress_bar.js"></script>
 	<script defer src="popup.js"></script>
 	<script src="https://kit.fontawesome.com/133ee41db0.js" crossorigin="anonymous"></script>
 </head>
