@@ -162,7 +162,11 @@ include('http_response_code.php');
 															<div class="nav-tracker">
 															  <h3 class="nav-tracker-label">Current Status: <span class="highlight"><?php echo $data['CurrentStatus']; ?> </span></h3>
 															  <div class="nav-tracker-progress">
-																<div class="nav-tracker-progress-bar"></div>
+																<div class="nav-tracker-progress-bar">
+
+																
+
+																</div>
 															  </div>
 															</div>
 														  </div>
