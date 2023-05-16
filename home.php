@@ -3,7 +3,7 @@
 session_start();
 include('db_conn.php');
 $id = $_SESSION['UserID'];
-$query = "SELECT * FROM Orders WHERE UserID = '$id'"; 
+$query = "SELECT * FROM Orders"; 
 $result = mysqli_query($conn, $query);
 while($data = mysqli_fetch_assoc($result)){
 if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
@@ -23,490 +23,490 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 		}	
 	}
 	?>	
-											
-											<!DOCTYPE html>
-											<head>
-												<title>MakSci Express</title>
-												<meta charset="UTF-8">
-												<meta name="viewport" content="width=device-width, initial-scale=1">
-												<meta http-equiv="X-UA-Compatible" content="ie=edge">
-												<link rel = "icon" href = "https://media.discordapp.net/attachments/1021975352945414186/1085188387692089474/MakSci_Express_Logo_Version_14_-_Symbol_1.1.png" type = "image/x-icon">
-												<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
-												<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-												<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-												<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,700" >
-												<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300'>
-												<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-												<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" >
-												<link rel="stylesheet" href="Menu Items.css">
-												<link rel="stylesheet" href="Main Menu.css">
-												<link rel="stylesheet" href="mySidebar.css">
-												<link rel="stylesheet" href="dashboard.css">
-												<link rel="stylesheet" href="foodbutton.css">
-												<link rel="stylesheet" href="Checkout.css">
-												<link rel="stylesheet" href="header.css">
-												<link rel="stylesheet" href="more sidebar.css">
-												<link rel="stylesheet" href="item details pane.css">
-												<link rel="stylesheet" href="popup.css">
-												<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" crossorigin="anonymous">
 
-											</head>
-											<body style="color: black !important;">
-											<!-- header-->
-											<div class="divider"></div>
-											<div class="header">
-												<div><a class="hamburger" href="#" onclick="openNav_sidebar()"> <i class="fa fas fa-solid fa-bars"></i></a></div>
-												<div class="icon logo">
-													<img class="icon_pic"src="https://cdn.discordapp.com/attachments/1021975352945414186/1103678456866287746/MakSci_Express_Logo.png">AKSCIEXPRESS
-												</div>
-											  <div class="yes">
-												  <div><a href="checkout real.php" class="checkout" onclick="openNav_checkout()"><i class="fa fas fa-solid fa-cart-shopping"></i></a></div>
-											  </div>
-											</div>
-											<div class="grid-container">
-											<!-- dashboard-->
-											<div class="slowpan">
-												<section id="imgages-carousel">
-													 <div class="img-carousel-container">
-															<div class="img-carousel">
-																<div>
-																<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646045524099/1.png" draggable=false>
-																	<p>1/6</p>
-																</div>
-																<div>
-																<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646347522152/2.png" draggable=false> 
-																	<p>2/6</p>
-																</div>
-																<div>
-																<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646687256616/3.png" draggable=false> 
-																	<p>3/6</p>
-																</div>
-																<div>
-																<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597058920528/4.png" draggable=false> 
-																	<p>4/6</p>
-																</div>
-																<div>
-																<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597763563591/6.png" draggable=false> 
-																	<p>5/6</p>
-																</div>
-																<div>
-																<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665598115876864/7.png" draggable=false>
-																	<p>6/6</p>
-																</div>
-															</div>
-															<button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
-															<button id="next"><i class="fas fa-chevron-right fa-2x"></i></button> 
-														</div>        
-												</section> 
+<!DOCTYPE html>
+<head>
+	<title>MakSci Express</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel = "icon" href = "https://media.discordapp.net/attachments/1021975352945414186/1085188387692089474/MakSci_Express_Logo_Version_14_-_Symbol_1.1.png" type = "image/x-icon">
+	<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,700" >
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" >
+	<link rel="stylesheet" href="Menu Items.css">
+	<link rel="stylesheet" href="Main Menu.css">
+	<link rel="stylesheet" href="mySidebar.css">
+	<link rel="stylesheet" href="dashboard.css">
+	<link rel="stylesheet" href="foodbutton.css">
+	<link rel="stylesheet" href="Checkout.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="more sidebar.css">
+	<link rel="stylesheet" href="item details pane.css">
+	<link rel="stylesheet" href="popup.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+</head>
+<body style="color: black !important;">
+<!-- header-->
+<div class="divider"></div>
+<div class="header">
+	<div><a class="hamburger" href="#" onclick="openNav_sidebar()"> <i class="fa fas fa-solid fa-bars"></i></a></div>
+	<div class="icon logo">
+		<img class="icon_pic"src="https://cdn.discordapp.com/attachments/1021975352945414186/1103678456866287746/MakSci_Express_Logo.png">AKSCIEXPRESS
+	</div>
+	<div class="yes">
+		<div><a href="checkout real.php" class="checkout" onclick="openNav_checkout()"><i class="fa fas fa-solid fa-cart-shopping"></i></a></div>
+	</div>
+</div>
+<div class="grid-container">
+<!-- dashboard-->
+<div class="slowpan">
+	<section id="imgages-carousel">
+			<div class="img-carousel-container">
+				<div class="img-carousel">
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646045524099/1.png" draggable=false>
+						<p>1/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646347522152/2.png" draggable=false> 
+						<p>2/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646687256616/3.png" draggable=false> 
+						<p>3/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597058920528/4.png" draggable=false> 
+						<p>4/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597763563591/6.png" draggable=false> 
+						<p>5/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665598115876864/7.png" draggable=false>
+						<p>6/6</p>
+					</div>
+				</div>
+				<button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+				<button id="next"><i class="fas fa-chevron-right fa-2x"></i></button> 
+			</div>        
+	</section> 
 
 
 
-											<!-- quick menu -->
-											  <footer class="grid-item footer">
-												<div class="sign"> <h2>Quick Menu</h2> </div>
-												<div class="quick_menu">
-														<button class="mate" onclick="tosetMeals()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170350628955/setmeals.png"></button>
-														<button class="mate" onclick="toAlACarte()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771169788608604/download.png"></button>
-												</div>
-												<div class="quick_menu">
-														<button class="mate" onclick="toExtras()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170078007346/extras.png" ></button >
-														<button class="mate" onclick="toDrinks()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170635857981/drinks.png"></button >
-												</div>
-											  </footer>
-  
-											</div>
-											</div>
-											
+<!-- quick menu -->
+	<footer class="grid-item footer">
+	<div class="sign"> <h2>Quick Menu</h2> </div>
+	<div class="quick_menu">
+			<button class="mate" onclick="tosetMeals()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170350628955/setmeals.png"></button>
+			<button class="mate" onclick="toAlACarte()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771169788608604/download.png"></button>
+	</div>
+	<div class="quick_menu">
+			<button class="mate" onclick="toExtras()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170078007346/extras.png" ></button >
+			<button class="mate" onclick="toDrinks()"><img class="selection" src="https://cdn.discordapp.com/attachments/1021975352945414186/1101771170635857981/drinks.png"></button >
+	</div>
+	</footer>
 
-											<div id="checkout" class="overlay">
-											  <a href="checkout.html" class="closebabe" onclick="closeNav_checkout()">&times;</a>
-											</div>
+</div>
+</div>
 
-											<div class="grid-yes">
-											  <main class="grid-item main">
-												<div class="container" id="SetMeals">
-	
-												  <div class="hs__wrapper">
-													<div class="hs__header" >
-													  <h2 class="hs__headline">Set Meals</h2>
-													  <div class="hs__arrows">
-														<a class="arrow disabled arrow-prev"></a>
-														<a class="arrow arrow-next"></a></div>
-													</div>
-		
-													<ul class="hs">
-				
-														  <li class="hs__item"> 		  
-															<div type="button" data-modal-target="#modal" class="hs__item__image__wrapper">
-																<div class="detailspane setMealColor">
-																		<div class="nameDetails">TONKATSU</div>
-																		<div class="priceDetails">65 PESOS</div>
-																</div>
-																<a class="hs__item__image" href="#" draggable=false>
-																	<img class="menu" src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" alt=""/>
-																</a>
-															</div>
 
-													  <li class="hs__item"> 
-														<div type="button" data-modal-target="#chicken" class="hs__item__image__wrapper" >
-															<div class="detailspane setMealColor">
-																	<div class="nameDetails">FRIED CHICKEN</div>
-																	<div class="priceDetails">70 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg" alt=""/>		
-																</a>
-														</div>
-			
-													  <li class="hs__item"> 
-														<div type="button" data-modal-target="#dinuguan" class="hs__item__image__wrapper">
-															<div class="detailspane setMealColor">
-																	<div class="nameDetails">DINUGUAN</div>
-																	<div class="priceDetails">75 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://i.ytimg.com/vi/U8oC6nqzhBY/maxresdefault.jpg" alt=""/>	
-																</a>
-														</div>
-			
-													  <li class="hs__item"> 
-														<div type="button" data-modal-target="#bopis" class="hs__item__image__wrapper" >
-															<div class="detailspane setMealColor">
-																	<div class="nameDetails">BOPIS</div>
-																	<div class="priceDetails">65 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2010/11/bopis-recipe.jpg" alt=""/>	
-															</a>
-														</div>
-			
-			
-													  <li class="hs__item"> 
-														<div type="button" data-modal-target="#adobong_pusit" class="hs__item__image__wrapper" >
-															<div class="detailspane setMealColor">
-																	<div class="nameDetails">ADOBONG PUSIT</div>
-																	<div class="priceDetails">65 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://yummykitchentv.com/wp-content/uploads/2021/04/adobong-pusit-recipe-01-1024x816.jpg" alt=""/>	
-															</a>
-														</div>
-			
-		
-														<li class="hs__item"> 
-														<div type="button" data-modal-target="#sinigang_baboy" class="hs__item__image__wrapper" >
-															<div class="detailspane setMealColor">
-																	<div class="nameDetails">SINIGANG NA BABOY</div>
-																	<div class="priceDetails">70 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.pinoyrecipe.net/wp-content/uploads/2022/09/Sinigang-na-Baboy-sa-Batuan-Recipe-1200x675.jpg" alt=""/>	
-															</a>
-														</div>
-			
-			
-													  <li class="hs__item"> 
-													  <div type="button" data-modal-target="#sisig" class="hs__item__image__wrapper" >
-															<div class="detailspane setMealColor">
-																	<div class="nameDetails">SISIG</div>
-																	<div class="priceDetails">65 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-								f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/sisig-kapampangan-1.jpg" alt=""/>	
-															</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" data-modal-target="#bicol_express" class="hs__item__image__wrapper" >
-																  <div class="detailspane setMealColor">
-																	<div class="nameDetails">BICOL EXPRESS</div>
-																	<div class="priceDetails">70 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://i0.wp.com/whattoeatph.com/wp-content/uploads/2022/03/DSC_9120.jpg?fit=720%2C576&ssl=1" alt=""/>	
-															</a>
-														</div>
-													</ul>
-												  </div>
-											<br id="AlACarte">	  
-	  
-												  <div class="hs__wrapper">
-													<div class="hs__header">
-													  <h2 class="hs__headline">A la carte</h2>
-													  <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
-													</div>
-		
-													<ul class="hs">
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#spaghetti">
-															<div class="detailspane alACarteColor" >
-																	<div class="nameDetails">SPAGHETTI</div>
-																	<div class="priceDetails">25 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/mushroom-spaghetti-recipe.jpg" alt=""/>	
-															</a>
-														</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#carbonara">
-															<div class="detailspane alACarteColor">
-																	<div class="nameDetails">CARBONARA</div>
-																	<div class="priceDetails">25 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.cookingclassy.com/wp-content/uploads/2020/10/spaghetti-carbonara-01.jpg" alt=""/>	
-															</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#baked_mac">
-															<div class="detailspane alACarteColor">
-																	<div class="nameDetails">BAKED MAC</div>
-																	<div class="priceDetails">25 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://images.summitmedia-digital.com/yummyph/images/2020/09/04/bakedmac640.jpg" alt=""/>	
-															</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#eggplant_omelette">
-															<div class="detailspane alACarteColor">
-																	<div class="nameDetails">EGGPLANT OMELETTE</div>
-																	<div class="priceDetails">25 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/mela-1200x675.jpg" alt=""/>	
-														</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#ginisang_upo">
-															<div class="detailspane alACarteColor">
-																	<div class="nameDetails">GINISANG UPO</div>
-																	<div class="priceDetails">55 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://momfoodblog.com/wp-content/uploads/2021/03/Ginisang-Upo-with-Pork-MomFoodBlog2.jpg" alt=""/>	
-															</a>
-														</div>
+<div id="checkout" class="overlay">
+	<a href="checkout.html" class="closebabe" onclick="closeNav_checkout()">&times;</a>
+</div>
 
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#ginisang_monggo">
-															<div class="detailspane alACarteColor">
-																	<div class="nameDetails">GINSANG MONGGO</div>
-																	<div class="priceDetails">30 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://speedyrecipe.com/wp-content/uploads/2018/04/Ginisang-Munggo.jpg" alt=""/>	
-															</a>
-														</div>
-		   
-													</ul>
-												  </div>
-											<br id="Extras">
-	  
-												  <div class="hs__wrapper">
-													<div class="hs__header">
-													  <h2 class="hs__headline">Extras</h2>
-													  <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
-													</div>
-		
-													<ul class="hs">
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#rice">
-															<div class="detailspane extrasColor">
-																	<div class="nameDetails">RICE</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://cdn.shopify.com/s/files/1/0406/5728/9378/products/Add-onPlainRice_530x@2x.jpg?v=1595751788" alt=""/>	
-															</a>
-													  </div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#egg">
-															<div class="detailspane extrasColor">
-																	<div class="nameDetails">EGG</div>
-																	<div class="priceDetails">15 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.sophisticatedgourmet.com/wp-content/uploads/2021/01/how-to-fry-an-egg-recipe.jpg" alt=""/>	
-															</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#ham">
-															<div class="detailspane extrasColor">
-																	<div class="nameDetails">HAM</div>
-																	<div class="priceDetails">20 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.everydayfamilycooking.com/wp-content/uploads/2019/12/air-fried-ham-slices.jpg" alt=""/>	
-															</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#hotdog">
-															<div class="detailspane extrasColor">
-																	<div class="nameDetails">HOTDOG</div>
-																	<div class="priceDetails">20 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://cdn.shopify.com/s/files/1/0487/5167/3505/products/BESTDOG-500g-3_360x.jpg?v=1633066669" alt=""/>	
-															</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#siomai">
-															<div class="detailspane extrasColor">
-																	<div class="nameDetails">SIOMAI</div>
-																	<div class="priceDetails">5 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2020/01/pork-siomai-recipe.jpg" alt=""/>	
-															</a>
-														</div>
+<div class="grid-yes">
+	<main class="grid-item main">
+	<div class="container" id="SetMeals">
 
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#salad">
-															<div class="detailspane extrasColor">
-																	<div class="nameDetails">SALAD</div>
-																	<div class="priceDetails">25 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad.jpg" alt=""/>	
-															</a>
-														</div>
+		<div class="hs__wrapper">
+		<div class="hs__header" >
+			<h2 class="hs__headline">Set Meals</h2>
+			<div class="hs__arrows">
+			<a class="arrow disabled arrow-prev"></a>
+			<a class="arrow arrow-next"></a></div>
+		</div>
 
-													</ul>
-												  </div>
-											<br id="Drinks">
+		<ul class="hs">
 
-												  <div class="hs__wrapper">
-													<div class="hs__header">
-													  <h2 class="hs__headline">Drinks and Beverages</h2>
-													  <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
-													</div>
-													<ul class="hs">
-		
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#lemonade">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">LEMONADE</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.texanerin.com/content/uploads/2014/08/honey-lemonade-2-650x975.jpg" alt=""/>
-															</a>
-														</div>
-		
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#bluelemonade">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">BLUE LEMONADE</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://i0.wp.com/charlotteshares.blog/wp-content/uploads/2022/05/img_4254_jpg.jpg?resize=768%2C1024&ssl=1" alt=""/>
-															</a>
-														</div>
+				<li class="hs__item"> 		  
+				<div type="button" data-modal-target="#modal" class="hs__item__image__wrapper">
+					<div class="detailspane setMealColor">
+							<div class="nameDetails">TONKATSU</div>
+							<div class="priceDetails">65 PESOS</div>
+					</div>
+					<a class="hs__item__image" href="#" draggable=false>
+						<img class="menu" src="https://cdn.discordapp.com/attachments/795464336713580585/1091008874309488711/tonkatsu.jpg" alt=""/>
+					</a>
+				</div>
 
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#iced_tea">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">ICED TEA</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.acouplecooks.com/wp-content/uploads/2020/07/Iced-Tea-001.jpg" alt=""/>	
-															</a>
-														</div>
+			<li class="hs__item"> 
+			<div type="button" data-modal-target="#chicken" class="hs__item__image__wrapper" >
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">FRIED CHICKEN</div>
+						<div class="priceDetails">70 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://recipe30.com/wp-content/uploads/2020/05/Fried-chicken.jpg" alt=""/>		
+					</a>
+			</div>
 
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#red_iced_tea">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">RED ICED TEA</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://i.pinimg.com/564x/ae/41/60/ae41604e8ee060a9a1d1066954670b04.jpg" alt=""/>	
-															</a>
-														</div>
+			<li class="hs__item"> 
+			<div type="button" data-modal-target="#dinuguan" class="hs__item__image__wrapper">
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">DINUGUAN</div>
+						<div class="priceDetails">75 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i.ytimg.com/vi/U8oC6nqzhBY/maxresdefault.jpg" alt=""/>	
+					</a>
+			</div>
 
-		
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#cucumber_iced_tea">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">CUCUMBER ICED TEA</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.babaganosh.org/wp-content/uploads/2022/07/cucumber-lemonade-11.jpg.webp" alt=""/>	
-															</a>
-														</div>
+			<li class="hs__item"> 
+			<div type="button" data-modal-target="#bopis" class="hs__item__image__wrapper" >
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">BOPIS</div>
+						<div class="priceDetails">65 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2010/11/bopis-recipe.jpg" alt=""/>	
+				</a>
+			</div>
 
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#mango_iced_tea">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">MANGO ICED TEA</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.whiskaffair.com/wp-content/uploads/2019/03/Mango-Iced-Tea-2-3.jpg" alt=""/>	
-															</a>
-														</div>
 
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#guyabano_iced_tea">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">GUYABANO ICED TEA</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://simplybakings.com/wp-content/uploads/2020/02/Gayubano-Smoothie-13.jpg" alt=""/>	
-															</a>
-														</div>
-		
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#melon_juice">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">MELON JUICE</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kOC6NsRK1YhkS-x4qj6iPGBIIo7UNS7u3fEHdGRzeu3vjjMjZOybf94K-8mI-8ZRGfU&usqp=CAU" alt=""/>	
-															</a>
-														</div>
+			<li class="hs__item"> 
+			<div type="button" data-modal-target="#adobong_pusit" class="hs__item__image__wrapper" >
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">ADOBONG PUSIT</div>
+						<div class="priceDetails">65 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://yummykitchentv.com/wp-content/uploads/2021/04/adobong-pusit-recipe-01-1024x816.jpg" alt=""/>	
+				</a>
+			</div>
 
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#gulaman">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">GULAMAN</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://i.pinimg.com/736x/a4/c8/a6/a4c8a62696ebd53b43458c8cadd9b25c.jpg" alt=""/>	
-															</a>
-														</div>
-			
-													  <li class="hs__item"> 
-													  <div type="button" class="hs__item__image__wrapper" data-modal-target="#milo">
-															<div class="detailspane drinkColor">
-																	<div class="nameDetails">MILO</div>
-																	<div class="priceDetails">10 PESOS</div>
-															</div>
-															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://recipes-by-reeshu.s3.ap-south-1.amazonaws.com/recipes/ice-milo-dinosaur/1.jpg" alt=""/>	
-															</a>
-														</div>
-													</ul>
-												  </div>
-												</div>
-												</main>
-											</div>
+
+			<li class="hs__item"> 
+			<div type="button" data-modal-target="#sinigang_baboy" class="hs__item__image__wrapper" >
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">SINIGANG NA BABOY</div>
+						<div class="priceDetails">70 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.pinoyrecipe.net/wp-content/uploads/2022/09/Sinigang-na-Baboy-sa-Batuan-Recipe-1200x675.jpg" alt=""/>	
+				</a>
+			</div>
+
+
+			<li class="hs__item"> 
+			<div type="button" data-modal-target="#sisig" class="hs__item__image__wrapper" >
+				<div class="detailspane setMealColor">
+						<div class="nameDetails">SISIG</div>
+						<div class="priceDetails">65 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/sisig-kapampangan-1.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" data-modal-target="#bicol_express" class="hs__item__image__wrapper" >
+						<div class="detailspane setMealColor">
+						<div class="nameDetails">BICOL EXPRESS</div>
+						<div class="priceDetails">70 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i0.wp.com/whattoeatph.com/wp-content/uploads/2022/03/DSC_9120.jpg?fit=720%2C576&ssl=1" alt=""/>	
+				</a>
+			</div>
+		</ul>
+		</div>
+<br id="AlACarte">	  
+
+		<div class="hs__wrapper">
+		<div class="hs__header">
+			<h2 class="hs__headline">A la carte</h2>
+			<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+		</div>
+
+		<ul class="hs">
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#spaghetti">
+				<div class="detailspane alACarteColor" >
+						<div class="nameDetails">SPAGHETTI</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/mushroom-spaghetti-recipe.jpg" alt=""/>	
+				</a>
+			</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#carbonara">
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">CARBONARA</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.cookingclassy.com/wp-content/uploads/2020/10/spaghetti-carbonara-01.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#baked_mac">
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">BAKED MAC</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://images.summitmedia-digital.com/yummyph/images/2020/09/04/bakedmac640.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#eggplant_omelette">
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">EGGPLANT OMELETTE</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/mela-1200x675.jpg" alt=""/>	
+			</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#ginisang_upo">
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">GINISANG UPO</div>
+						<div class="priceDetails">55 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://momfoodblog.com/wp-content/uploads/2021/03/Ginisang-Upo-with-Pork-MomFoodBlog2.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#ginisang_monggo">
+				<div class="detailspane alACarteColor">
+						<div class="nameDetails">GINSANG MONGGO</div>
+						<div class="priceDetails">30 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://speedyrecipe.com/wp-content/uploads/2018/04/Ginisang-Munggo.jpg" alt=""/>	
+				</a>
+			</div>
+
+		</ul>
+		</div>
+<br id="Extras">
+
+		<div class="hs__wrapper">
+		<div class="hs__header">
+			<h2 class="hs__headline">Extras</h2>
+			<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+		</div>
+
+		<ul class="hs">
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#rice">
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">RICE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://cdn.shopify.com/s/files/1/0406/5728/9378/products/Add-onPlainRice_530x@2x.jpg?v=1595751788" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#egg">
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">EGG</div>
+						<div class="priceDetails">15 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.sophisticatedgourmet.com/wp-content/uploads/2021/01/how-to-fry-an-egg-recipe.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#ham">
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">HAM</div>
+						<div class="priceDetails">20 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.everydayfamilycooking.com/wp-content/uploads/2019/12/air-fried-ham-slices.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#hotdog">
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">HOTDOG</div>
+						<div class="priceDetails">20 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://cdn.shopify.com/s/files/1/0487/5167/3505/products/BESTDOG-500g-3_360x.jpg?v=1633066669" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#siomai">
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">SIOMAI</div>
+						<div class="priceDetails">5 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://panlasangpinoy.com/wp-content/uploads/2020/01/pork-siomai-recipe.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#salad">
+				<div class="detailspane extrasColor">
+						<div class="nameDetails">SALAD</div>
+						<div class="priceDetails">25 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad.jpg" alt=""/>	
+				</a>
+			</div>
+
+		</ul>
+		</div>
+<br id="Drinks">
+
+		<div class="hs__wrapper">
+		<div class="hs__header">
+			<h2 class="hs__headline">Drinks and Beverages</h2>
+			<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+		</div>
+		<ul class="hs">
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#lemonade">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">LEMONADE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.texanerin.com/content/uploads/2014/08/honey-lemonade-2-650x975.jpg" alt=""/>
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#bluelemonade">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">BLUE LEMONADE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i0.wp.com/charlotteshares.blog/wp-content/uploads/2022/05/img_4254_jpg.jpg?resize=768%2C1024&ssl=1" alt=""/>
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#iced_tea">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.acouplecooks.com/wp-content/uploads/2020/07/Iced-Tea-001.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#red_iced_tea">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">RED ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i.pinimg.com/564x/ae/41/60/ae41604e8ee060a9a1d1066954670b04.jpg" alt=""/>	
+				</a>
+			</div>
+
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#cucumber_iced_tea">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">CUCUMBER ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.babaganosh.org/wp-content/uploads/2022/07/cucumber-lemonade-11.jpg.webp" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#mango_iced_tea">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">MANGO ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://www.whiskaffair.com/wp-content/uploads/2019/03/Mango-Iced-Tea-2-3.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#guyabano_iced_tea">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">GUYABANO ICED TEA</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://simplybakings.com/wp-content/uploads/2020/02/Gayubano-Smoothie-13.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#melon_juice">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">MELON JUICE</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kOC6NsRK1YhkS-x4qj6iPGBIIo7UNS7u3fEHdGRzeu3vjjMjZOybf94K-8mI-8ZRGfU&usqp=CAU" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#gulaman">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">GULAMAN</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://i.pinimg.com/736x/a4/c8/a6/a4c8a62696ebd53b43458c8cadd9b25c.jpg" alt=""/>	
+				</a>
+			</div>
+
+			<li class="hs__item"> 
+			<div type="button" class="hs__item__image__wrapper" data-modal-target="#milo">
+				<div class="detailspane drinkColor">
+						<div class="nameDetails">MILO</div>
+						<div class="priceDetails">10 PESOS</div>
+				</div>
+				<a class="hs__item__image" href="#" draggable=false>
+					<img class="menu" src="https://recipes-by-reeshu.s3.ap-south-1.amazonaws.com/recipes/ice-milo-dinosaur/1.jpg" alt=""/>	
+				</a>
+			</div>
+		</ul>
+		</div>
+	</div>
+	</main>
+</div>
 
 
 <!--------------------------------------GUIDE------------------------------------------>
@@ -2448,31 +2448,31 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 
 
 
-														<?php if (isset($_SESSION['COS'])) {
-															echo $_SESSION['COS'];
-														}
-														?>
-														<?php
-														if ($_SESSION['Access'] == "admin") {
-															?>
-																										<p><br>Clear all orders</p>
-																										<form action = "clear.php">
-																											<input type="submit">
-																											</form>
-																										<p><br>Start timer</p>
-																										<form action = "timerstart.php">
-																											<input type="submit">
-																											</form>
-																											<br>
-																											
-																								
+<?php if (isset($_SESSION['COS'])) {
+	echo $_SESSION['COS'];
+}
+?>
+<?php
+if ($_SESSION['Access'] == "admin") {
+	?>
+												<p><br>Clear all orders</p>
+												<form action = "clear.php">
+													<input type="submit">
+													</form>
+												<p><br>Start timer</p>
+												<form action = "timerstart.php">
+													<input type="submit">
+													</form>
+													<br>
+													
+										
 
-																																								  				<?php
-																							}?>
-																						
-														</body>
-												<?php
-													}
+																														<?php
+									}?>
+								
+</body>
+<?php
+}
 } 
 else{
 	header('Location: index.php');
