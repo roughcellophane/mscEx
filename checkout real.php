@@ -63,7 +63,7 @@ if (mysqli_num_rows($result) > 0) {
             }?>
   <div class="eachOrderRow finalPriceDisplay">
     <?php
-      $result = mysqli_query($conn, 'SELECT SUM(PriceValue) AS finalPrice FROM ORDERS'); 
+      $result = mysqli_query($conn, "SELECT SUM(PriceValue) AS finalPrice FROM ORDERS WHERE UserID = '$currentid'"); 
       $row = mysqli_fetch_assoc($result); 
       $sum = $row['finalPrice'];
       ?>
