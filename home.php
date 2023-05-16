@@ -12,6 +12,11 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 session_start();
 include('db_conn.php');
+include('http_response_code.php');
+$id = $_SESSION['UserID'];
+$query = "SELECT * FROM Orders WHERE UserID = '$id'"; 
+$result = mysqli_query($conn, $query);
+while($data = mysqli_fetch_assoc($result)){
 if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 	if (isset($_SESSION['error'])) {
 		if ($_SESSION['error'] == 'wait') {
@@ -28,15 +33,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 			$_SESSION['error'] = "";
 		}	
 	}
-include('http_response_code.php');
 	?>	
-
-<?php
-	$query = "SELECT * FROM Orders";
-	$result = mysqli_query($conn, $query);
-	if (mysqli_num_rows($result) > 0) {
-	while ($data = mysqli_fetch_assoc($result)) {
-	?>
 											
 											<!DOCTYPE html>
 											<head>
@@ -164,7 +161,7 @@ include('http_response_code.php');
 					
 													<!-- display Item tracker -->		
 														<div class="nav-section">
-														  <h2 class="nav-section-label">Order Tracker: <span class="Order ID"> <?php echo $data['UserID']; ?> </span></h2>               
+														  <h2 class="nav-section-label">Order Tracker: <span class="Order ID"> <?php echo $data['OrderID']; ?> </span></h2>               
 														  <div class="nav-section-content">
 															<div class="nav-tracker">
 															  <h3 class="nav-tracker-label">Current Status: <span class="highlight"> <?php echo $data['CurrentStatus']; ?> </span></h3>
@@ -303,7 +300,7 @@ include('http_response_code.php');
 																	<div class="priceDetails">65 PESOS</div>
 															</div>
 															<a class="hs__item__image" href="#" draggable=false>
-																<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/sisig-kapampangan-1.jpg" alt=""/>	
+								f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/2015/05/sisig-kapampangan-1.jpg" alt=""/>	
 															</a>
 														</div>
 			
@@ -599,9 +596,54 @@ include('http_response_code.php');
 												</main>
 											</div>
 
-											<!--------------------------------------DETAILS PANE------------------------------------------>
 
-											<!---------------------------------------SET MEALS------------------------------------------->
+<!--------------------------------------GUIDE------------------------------------------>
+<div type="button" class="hs__item__image__wrapper" data-modal-target="#guide">Open Modal</div>
+  <div class="guide" id="guide">
+    <div class="guide-body">
+	<button data-close-button class="closing-button">&times;</button>
+		<section id="imgages-carousel">
+		 <div class="img-carousel-container">
+				<div class="img-carousel">
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646045524099/1.png" draggable=false>
+						<p>1/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646347522152/2.png" draggable=false> 
+						<p>2/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646687256616/3.png" draggable=false> 
+						<p>3/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597058920528/4.png" draggable=false> 
+						<p>4/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597763563591/6.png" draggable=false> 
+						<p>5/6</p>
+					</div>
+					<div>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665598115876864/7.png" draggable=false>
+						<p>6/6</p>
+					</div>
+				</div>
+				<button id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>
+				<button id="next"><i class="fas fa-chevron-right fa-2x"></i></button> 
+			</div>        
+	</section> 
+	</div>
+  </div>
+  <div id="pane"></div>
+
+
+
+
+<!--------------------------------------DETAILS PANE------------------------------------------>
+
+<!---------------------------------------SET MEALS------------------------------------------->
 
 <!---------------------------------------Tonkatsu------------------------------------------->
 <div class="SetMealsDivider">
@@ -2425,14 +2467,15 @@ include('http_response_code.php');
 																								
 
 																																								  				<?php
-																							}
-																						} ?>
+																							}?>
 																						
 														</body>
 												<?php
-} else {
+} 
+else{
 	header('Location: index.php');
 	exit();
+}
 }
 ?>
 <head>
