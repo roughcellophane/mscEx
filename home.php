@@ -17,7 +17,7 @@ $id = $_SESSION['UserID'];
 $query = "SELECT * FROM Orders WHERE UserID = '$id'"; 
 $result = mysqli_query($conn, $query);
 while($data = mysqli_fetch_assoc($result)){
-if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
+	if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 	if (isset($_SESSION['error'])) {
 		if ($_SESSION['error'] == 'wait') {
 			echo "<script>alert('Please wait for your pre-existing order to be completed first.')</script>";
@@ -2483,6 +2483,7 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 																						
 														</body>
 												<?php
+													}
 } 
 else{
 	header('Location: index.php');
