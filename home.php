@@ -1,5 +1,6 @@
 <?php
 //Get Heroku ClearDB connection information
+session_start();
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $cleardb_server = $cleardb_url["host"];
 $cleardb_username = $cleardb_url["user"];
@@ -10,7 +11,7 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
-session_start();
+
 include('db_conn.php');
 include('http_response_code.php');
 $id = $_SESSION['UserID'];
