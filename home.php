@@ -2365,118 +2365,116 @@ f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/20
   </div>		
 <div id="pane"></div>
 
+<div id="mySidebar" class="sidebar"> 
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav_sidebar()">&times;</a>
+
+			<!-- display MakSci Express in Sidebar -->		
+			<div id="nav">
+
+				<div class="nav-content">
+				<div class="nav-header"><h2 class="nav-greeting">MakSci Express</h2></div>
+				<div>	
+
+			<!-- display name of user -->		
+				<div class="nav-title">Good day, <?php echo $_SESSION['FName'] ?>										 	<?php echo $_SESSION['LName'] ?>!</div>
+				<br>
+
+			<!-- main nav buttons -->	
+				<div class="nav-section">
+					<div class="nav-options">
+					<a class="nav-option" href="checkout real.php" data-modal-target="#guide">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<span>Checkout</span>
+					</a>
+					<a class="nav-option" href="#">
+						<i class="fa-solid fa-question"></i>
+						<span>Guide</span>
+					</a>
+					<a class="nav-option" href="#">
+						<i class="fas fa-solid fa-moon"></i>
+						<span>Dark Mode</span>
+					</a>
+					</div>
+				</div>
+
+			<!-- display Item tracker -->
+				<div class="nav-section">
+					<h2 class="nav-section-label">Order Tracker: <span class="Order ID"> <?php echo $data['OrderID']; ?> </span></h2>               
+					<div class="nav-section-content">
+					<div class="nav-tracker">
+						<h3 class="nav-tracker-label">Current Status: <span class="highlight">
+							<?php
+							$query = "SELECT * FROM Orders";
+							$result = mysqli_query($conn, $query);
+							if (mysqli_num_rows($result) > 0) {
+							$data = mysqli_fetch_assoc($result); 
+								echo $data['CurrentStatus']; ?> </span></h3>
+						<div class="nav-tracker-progress" data-progress-percent= "<?php echo $find['TimeLeft']?>">
+						<div class="nav-tracker-progress-bar" >
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
 
 
-							<div id="mySidebar" class="sidebar"> 
-											<a href="javascript:void(0)" class="closebtn" onclick="closeNav_sidebar()">&times;</a>
-		
-													<!-- display MakSci Express in Sidebar -->		
-													<div id="nav">
-		
-													  <div class="nav-content">
-														<div class="nav-header"><h2 class="nav-greeting">MakSci Express</h2></div>
-													  <div>	
-			
-													<!-- display name of user -->		
-														<div class="nav-title">Good day, <?php echo $_SESSION['FName'] ?>										 	<?php echo $_SESSION['LName'] ?>!</div>
-														<br>
-	
-													<!-- main nav buttons -->	
-														<div class="nav-section">
-														  <div class="nav-options">
-															<a class="nav-option" href="checkout real.php" data-modal-target="#guide">
-															  <i class="fa-solid fa-cart-shopping"></i>
-															  <span>Checkout</span>
-															</a>
-															<a class="nav-option" href="#">
-															  <i class="fa-solid fa-question"></i>
-															  <span>Guide</span>
-															</a>
-															<a class="nav-option" href="#">
-															  <i class="fas fa-solid fa-moon"></i>
-															  <span>Dark Mode</span>
-															</a>
-														  </div>
-														</div>
-					
-													<!-- display Item tracker -->
-													<?php
-													$query = "SELECT * FROM Orders";
-													$result = mysqli_query($conn, $query);
-													if (mysqli_num_rows($result) > 0) {
-													$data = mysqli_fetch_assoc($result); 
-													?>		
-														<div class="nav-section">
-														  <h2 class="nav-section-label">Order Tracker: <span class="Order ID"> <?php echo $data['OrderID']; ?> </span></h2>               
-														  <div class="nav-section-content">
-															<div class="nav-tracker">
-															  <h3 class="nav-tracker-label">Current Status: <span class="highlight"> <?php echo $data['CurrentStatus']; ?> </span></h3>
-															  <div class="nav-tracker-progress" data-progress-percent= "<?php echo $find['TimeLeft']?>">
-																<div class="nav-tracker-progress-bar" >
-																</div>
-															  </div>
-															</div>
-														  </div>
-														</div>
-			
+			<!-- display Location of store -->
+				<div class="nav-section">
+					<h2 class="nav-section-label">Location</h2>              
+					<div class="nav-section-content">
+					<div class="nav-track">
+						<h3 class="nav-track-label">6th Floor: <span class="process"> Co-Op Canteen</span></h3>
+					</div>
+					</div>
+				</div>
 
-													<!-- display Location of store -->
-														<div class="nav-section">
-														  <h2 class="nav-section-label">Location</h2>              
-														  <div class="nav-section-content">
-															<div class="nav-track">
-															  <h3 class="nav-track-label">6th Floor: <span class="process"> Co-Op Canteen</span></h3>
-															</div>
-														  </div>
-														</div>
-		
-													<!-- display more info button -->		
-														<div class="nav-section">
-														  <h2 class="nav-section-label">Learn More?</h2>              
-														  <div class="nav-section-content">
-															<div class="nav-track">
-															  <a href="#" class="more">Stuff About us</a>
-															</div>
-														  </div>
-														</div>
-			
-		
-													<!-- Sign Out Button -->
-														<div class="nav-config-options">
-														  <button class="sign-out nav-config-option" type="button">
-														  <a href="logout.php">Sign Out</a>
-														  </button>
-														</div>
-													  </div>
-													</div>
-												  </div>	
-											</div>
+			<!-- display more info button -->		
+				<div class="nav-section">
+					<h2 class="nav-section-label">Learn More?</h2>              
+					<div class="nav-section-content">
+					<div class="nav-track">
+						<a href="#" class="more">Stuff About us</a>
+					</div>
+					</div>
+				</div>
+
+
+			<!-- Sign Out Button -->
+				<div class="nav-config-options">
+					<button class="sign-out nav-config-option" type="button">
+					<a href="logout.php">Sign Out</a>
+					</button>
+				</div>
+				</div>
+			</div>
+			</div>	
+	</div>
 
 <!-- from the original code -->
 
 
 
 <?php if (isset($_SESSION['COS'])) {
-	echo $_SESSION['COS'];
+echo $_SESSION['COS'];
 }
 ?>
 <?php
 if ($_SESSION['Access'] == "admin") {
-	?>
-												<p><br>Clear all orders</p>
-												<form action = "clear.php">
-													<input type="submit">
-													</form>
-												<p><br>Start timer</p>
-												<form action = "timerstart.php">
-													<input type="submit">
-													</form>
-													<br>
-													
-										
+?>
+					<p><br>Clear all orders</p>
+					<form action = "clear.php">
+						<input type="submit">
+						</form>
+					<p><br>Start timer</p>
+					<form action = "timerstart.php">
+						<input type="submit">
+						</form>
+						<br>
+						
+			
 
-																														<?php
-									}?>
+<?php
+}?>
 								
 </body>
 <?php
