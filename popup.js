@@ -34,3 +34,18 @@ closeModalButtons.forEach(button => {
     closeModal(modal)
   })
 })
+
+
+pane.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.guide.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.guide')
+    closeModal(modal)
+  })
+})
