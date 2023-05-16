@@ -33,7 +33,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 			$_SESSION['error'] = "";
 		}	
 	}
-	else {
 	?>	
 											
 											<!DOCTYPE html>
@@ -2485,7 +2484,6 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 														</body>
 												<?php
 													}
-												}
 } 
 else{
 	header('Location: index.php');
