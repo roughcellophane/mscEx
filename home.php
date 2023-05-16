@@ -12,7 +12,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 session_start();
 include('db_conn.php');
-include('http_response_code.php');
+
 $id = $_SESSION['UserID'];
 $query = "SELECT * FROM Orders WHERE UserID = '$id'"; 
 $result = mysqli_query($conn, $query);
