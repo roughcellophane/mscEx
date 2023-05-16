@@ -1,4 +1,5 @@
 <?php
+
 //Get Heroku ClearDB connection information
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $cleardb_server = $cleardb_url["host"];
@@ -12,10 +13,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 session_start();
 include('db_conn.php');
-$id = $_SESSION['UserID'];
-$query = "SELECT * FROM Orders"; 
-$result = mysqli_query($conn, $query);
-while($data = mysqli_fetch_assoc($result)){
 if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 	if (isset($_SESSION['error'])) {
 		if ($_SESSION['error'] == 'wait') {
@@ -30,9 +27,10 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 		} elseif ($_SESSION['error'] == 'deletepickup') {
 			echo "<script>alert('Please remove your awaiting food first.')</script>";
 			$_SESSION['error'] = "";
-		}	
+		}
 	}
 	?>	
+
 
 <!DOCTYPE html>
 <head>
@@ -2488,7 +2486,7 @@ else{
 	header('Location: index.php');
 	exit();
 }
-}
+
 ?>
 <head>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
