@@ -2475,8 +2475,26 @@ if ($_SESSION['Access'] == "admin") {
 						<input type="submit">
 						</form>
 						<br>
-						
-			
+						<table border ="1" cellspacing="0" cellpadding="10">
+    <tr>
+        <th>UserID</th>
+        <th>CurrentStatus</th>
+        </tr>
+<?php
+$query = "SELECT * FROM Orders";
+$result = mysqli_query($conn, $query);
+if (mysqli_num_rows($result) > 0) {
+  while($data = mysqli_fetch_assoc($result)) {
+ ?>
+ <tr>
+   <td><?php echo $data['UserID']; ?> </td>
+   <td><?php echo $data['CurrentStatus']; ?> </td>
+    </tr>
+  <?php
+  }
+}?>
+  </table>
+           
 
 <?php
 }?>
