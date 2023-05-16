@@ -30,6 +30,14 @@ if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 	}
 include('http_response_code.php');
 	?>	
+
+<?php
+	$query = "SELECT * FROM Orders";
+	$result = mysqli_query($conn, $query);
+	if (mysqli_num_rows($result) > 0) {
+	while ($data = mysqli_fetch_assoc($result)) {
+	?>
+											
 											<!DOCTYPE html>
 											<head>
 												<title>MakSci Express</title>
@@ -2413,25 +2421,13 @@ include('http_response_code.php');
 																											<input type="submit">
 																											</form>
 																											<br>
-																											<table border ="1" cellspacing="0" cellpadding="10">
-																							<tr>
-																								<th>UserID</th>
-																								<th>CurrentStatus</th>
-																								</tr>
-																								<?php
-																						$query = "SELECT * FROM Orders";
-																						$result = mysqli_query($conn, $query);
-																						if (mysqli_num_rows($result) > 0) {
-																							while ($data = mysqli_fetch_assoc($result)) {
-																								?>
+																											
+																								
 
 																																								  				<?php
 																							}
 																						} ?>
-																						  </table>
-																									<?php
-														}
-														?>
+																						
 														</body>
 												<?php
 } else {
