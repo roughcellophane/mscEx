@@ -518,7 +518,6 @@ f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/20
 
 
 <!--------------------------------------GUIDE------------------------------------------>
-<div type="button" class="hs__item__image__wrapper" data-modal-target="#guide">Open Modal</div>
   <div class="guide" id="guide">
     <div class="guide-body">
 	<button data-close-button class="closing-button">&times;</button>
@@ -526,27 +525,27 @@ f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/20
 		 <div class="img-carousel-container">
 				<div class="img-carousel">
 					<div>
-					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646045524099/1.png" draggable=false>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1107875685663506452/guide1.png" draggable=false>
 						<p>1/6</p>
 					</div>
 					<div>
-					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646347522152/2.png" draggable=false> 
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1107875686179418233/guide2.png" draggable=false> 
 						<p>2/6</p>
 					</div>
 					<div>
-					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103661646687256616/3.png" draggable=false> 
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1107875687207010334/guide3.png" draggable=false> 
 						<p>3/6</p>
 					</div>
 					<div>
-					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597058920528/4.png" draggable=false> 
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1107875687488040980/guide4.png" draggable=false> 
 						<p>4/6</p>
 					</div>
 					<div>
-					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665597763563591/6.png" draggable=false> 
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1107875687760678963/guide5.png" draggable=false> 
 						<p>5/6</p>
 					</div>
 					<div>
-					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1103665598115876864/7.png" draggable=false>
+					<img src="https://cdn.discordapp.com/attachments/1021975352945414186/1107875687978762331/guide6.png" draggable=false>
 						<p>6/6</p>
 					</div>
 				</div>
@@ -2382,11 +2381,11 @@ f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/20
 			<!-- main nav buttons -->	
 				<div class="nav-section">
 					<div class="nav-options">
-					<a class="nav-option" href="checkout real.php" data-modal-target="#guide">
+					<a class="nav-option" href="checkout real.php" >
 						<i class="fa-solid fa-cart-shopping"></i>
 						<span>Checkout</span>
 					</a>
-					<a class="nav-option" href="#">
+					<a class="nav-option" href="#" data-modal-target="#guide">
 						<i class="fa-solid fa-question"></i>
 						<span>Guide</span>
 					</a>

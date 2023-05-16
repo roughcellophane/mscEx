@@ -32,8 +32,8 @@
 
 .sidebar .closebtn {
   position: absolute;
-  top: -5px;
-  right: -3px;
+  top: 5px;
+  right: 3px;
   font-size: 36px;
   margin-left: 50px;
 }
