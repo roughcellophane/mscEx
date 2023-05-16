@@ -2411,7 +2411,8 @@ f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/20
 								echo $data['CurrentStatus']; 
 							}
 							else {
-								echo 'Please order' ?> </span></h3>
+								echo 'Please order';
+							}?> </span></h3>
 						<div class="nav-tracker-progress" data-progress-percent= "<?php echo $find['TimeLeft']?>">
 						<div class="nav-tracker-progress-bar" >
 						</div>
