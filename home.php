@@ -2483,7 +2483,7 @@ if ($_SESSION['Access'] == "admin") {
 </body>
 <?php
 }
-} 
+
 else{
 	header('Location: index.php');
 	exit();
