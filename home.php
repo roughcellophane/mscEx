@@ -2457,12 +2457,6 @@ f								<img class="menu" src="https://www.foxyfolksy.com/wp-content/uploads/20
 
 <!-- from the original code -->
 
-
-
-<?php if (isset($_SESSION['COS'])) {
-echo $_SESSION['COS'];
-}
-?>
 <?php
 if ($_SESSION['Access'] == "admin") {
 ?>
