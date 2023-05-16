@@ -16,7 +16,8 @@ include('http_response_code.php');
 $id = $_SESSION['UserID'];
 $query = "SELECT * FROM Orders WHERE UserID = '$id'"; 
 $result = mysqli_query($conn, $query);
-	if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
+while($data = mysqli_fetch_assoc($result)){
+if (isset($_SESSION['UserID']) && $_SESSION['Password']) {
 	if (isset($_SESSION['error'])) {
 		if ($_SESSION['error'] == 'wait') {
 			echo "<script>alert('Please wait for your pre-existing order to be completed first.')</script>";
@@ -32,6 +33,7 @@ $result = mysqli_query($conn, $query);
 			$_SESSION['error'] = "";
 		}	
 	}
+	else {
 	?>	
 											
 											<!DOCTYPE html>
@@ -2482,6 +2484,8 @@ $result = mysqli_query($conn, $query);
 																						
 														</body>
 												<?php
+													}
+												}
 } 
 else{
 	header('Location: index.php');
@@ -2504,4 +2508,4 @@ else{
 	<script src="https://kit.fontawesome.com/133ee41db0.js" crossorigin="anonymous"></script>
 </head>
 <!DOCTYPE html>
-<!-- dsfjdsf -->
+<!-- dsfjdsf -->;
